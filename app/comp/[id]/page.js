@@ -5,7 +5,6 @@ import FavoriteButton from '@/components/FavoriteButton';
 import LikeButton from '@/components/LikeButton';
 import CommentSection from '@/components/CommentSection';
 import IconImg from '@/components/IconImg';
-import AdSlot from '@/components/AdSlot';
 import icons from '@/data/icons.json';
 
 export default async function CompDetail({ params }) {
@@ -170,8 +169,6 @@ export default async function CompDetail({ params }) {
           ))}
         </div>
       </div>
-
-      <AdSlot slot="detail" className="ad-detail" />
     </div>
   );
 }

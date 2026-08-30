@@ -1,7 +1,6 @@
 import './globals.css';
 import HexMark from '@/components/HexMark';
 import SiteNav from '@/components/SiteNav';
-import AdSlot from '@/components/AdSlot';
 
 export const metadata = {
   title: '弈览 · 金铲铲 S18 攻略',
@@ -16,7 +15,6 @@ export const viewport = {
 };
 
 export default function RootLayout({ children }) {
-  const adClient = process.env.NEXT_PUBLIC_AD_CLIENT;
   return (
     <html lang="zh-CN">
       <head>
@@ -26,14 +24,6 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap"
           rel="stylesheet"
         />
-        {/* 广告就绪：设置 NEXT_PUBLIC_AD_CLIENT 后自动加载广告联盟脚本 */}
-        {adClient && (
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            crossOrigin="anonymous"
-          />
-        )}
       </head>
       <body>
         <header className="site-header">
@@ -43,10 +33,7 @@ export default function RootLayout({ children }) {
           </a>
           <SiteNav />
         </header>
-        <main className="site-main">
-          <AdSlot slot="top" className="ad-top" />
-          {children}
-        </main>
+        <main className="site-main">{children}</main>
         <footer className="site-footer">
           <span>弈览 · 金铲铲 S18 自然之力攻略</span>
           <span className="footer-links">
