@@ -1,0 +1,8 @@
+node_modules
+.next
+.git
+data/social
+npm-debug.log*
+.env.local
+.env
+*.log

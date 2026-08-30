@@ -1,0 +1,18 @@
+
+# 依赖 / 构建产物
+node_modules/
+.next/
+out/
+
+# 环境变量（含密钥，绝不提交）
+.env
+.env.*
+!.env.example
+
+# 运行时社交数据（点赞/评论，本地生成）
+data/social/
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*.log

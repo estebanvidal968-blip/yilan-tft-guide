@@ -1,0 +1,28 @@
+# 弈览 · 金铲铲 S18 攻略 — Render 部署（路径 A：海外，免备案）
+# 用法：Render 新建 Web Service → 连 GitHub 仓库 → 选本文件即自动识别
+services:
+  - type: web
+    name: yilan
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      # 接广告联盟时填发布商 ID（如 ca-pub-xxxxxxxx），留空则不加载任何广告脚本
+      - key: NEXT_PUBLIC_AD_CLIENT
+        sync: false
+      # 绑定域名后填 https://你的域名，用于 sitemap / robots（SEO）
+      - key: NEXT_PUBLIC_SITE_URL
+        sync: false
+
+# 点赞/评论数据持久化：免费版 Render 不支持挂载卷，会随每次部署重置。
+# 要持久，把 plan 升到 Starter（$7/月）并取消下面注释：
+#    disks:
+#      - name: yilan-data
+#        mountPath: /app/data
+#        sizeGB: 1
+# 或把 lib/socialStore.js 换成 DB/KV（推荐用于正式广告变现站点）。

@@ -1,0 +1,1387 @@
+[
+  {
+    "compId": "opgg--744234",
+    "versionId": "set18",
+    "name": "护卫 卡西奥佩娅",
+    "alias": "Defender Cassiopeia",
+    "tier": "T0",
+    "coreChampions": [
+      "卡西奥佩娅",
+      "费德提克",
+      "拉姆斯"
+    ],
+    "traits": [
+      "花灵",
+      "护卫",
+      "咒术师",
+      "魔女",
+      "圣盾",
+      "仙灵",
+      "幽林",
+      "灵狐",
+      "炼狱",
+      "处刑人"
+    ],
+    "coreItems": [
+      "Archangels Staff",
+      "Blue Buff",
+      "Hextech Gunblade"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以卡西奥佩娅、费德提克、拉姆斯为核心的花灵、护卫、咒术师体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "卡西奥佩娅",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Archangels Staff",
+          "Blue Buff",
+          "Hextech Gunblade"
+        ]
+      },
+      {
+        "champ": "Soraka",
+        "row": 0,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Jeweled Gauntlet",
+          "Nashors Tooth",
+          "Spear Of Shojin"
+        ]
+      },
+      {
+        "champ": "蕾欧娜",
+        "row": 3,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "慎",
+        "row": 3,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "莉莉娅",
+        "row": 3,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "费德提克",
+        "row": 3,
+        "col": 3,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Ionic Spark",
+          "Spirit Visage",
+          "Sunfire Cape"
+        ]
+      },
+      {
+        "champ": "拉姆斯",
+        "row": 3,
+        "col": 4,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Steadfast Heart",
+          "Warmogs Armor"
+        ]
+      },
+      {
+        "champ": "奥恩",
+        "row": 3,
+        "col": 5,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      }
+    ],
+    "stat": {
+      "opScore": 4.005882363838343
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到花灵、护卫、咒术师来牌顺、或野怪爆了卡西奥佩娅的散件时就该冲这套。强化符文优先拿花灵相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追卡西奥佩娅、费德提克、拉姆斯的二星与核心装备；前期用卡西奥佩娅、Soraka打工过渡，别硬 D；若卡西奥佩娅迟迟不来牌，就转其他花灵体系保血。"
+  },
+  {
+    "compId": "opgg--b6a673",
+    "versionId": "set18",
+    "name": "灵魂莲华 阿狸",
+    "alias": "Blossom Ahri",
+    "tier": "T0",
+    "coreChampions": [
+      "阿狸",
+      "艾希",
+      "Sett"
+    ],
+    "traits": [
+      "Zyra Unique Trait",
+      "Blossom",
+      "咒术师",
+      "Hunter",
+      "Brawler",
+      "Primal18",
+      "重装战士",
+      "Summoner",
+      "幽林",
+      "灵狐"
+    ],
+    "coreItems": [
+      "Jeweled Gauntlet",
+      "Spear Of Shojin",
+      "Strikers Flail"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以阿狸、艾希、Sett为核心的Zyra Unique Trait、Blossom、咒术师体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "阿狸",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Jeweled Gauntlet",
+          "Spear Of Shojin",
+          "Strikers Flail"
+        ]
+      },
+      {
+        "champ": "Sivir",
+        "row": 0,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Deathblade",
+          "Infinity Edge",
+          "Spear Of Shojin"
+        ]
+      },
+      {
+        "champ": "Zyra",
+        "row": 0,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Karma18",
+        "row": 0,
+        "col": 3,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "艾希",
+        "row": 0,
+        "col": 6,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Last Whisper",
+          "Red Buff",
+          "Spear Of Shojin"
+        ]
+      },
+      {
+        "champ": "蔚",
+        "row": 1,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Gnar Small",
+        "row": 1,
+        "col": 3,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Yorick",
+        "row": 1,
+        "col": 4,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Sett",
+        "row": 3,
+        "col": 3,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Gargoyle Stoneplate",
+          "Warmogs Armor"
+        ]
+      }
+    ],
+    "stat": {
+      "opScore": 2.2228740342975275
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Zyra Unique Trait、Blossom、咒术师来牌顺、或野怪爆了阿狸的散件时就该冲这套。强化符文优先拿Zyra Unique Trait相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追阿狸、艾希、Sett的二星与核心装备；前期用阿狸、Sivir打工过渡，别硬 D；若阿狸迟迟不来牌，就转其他Zyra Unique Trait体系保血。"
+  },
+  {
+    "compId": "opgg--c5a44d",
+    "versionId": "set18",
+    "name": "永恒之森 德莱文",
+    "alias": "Elderwood Draven",
+    "tier": "T0",
+    "coreChampions": [
+      "Ezreal",
+      "Draven18",
+      "Maokai"
+    ],
+    "traits": [
+      "Greenfather",
+      "Maokai_Unique Trait",
+      "Draven Unique Trait18",
+      "Emerald18",
+      "Brawler",
+      "处刑人",
+      "炼狱",
+      "重装战士",
+      "幽林",
+      "灵狐",
+      "Vanguard"
+    ],
+    "coreItems": [
+      "Deathblade",
+      "Last Whisper",
+      "Spear Of Shojin"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以Ezreal、Draven18、Maokai为核心的Greenfather、Maokai_Unique Trait、Draven Unique Trait18体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "Alistar",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Ezreal",
+        "row": 0,
+        "col": 5,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Deathblade",
+          "Last Whisper",
+          "Spear Of Shojin"
+        ]
+      },
+      {
+        "champ": "Draven18",
+        "row": 0,
+        "col": 6,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Deathblade",
+          "Guinsoos Rageblade",
+          "Krakens Fury"
+        ]
+      },
+      {
+        "champ": "Ivern",
+        "row": 3,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Kennen",
+        "row": 3,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Edge Of Night",
+          "Hand Of Justice",
+          "Rabadons Deathcap"
+        ]
+      },
+      {
+        "champ": "Gnar Small",
+        "row": 3,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "塔里克",
+        "row": 3,
+        "col": 3,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Amumu18",
+        "row": 3,
+        "col": 4,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Maokai",
+        "row": 3,
+        "col": 5,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Spirit Visage",
+          "Warmogs Armor"
+        ]
+      }
+    ],
+    "stat": {
+      "opScore": 1.5998354140203952
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Greenfather、Maokai_Unique Trait、Draven Unique Trait18来牌顺、或野怪爆了Ezreal的散件时就该冲这套。强化符文优先拿Greenfather相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追Ezreal、Draven18、Maokai的二星与核心装备；前期用Alistar、Ezreal打工过渡，别硬 D；若Ezreal迟迟不来牌，就转其他Greenfather体系保血。"
+  },
+  {
+    "compId": "opgg--6afba8",
+    "versionId": "set18",
+    "name": "魔战士 易",
+    "alias": "Adaptor Master Yi",
+    "tier": "T0",
+    "coreChampions": [
+      "Nidalee18_AP",
+      "Kog Maw18_AD",
+      "Master Yi_AD"
+    ],
+    "traits": [
+      "Caustic",
+      "Adaptor",
+      "Brawler",
+      "重装战士",
+      "Primal18",
+      "Blossom",
+      "Summoner",
+      "Invoker",
+      "Riftbeast18"
+    ],
+    "coreItems": [
+      "Guinsoos Rageblade",
+      "Jeweled Gauntlet",
+      "Strikers Flail"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以Nidalee18_AP、Kog Maw18_AD、Master Yi_AD为核心的Caustic、Adaptor、Brawler体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "Gromp18_AP",
+        "row": 0,
+        "col": 4,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Nidalee18_AP",
+        "row": 0,
+        "col": 5,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Guinsoos Rageblade",
+          "Jeweled Gauntlet",
+          "Strikers Flail"
+        ]
+      },
+      {
+        "champ": "Kog Maw18_AD",
+        "row": 0,
+        "col": 6,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Infinity Edge",
+          "Red Buff",
+          "Spear Of Shojin"
+        ]
+      },
+      {
+        "champ": "Master Yi_AD",
+        "row": 1,
+        "col": 6,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Edge Of Night",
+          "Guinsoos Rageblade",
+          "Titans Resolve"
+        ]
+      },
+      {
+        "champ": "Yorick",
+        "row": 2,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Sett",
+        "row": 3,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Krug18",
+        "row": 3,
+        "col": 1,
+        "cost": 3,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "蔚",
+        "row": 3,
+        "col": 5,
+        "cost": 3,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Gargoyle Stoneplate",
+          "Warmogs Armor"
+        ]
+      }
+    ],
+    "stat": {
+      "opScore": 1.5556999833890839
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Caustic、Adaptor、Brawler来牌顺、或野怪爆了Nidalee18_AP的散件时就该冲这套。强化符文优先拿Caustic相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追Nidalee18_AP、Kog Maw18_AD、Master Yi_AD的二星与核心装备；前期用Gromp18_AP、Nidalee18_AP打工过渡，别硬 D；若Nidalee18_AP迟迟不来牌，就转其他Caustic体系保血。"
+  },
+  {
+    "compId": "opgg--a3243a",
+    "versionId": "set18",
+    "name": "法师 阿狸",
+    "alias": "Spellweaver Ahri",
+    "tier": "T0",
+    "coreChampions": [
+      "阿狸",
+      "Morgana",
+      "Sentinel18"
+    ],
+    "traits": [
+      "Alune Unique Trait18",
+      "Emerald18",
+      "咒术师",
+      "Vanguard",
+      "花灵",
+      "Lunar",
+      "Invoker",
+      "魔女",
+      "Blossom",
+      "Slayer",
+      "护卫",
+      "Riftbeast18"
+    ],
+    "coreItems": [
+      "Jeweled Gauntlet",
+      "Spear Of Shojin",
+      "Strikers Flail"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以阿狸、Morgana、Sentinel18为核心的Alune Unique Trait18、Emerald18、咒术师体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "阿狸",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Jeweled Gauntlet",
+          "Spear Of Shojin",
+          "Strikers Flail"
+        ]
+      },
+      {
+        "champ": "Alune",
+        "row": 0,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Jeweled Gauntlet",
+          "Rabadons Deathcap",
+          "Spear Of Shojin"
+        ]
+      },
+      {
+        "champ": "卡西奥佩娅",
+        "row": 0,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Morgana",
+        "row": 2,
+        "col": 2,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Adaptive Helm",
+          "Morellonomicon",
+          "Void Staff"
+        ]
+      },
+      {
+        "champ": "Elise",
+        "row": 3,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Diana",
+        "row": 3,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Sentinel18",
+        "row": 3,
+        "col": 3,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Protectors Vow",
+          "Warmogs Armor"
+        ]
+      },
+      {
+        "champ": "塔里克",
+        "row": 3,
+        "col": 4,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "费德提克",
+        "row": 3,
+        "col": 5,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      }
+    ],
+    "stat": {
+      "opScore": 1.0387244298411096
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Alune Unique Trait18、Emerald18、咒术师来牌顺、或野怪爆了阿狸的散件时就该冲这套。强化符文优先拿Alune Unique Trait18相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追阿狸、Morgana、Sentinel18的二星与核心装备；前期用阿狸、Alune打工过渡，别硬 D；若阿狸迟迟不来牌，就转其他Alune Unique Trait18体系保血。"
+  },
+  {
+    "compId": "opgg--d29ea9",
+    "versionId": "set18",
+    "name": "迅捷射手 凯尔",
+    "alias": "Rapidfire Kayle",
+    "tier": "T0",
+    "coreChampions": [
+      "奥恩",
+      "Xayah",
+      "Kayle"
+    ],
+    "traits": [
+      "圣盾",
+      "Rapidfire",
+      "Vanguard",
+      "护卫",
+      "仙灵",
+      "重装战士",
+      "幽林",
+      "Lunar"
+    ],
+    "coreItems": [
+      "Gargoyle Stoneplate",
+      "Spirit Visage",
+      "Warmogs Armor"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以奥恩、Xayah、Kayle为核心的圣盾、Rapidfire、Vanguard体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "蕾欧娜",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "奥恩",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Spirit Visage",
+          "Warmogs Armor"
+        ]
+      },
+      {
+        "champ": "Rakan",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Xayah",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Deathblade",
+          "Guinsoos Rageblade",
+          "Red Buff"
+        ]
+      },
+      {
+        "champ": "Kayle",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Guinsoos Rageblade",
+          "Jeweled Gauntlet",
+          "Rabadons Deathcap"
+        ]
+      },
+      {
+        "champ": "瑟庄妮",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Spirit Visage",
+          "Warmogs Armor"
+        ]
+      },
+      {
+        "champ": "Hecarim",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Aphelios",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      }
+    ],
+    "stat": {
+      "opScore": 0.8998135337182044
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到圣盾、Rapidfire、Vanguard来牌顺、或野怪爆了奥恩的散件时就该冲这套。强化符文优先拿圣盾相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追奥恩、Xayah、Kayle的二星与核心装备；前期用蕾欧娜、奥恩打工过渡，别硬 D；若奥恩迟迟不来牌，就转其他圣盾体系保血。"
+  },
+  {
+    "compId": "opgg--b9c6de",
+    "versionId": "set18",
+    "name": "重装战士 莫甘娜",
+    "alias": "Vanguard Morgana",
+    "tier": "T0",
+    "coreChampions": [
+      "Morgana",
+      "Brambleback18",
+      "Sentinel18"
+    ],
+    "traits": [
+      "Alune Unique Trait18",
+      "Caustic",
+      "Emerald18",
+      "Vanguard",
+      "Invoker",
+      "Lunar",
+      "Slayer",
+      "Riftbeast18",
+      "咒术师",
+      "幽林",
+      "魔女",
+      "Adaptor"
+    ],
+    "coreItems": [
+      "Morellonomicon",
+      "Rabadons Deathcap",
+      "Void Staff"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以Morgana、Brambleback18、Sentinel18为核心的Alune Unique Trait18、Caustic、Emerald18体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "Alune",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Emblem Invoker",
+          "Jeweled Gauntlet",
+          "Strikers Flail"
+        ]
+      },
+      {
+        "champ": "Kog Maw18_AD",
+        "row": 0,
+        "col": 3,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Sentry",
+        "row": 0,
+        "col": 6,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Morgana",
+        "row": 2,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Morellonomicon",
+          "Rabadons Deathcap",
+          "Void Staff"
+        ]
+      },
+      {
+        "champ": "Brambleback18",
+        "row": 2,
+        "col": 2,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Edge Of Night",
+          "Giant Slayer",
+          "Quicksilver"
+        ]
+      },
+      {
+        "champ": "塔里克",
+        "row": 3,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Diana",
+        "row": 3,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Sentinel18",
+        "row": 3,
+        "col": 3,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Adaptive Helm",
+          "Protectors Vow",
+          "Warmogs Armor"
+        ]
+      },
+      {
+        "champ": "Hecarim",
+        "row": 3,
+        "col": 4,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      }
+    ],
+    "stat": {
+      "opScore": 0.8254760818245085
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Alune Unique Trait18、Caustic、Emerald18来牌顺、或野怪爆了Morgana的散件时就该冲这套。强化符文优先拿Alune Unique Trait18相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追Morgana、Brambleback18、Sentinel18的二星与核心装备；前期用Alune、Kog Maw18_AD打工过渡，别硬 D；若Morgana迟迟不来牌，就转其他Alune Unique Trait18体系保血。"
+  },
+  {
+    "compId": "opgg--83ef89",
+    "versionId": "set18",
+    "name": "永恒之森 厄斐琉斯",
+    "alias": "Elderwood Aphelios",
+    "tier": "T0",
+    "coreChampions": [
+      "Aphelios",
+      "莉莉娅",
+      "Alune"
+    ],
+    "traits": [
+      "Alune Unique Trait18",
+      "Greenfather",
+      "幽林",
+      "Brawler",
+      "Lunar",
+      "咒术师",
+      "Rapidfire",
+      "护卫",
+      "仙灵",
+      "灵狐"
+    ],
+    "coreItems": [
+      "Giant Slayer",
+      "Guinsoos Rageblade",
+      "Krakens Fury"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以Aphelios、莉莉娅、Alune为核心的Alune Unique Trait18、Greenfather、幽林体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "奥恩",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Xayah",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Alistar",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Le Blanc",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Aphelios",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Giant Slayer",
+          "Guinsoos Rageblade",
+          "Krakens Fury"
+        ]
+      },
+      {
+        "champ": "莉莉娅",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Evenshroud",
+          "Protectors Vow",
+          "Sunfire Cape"
+        ]
+      },
+      {
+        "champ": "Alune",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Jeweled Gauntlet",
+          "Spear Of Shojin",
+          "Void Staff"
+        ]
+      },
+      {
+        "champ": "Gnar Small",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Edge Of Night",
+          "Steraks Gage",
+          "Titans Resolve"
+        ]
+      },
+      {
+        "champ": "Ivern",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      }
+    ],
+    "stat": {
+      "opScore": 0.7895730377043099
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Alune Unique Trait18、Greenfather、幽林来牌顺、或野怪爆了Aphelios的散件时就该冲这套。强化符文优先拿Alune Unique Trait18相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追Aphelios、莉莉娅、Alune的二星与核心装备；前期用奥恩、Xayah打工过渡，别硬 D；若Aphelios迟迟不来牌，就转其他Alune Unique Trait18体系保血。"
+  },
+  {
+    "compId": "opgg--e63491",
+    "versionId": "set18",
+    "name": "约德尔人和朋友 维迦",
+    "alias": "Sprykin Veigar",
+    "tier": "T0",
+    "coreChampions": [
+      "Veigar",
+      "Teemo",
+      "雷克塞"
+    ],
+    "traits": [
+      "Brawler",
+      "灵狐",
+      "花灵",
+      "护卫",
+      "Blackthorn",
+      "咒术师",
+      "幽林",
+      "Blossom",
+      "Invoker"
+    ],
+    "coreItems": [
+      "Emblem Flora Fatalis Augment",
+      "Blue Buff",
+      "Jeweled Gauntlet"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以Veigar、Teemo、雷克塞为核心的Brawler、灵狐、花灵体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "Veigar",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Emblem Flora Fatalis Augment",
+          "Blue Buff",
+          "Jeweled Gauntlet"
+        ]
+      },
+      {
+        "champ": "Teemo",
+        "row": 0,
+        "col": 1,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Morellonomicon",
+          "Spear Of Shojin",
+          "Void Staff"
+        ]
+      },
+      {
+        "champ": "Sett",
+        "row": 1,
+        "col": 1,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "费德提克",
+        "row": 1,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Kobuko",
+        "row": 1,
+        "col": 3,
+        "cost": 3,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "拉姆斯",
+        "row": 1,
+        "col": 4,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Gnar Small",
+        "row": 2,
+        "col": 2,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Bloodthirster",
+          "Steraks Gage",
+          "Titans Resolve"
+        ]
+      },
+      {
+        "champ": "雷克塞",
+        "row": 3,
+        "col": 3,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Gargoyle Stoneplate",
+          "Warmogs Armor"
+        ]
+      }
+    ],
+    "stat": {
+      "opScore": 0.6821566032714241
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Brawler、灵狐、花灵来牌顺、或野怪爆了Veigar的散件时就该冲这套。强化符文优先拿Brawler相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追Veigar、Teemo、雷克塞的二星与核心装备；前期用Veigar、Teemo打工过渡，别硬 D；若Veigar迟迟不来牌，就转其他Brawler体系保血。"
+  },
+  {
+    "compId": "opgg-elder-dragon-25e6c0",
+    "versionId": "set18",
+    "name": "峡谷野怪 Elder Dragon",
+    "alias": "Riftbeast Elder Dragon",
+    "tier": "T0",
+    "coreChampions": [
+      "Krug18",
+      "Brambleback18",
+      "Elder Dragon"
+    ],
+    "traits": [
+      "Apex Predator",
+      "Emerald18",
+      "Riftbeast18",
+      "Brawler",
+      "Invoker",
+      "Slayer",
+      "Vanguard",
+      "幽林",
+      "灵狐"
+    ],
+    "coreItems": [
+      "Gargoyle Stoneplate",
+      "Warmogs Armor",
+      "Warmogs Armor"
+    ],
+    "earlyGame": "",
+    "midGame": "",
+    "lateGame": "",
+    "counters": [],
+    "counteredBy": [],
+    "stationMapUrl": "",
+    "positionTip": "",
+    "aiComment": "以Krug18、Brambleback18、Elder Dragon为核心的Apex Predator、Emerald18、Riftbeast18体系（T0）。。数据为 OP.GG 实时统计，具体运营请见站位与装备建议。",
+    "positions": [
+      {
+        "champ": "Sentry",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Murkwolf18",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "Krug18",
+        "row": 0,
+        "col": 0,
+        "cost": 3,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Gargoyle Stoneplate",
+          "Warmogs Armor",
+          "Warmogs Armor"
+        ]
+      },
+      {
+        "champ": "Brambleback18",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Edge Of Night",
+          "Giant Slayer",
+          "Quicksilver"
+        ]
+      },
+      {
+        "champ": "Sentinel18",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": [
+          "Evenshroud",
+          "Spirit Visage",
+          "Sunfire Cape"
+        ]
+      },
+      {
+        "champ": "Elder Dragon",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": true,
+        "stars": 2,
+        "items": [
+          "Infinity Edge",
+          "Last Whisper",
+          "Steraks Gage"
+        ]
+      },
+      {
+        "champ": "Gnar Small",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      },
+      {
+        "champ": "塔里克",
+        "row": 0,
+        "col": 0,
+        "cost": 2,
+        "carry": false,
+        "stars": 2,
+        "items": []
+      }
+    ],
+    "stat": {
+      "opScore": 0.611570707235999
+    },
+    "source": "opgg",
+    "updatedAt": "2026-08-29",
+    "selectionGuide": "看到Apex Predator、Emerald18、Riftbeast18来牌顺、或野怪爆了Krug18的散件时就该冲这套。强化符文优先拿Apex Predator相关的战力 / 转职类；前期经济顺可拿利滚利类存钱，3-2 或 4-2 再补战力海克斯。",
+    "pickTips": "优先追Krug18、Brambleback18、Elder Dragon的二星与核心装备；前期用Sentry、Murkwolf18打工过渡，别硬 D；若Krug18迟迟不来牌，就转其他Apex Predator体系保血。"
+  }
+]

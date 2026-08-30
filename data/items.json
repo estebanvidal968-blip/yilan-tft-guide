@@ -1,0 +1,19 @@
+[
+  { "itemId": "bow", "name": "反曲之弓", "tier": "散件", "buildFrom": [], "recipe": ["guinsoo", "giant_slayer"] },
+  { "itemId": "sword", "name": "暴风大剑", "tier": "散件", "buildFrom": [], "recipe": ["ie", "giant_slayer", "bloodthirster"] },
+  { "itemId": "vest", "name": "锁子甲", "tier": "散件", "buildFrom": [], "recipe": ["sunfire", "warmog"] },
+  { "itemId": "cloak", "name": "负极斗篷", "tier": "散件", "buildFrom": [], "recipe": ["dragon_claw", "bloodthirster"] },
+  { "itemId": "belt", "name": "巨人腰带", "tier": "散件", "buildFrom": [], "recipe": ["sunfire", "warmog"] },
+  { "itemId": "glove", "name": "拳套", "tier": "散件", "buildFrom": [], "recipe": ["ie", "jeweled"] },
+  { "itemId": "tear", "name": "女神之泪", "tier": "散件", "buildFrom": [], "recipe": [] },
+  { "itemId": "rod", "name": "无用大棒", "tier": "散件", "buildFrom": [], "recipe": ["guinsoo", "jeweled"] },
+
+  { "itemId": "guinsoo", "name": "鬼索的狂暴之刃", "tier": "成装", "buildFrom": ["bow", "rod"], "recipe": [] },
+  { "itemId": "ie", "name": "无尽之刃", "tier": "成装", "buildFrom": ["sword", "glove"], "recipe": [] },
+  { "itemId": "giant_slayer", "name": "巨人杀手", "tier": "成装", "buildFrom": ["sword", "bow"], "recipe": [] },
+  { "itemId": "dragon_claw", "name": "龙牙", "tier": "成装", "buildFrom": ["cloak", "cloak"], "recipe": [] },
+  { "itemId": "warmog", "name": "振奋盔甲", "tier": "成装", "buildFrom": ["belt", "belt"], "recipe": [] },
+  { "itemId": "jeweled", "name": "珠光护手", "tier": "成装", "buildFrom": ["rod", "glove"], "recipe": [] },
+  { "itemId": "sunfire", "name": "红莲斗篷", "tier": "成装", "buildFrom": ["vest", "belt"], "recipe": [] },
+  { "itemId": "bloodthirster", "name": "饮血剑", "tier": "成装", "buildFrom": ["sword", "cloak"], "recipe": [] }
+]
