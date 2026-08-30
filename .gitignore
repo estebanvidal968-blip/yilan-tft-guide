@@ -10,7 +10,11 @@ out/
 !.env.example
 
 # 运行时社交数据（点赞/评论，本地生成）
+# SQLite 库及其 WAL/SHM 附属文件，以及原子文件存储兜底
 data/social/
+*.db
+*.db-wal
+*.db-shm
 
 # 系统 / 编辑器
 .DS_Store
