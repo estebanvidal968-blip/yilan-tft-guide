@@ -13,6 +13,7 @@ import { dirname, resolve } from 'node:path';
 import { fetchMetaDecks } from '../lib/opgg.js';
 import { generateComment } from '../lib/hunyuan.js';
 import { applyManualCopy, loadCopyLibrary } from '../lib/compCopy.js';
+import { seasonLabel } from '../lib/season.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA = resolve(__dirname, '..', 'data');
@@ -44,7 +45,8 @@ const { applied } = applyManualCopy(comps);
 console.log(`  文案库回填选取思路/选子技巧：${applied} 套`);
 
 const today = new Date().toISOString().slice(0, 10);
-const setLabel = `金铲铲 S${String(patch || '18').split('.')[0]} 自然之力`;
+// 赛季名统一取自 lib/season.js，换赛季只改那一处
+const setLabel = seasonLabel(patch);
 const tiers = { T0: 0, T1: 0, T2: 0 };
 comps.forEach((c) => { tiers[c.tier] = (tiers[c.tier] || 0) + 1; });
 const versions = [
