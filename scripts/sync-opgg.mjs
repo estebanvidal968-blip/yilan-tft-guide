@@ -1,11 +1,18 @@
-// 同步脚本：拉取 OP.GG 当前版本阵容 → 混元生成中文评语 → 写回 data/*.json
+// 同步脚本：拉取 OP.GG 当前版本阵容 → 生成中文评语 → 写回 data/*.json
+//
+// 评语来源优先级（成本控制 + 防止人工文案被覆盖）：
+//   ① data/comp-copy.json 人工文案库命中 → 直接复用，不消耗任何 LLM 调用；
+//   ② 未命中 → 调 LLM（LLM_* 或 HUNYUAN_SECRET_*），缺密钥则降级为数据驱动模板。
+// 写回前会再用文案库统一回填 selectionGuide / pickTips
+// （同步会重建阵容对象，这两个字段不在 OP.GG 原始数据里，容易丢失）。
+//
 // 用法：node scripts/sync-opgg.mjs [limit]
-// 环境变量：HUNYUAN_SECRET_ID / HUNYUAN_SECRET_KEY（缺则混元评语降级为模板）
 import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { fetchMetaDecks } from '../lib/opgg.js';
 import { generateComment } from '../lib/hunyuan.js';
+import { applyManualCopy, loadCopyLibrary } from '../lib/compCopy.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA = resolve(__dirname, '..', 'data');
@@ -15,11 +22,26 @@ console.log(`▶ 拉取 OP.GG 阵容（limit=${limit}）…`);
 const { comps, versionId, patch } = await fetchMetaDecks(limit);
 console.log(`  拿到 ${comps.length} 套，版本 ${versionId} (patch ${patch || '?'})`);
 
-console.log('▶ 调用混元生成中文评语…');
+console.log('▶ 生成中文评语（人工文案库优先）…');
+const copyLib = loadCopyLibrary();
+let fromLib = 0;
+let fromLLM = 0;
 for (const c of comps) {
-  c.aiComment = await generateComment(c);
+  const manual = copyLib[c.compId]?.aiComment;
+  if (manual) {
+    c.aiComment = manual; // 人工文案优先，零 LLM 调用成本
+    fromLib++;
+  } else {
+    c.aiComment = await generateComment(c);
+    fromLLM++;
+  }
 }
-console.log(`  生成完成（${comps.filter((c) => c.aiComment).length} 套）`);
+console.log(`  文案库命中 ${fromLib} 套（零调用），LLM/模板生成 ${fromLLM} 套`);
+
+// 同步会重建阵容对象，selectionGuide / pickTips 不在 OP.GG 原始数据里，
+// 统一从文案库回填，避免每次同步后丢失。
+const { applied } = applyManualCopy(comps);
+console.log(`  文案库回填选取思路/选子技巧：${applied} 套`);
 
 const today = new Date().toISOString().slice(0, 10);
 const setLabel = `金铲铲 S${String(patch || '18').split('.')[0]} 自然之力`;
