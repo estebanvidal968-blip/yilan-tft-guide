@@ -41,14 +41,15 @@ function Block({ block }) {
         </ol>
       );
 
-    case 'table':
+    case 'table': {
+      const align = block.align || [];
       return (
         <div className="guide-table-wrap">
           <table className="guide-table">
             <thead>
               <tr>
-                {block.headers.map((h) => (
-                  <th key={h}>{h}</th>
+                {block.headers.map((h, j) => (
+                  <th key={h} style={{ textAlign: align[j] || 'left' }}>{h}</th>
                 ))}
               </tr>
             </thead>
@@ -56,7 +57,7 @@ function Block({ block }) {
               {block.rows.map((row, i) => (
                 <tr key={i}>
                   {row.map((cell, j) => (
-                    <td key={j}>{cell}</td>
+                    <td key={j} style={{ textAlign: align[j] || 'left' }}>{cell}</td>
                   ))}
                 </tr>
               ))}
@@ -64,6 +65,7 @@ function Block({ block }) {
           </table>
         </div>
       );
+    }
 
     case 'callout':
       return (
@@ -115,7 +117,8 @@ export default function GuideDetailPage({ params }) {
 
       <footer className="guide-foot">
         <span className="muted">
-          数据来源：官方赛季公告与设计师访谈 + 社区攻略整理。机制可能随版本调整，以游戏内实际为准。
+          {g.dataNote ||
+            '数据来源：站点 OP.GG 实战阵容库与 S18 赛季元数据；机制随版本调整，以游戏内实际为准。'}
         </span>
       </footer>
     </article>
