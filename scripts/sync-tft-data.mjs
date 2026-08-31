@@ -167,6 +167,26 @@ async function loadDdragon() {
   return count;
 }
 
+// TFT 专属费用：Data Dragon 的 tft-champion.json 混了所有赛季，
+// 必须按 TFTSet18 过滤（OP.GG champId 里的 DA_18_ 即 Set 18）。
+async function loadTftCosts() {
+  const map = new Map(); // 小写英文名 -> cost(1-5)
+  try {
+    const res = await fetch(`${DDRAGON}/data/zh_CN/tft-champion.json`);
+    const j = await res.json();
+    for (const [key, c] of Object.entries(j.data || {})) {
+      if (!key.includes('TFTSet18')) continue;
+      const token = key.slice(key.lastIndexOf('/') + 1); // 形如 DA_18_Xayah
+      const base = splitUnitKey(token).name.toLowerCase();
+      if (base && typeof c.cost === 'number') map.set(base, c.cost);
+    }
+  } catch (e) {
+    console.warn('[warn] TFT 费用拉取失败：', e.message);
+  }
+  console.log(`      TFTSet18 费用：${map.size} 个`);
+  return map;
+}
+
 // 从 OP.GG key 拆出 { name, form }。例：DA_18_MasterYi_AD -> {name:'MasterYi', form:'AD'}
 function splitUnitKey(key) {
   const s = String(key)
@@ -241,6 +261,9 @@ async function main() {
   const ddCount = await loadDdragon();
   console.log(`      英文名表 ${knownNames.length} 条（Data Dragon ${ddCount} + 手工 ${Object.keys(MANUAL_UNITS).length}）`);
 
+  const tftCost = await loadTftCosts();
+  const costOf = (cid) => tftCost.get(splitUnitKey(cid).name.toLowerCase()) ?? null;
+
   const mcp = new McpClient();
   await mcp.init();
 
@@ -296,19 +319,12 @@ async function main() {
   })).filter((a) => a.name);
   console.log(`      符文 ${augments.length} 条`);
 
-  console.log('[5/6] 抓取弈子费用（从阵容榜反查）…');
+  console.log('[5/6] 弈子费用（TFTSet18 权威，Data Dragon）…');
+  // 以 Data Dragon TFTSet18 为唯一权威来源，不再用阵容榜的 tier（该字段不准）。
   const costMap = new Map();
-  try {
-    const decks = await mcp.call('tft_list_meta_decks', { lang: 'zh_CN', limit: 60 });
-    for (const d of decks.data || []) {
-      for (const u of d.units || []) {
-        if (u?.key && typeof u.tier === 'number' && !costMap.has(u.key)) {
-          costMap.set(u.key, u.tier);
-        }
-      }
-    }
-  } catch (e) {
-    console.warn('[warn] 阵容榜抓取失败，费用将缺失：', e.message);
+  for (const cid of champIds) {
+    const c = costOf(cid);
+    if (c) costMap.set(cid, c);
   }
   console.log(`      费用覆盖 ${costMap.size} 个`);
 

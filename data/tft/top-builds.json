@@ -15,15 +15,15 @@
    "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Artifact_Dawncore.png",
    "https://c-tft-api.op.gg/img/set/18/tft-item/DA_JeweledGauntlet.png"
   ],
-  "n": 1022,
-  "ap": 2.34,
-  "winRate": 0.4775,
-  "top4Rate": 0.864,
-  "delta": 1.864,
+  "n": 1047,
+  "ap": 2.35,
+  "winRate": 0.4766,
+  "top4Rate": 0.8615,
+  "delta": 1.855,
   "champ": "veigar",
   "champName": "邪恶小法师",
   "champIcon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Veigar.png",
-  "cost": 3
+  "cost": 1
  },
  {
   "items": [
@@ -41,14 +41,14 @@
    "https://c-tft-api.op.gg/img/set/18/tft-item/DA_GuinsoosRageblade.png",
    "https://c-tft-api.op.gg/img/set/18/tft-item/DA_KrakensFury.png"
   ],
-  "n": 1356,
+  "n": 1394,
   "ap": 3.73,
-  "winRate": 0.1504,
-  "top4Rate": 0.6541,
-  "delta": 0.905,
+  "winRate": 0.1521,
+  "top4Rate": 0.6564,
+  "delta": 0.904,
   "champ": "caitlyn",
   "champName": "皮城女警",
   "champIcon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Caitlyn.png",
-  "cost": null
+  "cost": 2
  }
 ]

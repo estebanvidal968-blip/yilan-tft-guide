@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:58:01.617Z",
+  "generatedAt": "2026-08-31T23:50:26.271Z",
   "source": "OP.GG TFT MCP + Data Dragon 16.17.1",
   "patch": "S18 自然之力",
   "counts": {
@@ -7,9 +7,9 @@
     "itemsWithData": 95,
     "champs": 66,
     "augments": 283,
-    "pairs": 5147
+    "pairs": 5161
   },
-  "totalSamples": 19462121,
+  "totalSamples": 19972990,
   "minSample": 300,
   "unresolvedNames": []
 }
