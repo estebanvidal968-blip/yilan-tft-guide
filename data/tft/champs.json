@@ -1,0 +1,962 @@
+[
+ {
+  "id": "sentinel",
+  "key": "DA_Sentinel18",
+  "keys": [
+   "DA_Sentinel18"
+  ],
+  "name": "锋喙鸟",
+  "icon": "",
+  "cost": 2,
+  "baseline": 3.792,
+  "sampleCount": 1247537,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "ahri",
+  "key": "DA_18_Ahri",
+  "keys": [
+   "DA_18_Ahri"
+  ],
+  "name": "九尾妖狐",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ahri.png",
+  "cost": 2,
+  "baseline": 4.068,
+  "sampleCount": 1073815,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "sett",
+  "key": "DA_18_Sett",
+  "keys": [
+   "DA_18_Sett"
+  ],
+  "name": "腕豪",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Sett.png",
+  "cost": 2,
+  "baseline": 3.823,
+  "sampleCount": 982842,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "aphelios",
+  "key": "DA_18_Aphelios",
+  "keys": [
+   "DA_18_Aphelios"
+  ],
+  "name": "残月之肃",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Aphelios.png",
+  "cost": 2,
+  "baseline": 3.959,
+  "sampleCount": 883703,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "morgana",
+  "key": "DA_18_Morgana",
+  "keys": [
+   "DA_18_Morgana"
+  ],
+  "name": "堕落天使",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Morgana.png",
+  "cost": 2,
+  "baseline": 3.936,
+  "sampleCount": 731315,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "brambleback",
+  "key": "DA_Brambleback18",
+  "keys": [
+   "DA_Brambleback18"
+  ],
+  "name": "石甲虫",
+  "icon": "",
+  "cost": 2,
+  "baseline": 3.759,
+  "sampleCount": 713803,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "lillia",
+  "key": "DA_18_Lillia",
+  "keys": [
+   "DA_18_Lillia"
+  ],
+  "name": "含羞蓓蕾",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Lillia.png",
+  "cost": 2,
+  "baseline": 3.612,
+  "sampleCount": 681720,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "ezreal",
+  "key": "DA_18_Ezreal",
+  "keys": [
+   "DA_18_Ezreal"
+  ],
+  "name": "探险家",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ezreal.png",
+  "cost": 2,
+  "baseline": 4.017,
+  "sampleCount": 562786,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "gnar",
+  "key": "DA_18_GnarSmall",
+  "keys": [
+   "DA_18_GnarSmall"
+  ],
+  "name": "迷失之牙",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Gnar.png",
+  "cost": 2,
+  "baseline": 3.065,
+  "sampleCount": 528194,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "elderdragon",
+  "key": "DA_18_ElderDragon",
+  "keys": [
+   "DA_18_ElderDragon"
+  ],
+  "name": "远古巨龙",
+  "icon": "",
+  "cost": 2,
+  "baseline": 3.287,
+  "sampleCount": 524195,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "soraka",
+  "key": "DA_18_Soraka",
+  "keys": [
+   "DA_18_Soraka"
+  ],
+  "name": "众星之子",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Soraka.png",
+  "cost": 2,
+  "baseline": 3.751,
+  "sampleCount": 488002,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "maokai",
+  "key": "DA_18_Maokai",
+  "keys": [
+   "DA_18_Maokai"
+  ],
+  "name": "扭曲树精",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Maokai.png",
+  "cost": 2,
+  "baseline": 3.523,
+  "sampleCount": 481575,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "alune",
+  "key": "DA_18_Alune",
+  "keys": [
+   "DA_18_Alune"
+  ],
+  "name": "阿露恩",
+  "icon": "",
+  "cost": 2,
+  "baseline": 3.333,
+  "sampleCount": 478172,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "taric",
+  "key": "DA_Taric18",
+  "keys": [
+   "DA_Taric18"
+  ],
+  "name": "瓦洛兰之盾",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Taric.png",
+  "cost": 2,
+  "baseline": 3.306,
+  "sampleCount": 469783,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "vi",
+  "key": "DA_Vi18",
+  "keys": [
+   "DA_Vi18"
+  ],
+  "name": "皮城执法官",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Vi.png",
+  "cost": 2,
+  "baseline": 3.862,
+  "sampleCount": 456691,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "draven",
+  "key": "DA_Draven18",
+  "keys": [
+   "DA_Draven18"
+  ],
+  "name": "荣耀行刑官",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Draven.png",
+  "cost": 2,
+  "baseline": 3.94,
+  "sampleCount": 444081,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "sivir",
+  "key": "DA_18_Sivir",
+  "keys": [
+   "DA_18_Sivir"
+  ],
+  "name": "战争女神",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Sivir.png",
+  "cost": 2,
+  "baseline": 3.849,
+  "sampleCount": 443471,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "ashe",
+  "key": "DA_18_Ashe",
+  "keys": [
+   "DA_18_Ashe"
+  ],
+  "name": "寒冰射手",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ashe.png",
+  "cost": 2,
+  "baseline": 3.415,
+  "sampleCount": 397296,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "kennen",
+  "key": "DA_18_Kennen",
+  "keys": [
+   "DA_18_Kennen"
+  ],
+  "name": "狂暴之心",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Kennen.png",
+  "cost": 2,
+  "baseline": 3.352,
+  "sampleCount": 375720,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "amumu",
+  "key": "DA_Amumu18",
+  "keys": [
+   "DA_Amumu18"
+  ],
+  "name": "殇之木乃伊",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Amumu.png",
+  "cost": 2,
+  "baseline": 4.142,
+  "sampleCount": 372211,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "leona",
+  "key": "DA_18_Leona",
+  "keys": [
+   "DA_18_Leona"
+  ],
+  "name": "曙光女神",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Leona.png",
+  "cost": 2,
+  "baseline": 4.281,
+  "sampleCount": 370674,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "zyra",
+  "key": "DA_18_Zyra",
+  "keys": [
+   "DA_18_Zyra"
+  ],
+  "name": "荆棘之兴",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Zyra.png",
+  "cost": 2,
+  "baseline": 3.936,
+  "sampleCount": 322969,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "nidalee",
+  "key": "TFT18_NidaleeCougar",
+  "keys": [
+   "TFT18_NidaleeCougar",
+   "DA_Nidalee18_AP"
+  ],
+  "name": "狂野女猎手",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Nidalee.png",
+  "cost": 2,
+  "baseline": 3.821,
+  "sampleCount": 303023,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "diana",
+  "key": "DA_18_Diana",
+  "keys": [
+   "DA_18_Diana"
+  ],
+  "name": "皎月女神",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Diana.png",
+  "cost": 2,
+  "baseline": 4.158,
+  "sampleCount": 300362,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "leblanc",
+  "key": "DA_18_LeBlanc",
+  "keys": [
+   "DA_18_LeBlanc"
+  ],
+  "name": "诡术妖姬",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Leblanc.png",
+  "cost": 2,
+  "baseline": 4.24,
+  "sampleCount": 233057,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "alistar",
+  "key": "DA_18_Alistar",
+  "keys": [
+   "DA_18_Alistar"
+  ],
+  "name": "牛头酋长",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Alistar.png",
+  "cost": 2,
+  "baseline": 4.362,
+  "sampleCount": 223528,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "elise",
+  "key": "DA_18_Elise",
+  "keys": [
+   "DA_18_Elise",
+   "DA_18_EliseSpider"
+  ],
+  "name": "蜘蛛女皇",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Elise.png",
+  "cost": 2,
+  "baseline": 5.075,
+  "sampleCount": 211665,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "shen",
+  "key": "DA_18_Shen",
+  "keys": [
+   "DA_18_Shen"
+  ],
+  "name": "暮光之眼",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Shen.png",
+  "cost": 2,
+  "baseline": 4.158,
+  "sampleCount": 199928,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "gromp",
+  "key": "DA_Gromp18_AP",
+  "keys": [
+   "DA_Gromp18_AP",
+   "TFT18_Gromp"
+  ],
+  "name": "魔沼蛙",
+  "icon": "",
+  "cost": 2,
+  "baseline": 3.834,
+  "sampleCount": 198050,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "murkwolf",
+  "key": "DA_Murkwolf18",
+  "keys": [
+   "DA_Murkwolf18"
+  ],
+  "name": "暗影狼",
+  "icon": "",
+  "cost": 2,
+  "baseline": 4.068,
+  "sampleCount": 191320,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "ivern",
+  "key": "DA_18_Ivern",
+  "keys": [
+   "DA_18_Ivern"
+  ],
+  "name": "翠神",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Ivern.png",
+  "cost": 2,
+  "baseline": 3.236,
+  "sampleCount": 185381,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "yorick",
+  "key": "DA_18_Yorick",
+  "keys": [
+   "DA_18_Yorick"
+  ],
+  "name": "牧魂人",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Yorick.png",
+  "cost": 2,
+  "baseline": 4.687,
+  "sampleCount": 135517,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "karma",
+  "key": "DA_Karma18",
+  "keys": [
+   "DA_Karma18"
+  ],
+  "name": "天启者",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Karma.png",
+  "cost": 2,
+  "baseline": 4.761,
+  "sampleCount": 63036,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "fiddlesticks",
+  "key": "DA_Fiddlesticks18",
+  "keys": [
+   "DA_Fiddlesticks18"
+  ],
+  "name": "远古恐惧",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Fiddlesticks.png",
+  "cost": 3,
+  "baseline": 3.919,
+  "sampleCount": 976539,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "cassiopeia",
+  "key": "DA_18_Cassiopeia",
+  "keys": [
+   "DA_18_Cassiopeia"
+  ],
+  "name": "魔蛇之拥",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Cassiopeia.png",
+  "cost": 3,
+  "baseline": 4.147,
+  "sampleCount": 898039,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "rammus",
+  "key": "DA_18_Rammus",
+  "keys": [
+   "DA_18_Rammus"
+  ],
+  "name": "披甲龙龟",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Rammus.png",
+  "cost": 3,
+  "baseline": 3.754,
+  "sampleCount": 867061,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "krug",
+  "key": "DA_Krug18",
+  "keys": [
+   "DA_Krug18"
+  ],
+  "name": "石甲虫",
+  "icon": "",
+  "cost": 3,
+  "baseline": 3.775,
+  "sampleCount": 809055,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "sentry",
+  "key": "DA_18_Sentry",
+  "keys": [
+   "DA_18_Sentry"
+  ],
+  "name": "苍蓝雕纹魔像",
+  "icon": "",
+  "cost": 3,
+  "baseline": 3.756,
+  "sampleCount": 664605,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "xayah",
+  "key": "DA_18_Xayah",
+  "keys": [
+   "DA_18_Xayah"
+  ],
+  "name": "逆羽",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Xayah.png",
+  "cost": 3,
+  "baseline": 4.266,
+  "sampleCount": 585152,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "sejuani",
+  "key": "DA_18_Sejuani",
+  "keys": [
+   "DA_18_Sejuani"
+  ],
+  "name": "北地之怒",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Sejuani.png",
+  "cost": 3,
+  "baseline": 4.044,
+  "sampleCount": 520278,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "masteryi",
+  "key": "DA_18_MasterYi_AD",
+  "keys": [
+   "DA_18_MasterYi_AD",
+   "TFT18_MasterYi"
+  ],
+  "name": "无极剑圣",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/MasterYi.png",
+  "cost": 3,
+  "baseline": 4.113,
+  "sampleCount": 450776,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "veigar",
+  "key": "DA_18_Veigar",
+  "keys": [
+   "DA_18_Veigar"
+  ],
+  "name": "邪恶小法师",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Veigar.png",
+  "cost": 3,
+  "baseline": 4.195,
+  "sampleCount": 441106,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "kogmaw",
+  "key": "DA_KogMaw18_AD",
+  "keys": [
+   "DA_KogMaw18_AD",
+   "TFT18_KogMaw"
+  ],
+  "name": "深渊巨口",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/KogMaw.png",
+  "cost": 3,
+  "baseline": 3.787,
+  "sampleCount": 330448,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "teemo",
+  "key": "DA_18_Teemo",
+  "keys": [
+   "DA_18_Teemo"
+  ],
+  "name": "迅捷斥候",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Teemo.png",
+  "cost": 3,
+  "baseline": 3.887,
+  "sampleCount": 317329,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "reksai",
+  "key": "DA_18_RekSai",
+  "keys": [
+   "DA_18_RekSai"
+  ],
+  "name": "虚空遁地兽",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/RekSai.png",
+  "cost": 3,
+  "baseline": 4.149,
+  "sampleCount": 302018,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "rakan",
+  "key": "DA_18_Rakan",
+  "keys": [
+   "DA_18_Rakan"
+  ],
+  "name": "幻翎",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Rakan.png",
+  "cost": 3,
+  "baseline": 4.202,
+  "sampleCount": 173444,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "kobuko",
+  "key": "DA_18_Kobuko",
+  "keys": [
+   "DA_18_Kobuko"
+  ],
+  "name": "可酷伯",
+  "icon": "",
+  "cost": 3,
+  "baseline": 4.217,
+  "sampleCount": 160928,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "tristana",
+  "key": "DA_18_Tristana",
+  "keys": [
+   "DA_18_Tristana"
+  ],
+  "name": "麦林炮手",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Tristana.png",
+  "cost": null,
+  "baseline": 4.295,
+  "sampleCount": 419423,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "cinderling",
+  "key": "DA_Cinderling18",
+  "keys": [
+   "DA_Cinderling18"
+  ],
+  "name": "驻灵",
+  "icon": "",
+  "cost": null,
+  "baseline": 3.639,
+  "sampleCount": 417312,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "scuttlecrab",
+  "key": "DA_Scuttlecrab18",
+  "keys": [
+   "DA_Scuttlecrab18"
+  ],
+  "name": "迅捷蟹",
+  "icon": "",
+  "cost": null,
+  "baseline": 3.948,
+  "sampleCount": 395671,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "malphite",
+  "key": "DA_18_Malphite",
+  "keys": [
+   "DA_18_Malphite"
+  ],
+  "name": "熔岩巨兽",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Malphite.png",
+  "cost": null,
+  "baseline": 4.317,
+  "sampleCount": 389959,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "rengar",
+  "key": "DA_18_Rengar",
+  "keys": [
+   "DA_18_Rengar"
+  ],
+  "name": "傲之追猎者",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Rengar.png",
+  "cost": null,
+  "baseline": 3.961,
+  "sampleCount": 362790,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "crimsonraptor",
+  "key": "DA_CrimsonRaptor18",
+  "keys": [
+   "DA_CrimsonRaptor18"
+  ],
+  "name": "绯红印记树怪",
+  "icon": "",
+  "cost": null,
+  "baseline": 4.139,
+  "sampleCount": 354774,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "khazix",
+  "key": "DA_18_KhaZix",
+  "keys": [
+   "DA_18_KhaZix"
+  ],
+  "name": "虚空掠夺者",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Khazix.png",
+  "cost": null,
+  "baseline": 4.13,
+  "sampleCount": 294830,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "lux",
+  "key": "DA_Lux18_Blackthorn",
+  "keys": [
+   "DA_Lux18_Blackthorn",
+   "DA_18_Lux_Coven",
+   "DA_18_Lux_Fae",
+   "DA_18_Lux_Primal",
+   "DA_18_Lux_Moonbeam",
+   "DA_Lux18_Base",
+   "DA_18_Lux_Sunbeam",
+   "DA_18_Lux_Inferno",
+   "DA_18_Lux_Elderwood",
+   "DA_Lux18_Blossom"
+  ],
+  "name": "光辉女郎·Blackthorn",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Lux.png",
+  "cost": null,
+  "baseline": 3.53,
+  "sampleCount": 279741,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "azir",
+  "key": "DA_18_Azir",
+  "keys": [
+   "DA_18_Azir"
+  ],
+  "name": "沙漠皇帝",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Azir.png",
+  "cost": null,
+  "baseline": 4.834,
+  "sampleCount": 238718,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "caitlyn",
+  "key": "DA_18_Caitlyn",
+  "keys": [
+   "DA_18_Caitlyn"
+  ],
+  "name": "皮城女警",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Caitlyn.png",
+  "cost": null,
+  "baseline": 4.631,
+  "sampleCount": 204464,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "varus",
+  "key": "DA_18_Varus",
+  "keys": [
+   "DA_18_Varus"
+  ],
+  "name": "惩戒之箭",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Varus.png",
+  "cost": null,
+  "baseline": 4.633,
+  "sampleCount": 165704,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "warwick",
+  "key": "DA_18_Warwick",
+  "keys": [
+   "DA_18_Warwick"
+  ],
+  "name": "祖安怒兽",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Warwick.png",
+  "cost": null,
+  "baseline": 4.897,
+  "sampleCount": 157603,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "yunara",
+  "key": "DA_18_Yunara",
+  "keys": [
+   "DA_18_Yunara"
+  ],
+  "name": "芸阿娜",
+  "icon": "",
+  "cost": null,
+  "baseline": 4.547,
+  "sampleCount": 111107,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "akali",
+  "key": "TFT18_Akali",
+  "keys": [
+   "TFT18_Akali",
+   "DA_18_Akali_AD"
+  ],
+  "name": "离群之刺",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Akali.png",
+  "cost": null,
+  "baseline": 4.764,
+  "sampleCount": 58705,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "camille",
+  "key": "DA_18_Camille",
+  "keys": [
+   "DA_18_Camille"
+  ],
+  "name": "青钢影",
+  "icon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Camille.png",
+  "cost": null,
+  "baseline": 5.18,
+  "sampleCount": 53748,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ },
+ {
+  "id": "sprykinsummon",
+  "key": "TFT18_SprykinSummonMelee",
+  "keys": [
+   "TFT18_SprykinSummonMelee"
+  ],
+  "name": "灵狐召唤物",
+  "icon": "",
+  "cost": null,
+  "baseline": 0,
+  "sampleCount": 0,
+  "topBuilds": [],
+  "worstBuilds": [],
+  "buildCount": 0
+ }
+]

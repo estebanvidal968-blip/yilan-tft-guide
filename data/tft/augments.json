@@ -1,0 +1,2549 @@
+[
+ {
+  "id": "advancedloan",
+  "key": "DA_AdvancedLoan",
+  "name": "高级贷款",
+  "desc": "获得20金币。你的下一个强化符文位阶降低一阶。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/AdvancedLoan_II.png"
+ },
+ {
+  "id": "advancedloanplus",
+  "key": "DA_AdvancedLoanPlus",
+  "name": "高级贷款+",
+  "desc": "获得33金币。你的下一个强化符文位阶降低一阶。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/AdvancedLoan_II.png"
+ },
+ {
+  "id": "arcaneviktory",
+  "key": "DA_ArcaneViktory",
+  "name": "双城赢家",
+  "desc": "在战斗开始8秒后，晕眩敌方队伍16.17.1秒。在战斗18秒后，重复该效果。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ArcaneViktory_II.png"
+ },
+ {
+  "id": "ascension",
+  "key": "DA_Ascension",
+  "name": "飞升",
+  "desc": "在战斗开始12秒后，你的单位们获得35%伤害增幅。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Ascension2.png"
+ },
+ {
+  "id": "augmentedpower",
+  "key": "DA_AugmentedPower",
+  "name": "强化之能量",
+  "desc": "你的下一个强化符文位阶提高一阶。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PowerUp_I.png"
+ },
+ {
+  "id": "backlineblueprint",
+  "key": "DA_BacklineBlueprint",
+  "name": "后排蓝图",
+  "desc": "获得1个3费非坦克弈子，以及一个与其职业相匹配的纹章。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BacklineBlueprint_II.png"
+ },
+ {
+  "id": "backupbows",
+  "key": "DA_BackupBows",
+  "name": "战时补给：反曲之弓",
+  "desc": "获得1个【反曲之弓】。在你的弈子们攻击1000次后，额外获得2个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/RecurveWrecker_I.png"
+ },
+ {
+  "id": "bandofthieves",
+  "key": "DA_BandOfThieves",
+  "name": "窃贼帮派",
+  "desc": "获得1个【窃贼手套】。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BandThieves1.png"
+ },
+ {
+  "id": "bandofthievesii",
+  "key": "DA_BandOfThievesII",
+  "name": "窃贼帮派 II",
+  "desc": "获得2个【窃贼手套】。在6场玩家对战回合后，获得另一个。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BandThieves3.png"
+ },
+ {
+  "id": "bandofthievesiiplus",
+  "key": "DA_BandOfThievesIIPlus",
+  "name": "窃贼帮派 II+",
+  "desc": "获得2个【窃贼手套】。在5场玩家对战回合后，获得另一个。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BandThieves3.png"
+ },
+ {
+  "id": "bandofthievesiiplusplus",
+  "key": "DA_BandOfThievesIIPlusPlus",
+  "name": "窃贼帮派 II++",
+  "desc": "获得2个【窃贼手套】。在3场玩家对战回合后，获得另一个。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BandThieves3.png"
+ },
+ {
+  "id": "baronslair",
+  "key": "DA_BaronsLair",
+  "name": "男爵幻域",
+  "desc": "获得1件随机坦克装备。在战斗开始8秒后，你的队伍每秒获得5%额外物理加成和法术加成，持续至战斗结束。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TheBaronsLair_III.png"
+ },
+ {
+  "id": "beltoverflow",
+  "key": "DA_BeltOverflow",
+  "name": "腰带溢流",
+  "desc": "获得4个【巨人腰带】。你的【巨人腰带】提供+85额外生命值。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BeltOverflow_III.png"
+ },
+ {
+  "id": "biggrabbag",
+  "key": "DA_18_BigGrabBag",
+  "name": "大百宝袋",
+  "desc": "获得3件随机基础装备、2金币和1个【装备重铸器】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Grab-Bag-II.png"
+ },
+ {
+  "id": "birthdaypresent",
+  "key": "DA_BirthdayPresent",
+  "name": "生日礼物",
+  "desc": "在你每次升级时提供1个2星弈子和1金币。这个弈子的费用位阶是你的等级减4(最大值：5费)。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Golden-Gifts-III.png"
+ },
+ {
+  "id": "birthdayreunion",
+  "key": "DA_BirthdayReunion",
+  "name": "生日聚会",
+  "desc": "获得1个随机2星2费弈子。在6级时，获得1件随机基础装备。在9级时，获得1个随机2星5费弈子。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BirthdayReunion_II.png"
+ },
+ {
+  "id": "blackthorntraitaugment",
+  "key": "DA_BlackthornTraitAugment",
+  "name": "装备提炼",
+  "desc": "你最初3次在【黑荆棘格】内献祭1个弈子时，获得1个其携带着的随机散件的复制品。获得1个【维迦】和1个【雷克塞】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "blossomtraitaugment",
+  "key": "DA_18_BlossomTraitAugment",
+  "name": "绽灵花的约定",
+  "desc": "当你购买1个【自然仙灵】时，获得1个随机【灵魂莲华】弈子(基于【自然仙灵】的费用)。获得1个【芸阿娜】、1个【约里克】和1个【卡尔玛】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "bodyguardtraining",
+  "key": "DA_BodyguardTraining",
+  "name": "利落保镖",
+  "desc": "友军获得15护甲和魔法抗性，每玩家等级提升该加成2。\n\n2022【双城之战】全球总决赛",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BodyguardsTraining_II.png"
+ },
+ {
+  "id": "bonusgift",
+  "key": "DA_BonusGift",
+  "name": "意外之礼",
+  "desc": "每当你开启1个战利品法球时，你有25%几率获得1个灰色战利品法球。获得2个灰色战利品法球。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "bonusgiftplus",
+  "key": "DA_BonusGiftPlus",
+  "name": "意外之礼+",
+  "desc": "每当你开启1个战利品法球时，你有25%几率获得1个灰色战利品法球。获得3个灰色战利品法球。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "boosterpack",
+  "key": "DA_BoosterPack",
+  "name": "扩展包",
+  "desc": "获得价值12金币的随机弈子。(保证至少一个3费弈子！)",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BoosterPack1_II.png"
+ },
+ {
+  "id": "boosterpackplus",
+  "key": "DA_BoosterPackPlus",
+  "name": "扩展包+",
+  "desc": "获得价值18金币的随机弈子。(保证至少一个4费弈子！)",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BoosterPack1_II.png"
+ },
+ {
+  "id": "boosterpackplusplus",
+  "key": "DA_BoosterPackPlusPlus",
+  "name": "扩展包++",
+  "desc": "获得价值26金币的随机弈子。(保证至少一个5费弈子！)",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BoosterPack1_II.png"
+ },
+ {
+  "id": "boxinglessons",
+  "key": "DA_BoxingLessons",
+  "name": "拳击课程",
+  "desc": "战斗开始时，前排每有1个弈子，你的队伍获得30生命值。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BoxingLessons_I.png"
+ },
+ {
+  "id": "branchingout",
+  "key": "DA_18_BranchingOut",
+  "name": "节外生枝",
+  "desc": "获得1个随机纹章。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Branching-Out-I.png"
+ },
+ {
+  "id": "branchingoutplus",
+  "key": "DA_18_BranchingOutPlus",
+  "name": "节外生枝+",
+  "desc": "获得1个随机纹章和1个【装备重铸器】。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Branching-Out-I.png"
+ },
+ {
+  "id": "bronzeforlifei",
+  "key": "DA_BronzeForLifeI",
+  "name": "终身黄铜 I",
+  "desc": "每拥有1个黄铜级羁绊，你的队伍获得2.5%伤害增幅。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BronzeForLife_II.png"
+ },
+ {
+  "id": "bronzeforlifeii",
+  "key": "DA_BronzeForLifeII",
+  "name": "终身黄铜 II",
+  "desc": "每拥有1个黄铜级羁绊，你的队伍获得2.5%伤害增幅和4护甲与魔法抗性。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BronzeForLife_III.png"
+ },
+ {
+  "id": "buriedtreasuresiii",
+  "key": "DA_BuriedTreasuresIII",
+  "name": "珍藏财宝 III",
+  "desc": "立刻以及接下来的5个回合开始时，获得1件随机基础装备。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Buried-Treasures-III.png"
+ },
+ {
+  "id": "calculatedloss",
+  "key": "DA_CalculatedLoss",
+  "name": "存心失利",
+  "desc": "在你输掉对战后，获得2金币和1次免费的商店刷新。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CalculatedLoss2.png"
+ },
+ {
+  "id": "calledshot",
+  "key": "DA_CalledShot",
+  "name": "进攻宣告",
+  "desc": "将你的连胜数设为+4。获得4金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CalledShot_I.png"
+ },
+ {
+  "id": "calltochaos",
+  "key": "DA_CallToChaos",
+  "name": "混沌召唤",
+  "desc": "获得1个强大的随机奖励。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CallToChaos_III.png"
+ },
+ {
+  "id": "capitalgainsi",
+  "key": "DA_CapitalGainsI",
+  "name": "资本利得 I",
+  "desc": "储存相当于你获得利息的金币。在阶段3-3，获得相当于你100已储存金币的金币。立刻获得1金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "capitalgainsii",
+  "key": "DA_CapitalGainsII",
+  "name": "资本利得 II",
+  "desc": "储存相当于你获得利息的金币。在阶段3-3，获得相当于你125已储存金币的金币。立刻获得1金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "caretakersally",
+  "key": "DA_18_CaretakersAlly",
+  "name": "游神的盟友",
+  "desc": "立刻获得1个随机2费弈子。在你每次升级时，再次获得1个相同弈子。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Caretaker_s-Chosen-I.png"
+ },
+ {
+  "id": "caretakersfavor",
+  "key": "DA_CaretakersFavor",
+  "name": "游神的眷顾",
+  "desc": "在你到达5、6、7和8级时，获得1个【基础装备锻造器】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Caretaker_s-Chosen-II.png"
+ },
+ {
+  "id": "carveapath",
+  "key": "DA_CarveAPath",
+  "name": "战时补给：暴风大剑",
+  "desc": "获得1个【暴风大剑】。在你的弈子们造成65000物理伤害后，额外获得2个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CarveAPath_I.png"
+ },
+ {
+  "id": "celestialblessingi",
+  "key": "DA_CelestialBlessingI",
+  "name": "星界赐福 I",
+  "desc": "你的队伍获得12%全能吸血。溢出的治疗量会转换为护盾，至多转化为200生命值护盾。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CelestialBlessing1.png"
+ },
+ {
+  "id": "celestialblessingii",
+  "key": "DA_CelestialBlessingII",
+  "name": "星界赐福 II",
+  "desc": "你的队伍获得18%全能吸血。溢出的治疗量会转换为护盾，至多转化为400生命值护盾。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CelestialBlessing2.png"
+ },
+ {
+  "id": "celestialblessingiii",
+  "key": "DA_CelestialBlessingIII",
+  "name": "星界赐福 III",
+  "desc": "你的队伍获得25%全能吸血。溢出的治疗量会转换为护盾，至多转化为1000生命值护盾。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CelestialBlessing3.png"
+ },
+ {
+  "id": "champdelivery",
+  "key": "DA_ChampDelivery",
+  "name": "弈子配送",
+  "desc": "获得3个2费弈子。在6个回合后，再获得3个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "champdeliveryplus",
+  "key": "DA_ChampDeliveryPlus",
+  "name": "弈子配送+",
+  "desc": "获得3个3费弈子。在6个回合后，再获得3个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "champdeliveryplusplus",
+  "key": "DA_ChampDeliveryPlusPlus",
+  "name": "弈子配送++",
+  "desc": "获得3个4费弈子。在6个回合后，再获得3个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "clearmind",
+  "key": "DA_ClearMind",
+  "name": "清晰头脑",
+  "desc": "如果在玩家对战回合结束时，你的备战席没有任何弈子，则获得3经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ClearMind2.png"
+ },
+ {
+  "id": "clockworkaccelerator",
+  "key": "DA_ClockworkAccelerator",
+  "name": "发条增速器",
+  "desc": "你的队伍在战斗中每过3秒就会获得10%攻击速度。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ClockworkAccelerator_II.png"
+ },
+ {
+  "id": "clutteredmind",
+  "key": "DA_ClutteredMind",
+  "name": "纷乱头脑",
+  "desc": "立刻获得4个1费弈子。如果在玩家对战回合结束时，你的备战席已满，则获得3经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Dizzy-II.png"
+ },
+ {
+  "id": "cognitiveoverload",
+  "key": "DA_CognitiveOverload",
+  "name": "认知过载",
+  "desc": "获得7金币、1个2星1费弈子、1个2费弈子、2个3费弈子、1经验值以及1次商店刷新。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CognitiveOverload_II.png"
+ },
+ {
+  "id": "cognitivetax",
+  "key": "DA_CognitiveTax",
+  "name": "认知税",
+  "desc": "获得8金币和1经验值。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CognitiveTax_I.png"
+ },
+ {
+  "id": "cognitivetaxplus",
+  "key": "DA_CognitiveTaxPlus",
+  "name": "认知税+",
+  "desc": "获得12金币和3经验值。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CognitiveTax_I.png"
+ },
+ {
+  "id": "comebackstory",
+  "key": "DA_ComebackStory",
+  "name": "绝境反击",
+  "desc": "每损失1玩家生命值，你的队伍获得4生命值和0.4%攻击速度。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ComebackStory_III.png"
+ },
+ {
+  "id": "commercecore",
+  "key": "DA_CommerceCore",
+  "name": "贸易中心",
+  "desc": "立刻获得16次免费商店刷新，并在剩余游戏时间内每回合获得3次免费商店刷新。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Trade3.png"
+ },
+ {
+  "id": "componentbuffet",
+  "key": "DA_ComponentBuffet",
+  "name": "基础装备自助餐",
+  "desc": "每当你将要获得1件基础装备时，转而获得1个【基础装备锻造器】。获得1件随机基础装备。这个锻造器提供4个选项。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/The-customer-is-always-right-I.png"
+ },
+ {
+  "id": "componentquest",
+  "key": "DA_ComponentQuest",
+  "name": "基础装备大冒险",
+  "desc": "获得1件随机基础装备和1金币。下7次你赢得玩家对战回合时，获得1件不同的随机基础装备。在此之后，获得5金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "cookingpot",
+  "key": "DA_CookingPot",
+  "name": "金色炊具",
+  "desc": "在每回合开始时，所有持有【金锅锅】或【金铲铲】装备的友军都会为最近的弈子提供60永久生命值。获得1个【金锅锅】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CookingPot_II.png"
+ },
+ {
+  "id": "coronation",
+  "key": "DA_Coronation",
+  "name": "加冕礼",
+  "desc": "获得1个【金铲铲冠冕】。【金铲铲冠冕】、【金锅锅冠冕】和【金锅铲冠冕】为携带者提供20%攻击速度、25%物理加成和30%法术加成。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Coronation_III.png"
+ },
+ {
+  "id": "corrosion",
+  "key": "DA_Corrosion",
+  "name": "腐蚀",
+  "desc": "前两排的敌人每2秒损失4护甲和魔法抗性。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Corrosion_I.png"
+ },
+ {
+  "id": "coventraitaugment",
+  "key": "DA_18_CovenTraitAugment",
+  "name": "女巫使魔",
+  "desc": "当你选择继续收集【魔女精粹】而非兑换时，治疗2玩家生命值。获得1个【卡蜜尔】、1个【伊莉丝】和1个【凯特琳】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "craftedcrafting",
+  "key": "DA_CraftedCrafting",
+  "name": "精心打造",
+  "desc": "每当你打造1件成装时，获得2次刷新。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CraftedCrafting_I.png"
+ },
+ {
+  "id": "crymeariver",
+  "key": "DA_CryMeARiver",
+  "name": "泪流成河",
+  "desc": "获得1个【女神之泪】。你的队伍获得1法力回复。战斗开始12秒后，该数值提升至4。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CryMeARiver_II.png"
+ },
+ {
+  "id": "cursedcrown",
+  "key": "DA_CursedCrown",
+  "name": "诅咒冠冕",
+  "desc": "获得+2最大队伍规模，并且你的队伍获得4%伤害减免，但你在输掉一场玩家对战回合后会承受2倍的玩家伤害。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/CursedCrown-III.png"
+ },
+ {
+  "id": "deadlierblades",
+  "key": "DA_DeadlierBlades",
+  "name": "更要命的战刃",
+  "desc": "获得1个【死亡之刃】。【死亡之刃】的携带者每参与1次击杀，【死亡之刃】就会永久获得1%物理加成。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/DeadlierBlades_II.png"
+ },
+ {
+  "id": "doubletrouble",
+  "key": "DA_DoubleTrouble",
+  "name": "好事成双",
+  "desc": "如果你恰好登场了相同英雄的2个弈子，那么他们都会获得25%物理加成和法术加成、25护甲和魔法抗性。当你将弈子升至3星时，获得该英雄的1个2星弈子。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Double-Trouble-II.png"
+ },
+ {
+  "id": "dummify",
+  "key": "DA_Dummify",
+  "name": "假人化",
+  "desc": "失去你棋盘上和备战席的所有弈子。获得1个【训练假人】，其生命值为所有失去弈子总生命值的60%。假人每阶段获得1000生命值。获得1个随机2星2费非坦克弈子。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Dummify_I.png"
+ },
+ {
+  "id": "duoqueue",
+  "key": "DA_18_DuoQueue",
+  "name": "双排",
+  "desc": "获得2个随机5费弈子和2件相同的随机基础装备。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/DuoQueue_II.png"
+ },
+ {
+  "id": "earlylearnings",
+  "key": "DA_EarlyLearnings",
+  "name": "宝宝学院",
+  "desc": "你的队伍获得5%物理加成和法术加成。在每场玩家对战回合结束后，该加成提升1%。1费弈子们获得双倍该加成。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/EarlyLearning_II.png"
+ },
+ {
+  "id": "elderwoodtraitaugment",
+  "key": "DA_18_ElderwoodTraitAugment",
+  "name": "自然庇护所",
+  "desc": "战斗开始时：位于【永恒之森】植物邻格的弈子们获得15%攻击速度，并且每2秒治疗其2%最大生命值。获得1个【阿利斯塔】、1个【奥恩】和1个【霞】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "electrochargei",
+  "key": "DA_ElectrochargeI",
+  "name": "电火花 I",
+  "desc": "友军每受到4次攻击，会对附近的敌人造成30~90(基于当前阶段)魔法伤害(1秒冷却)。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Electrocharge-I.png"
+ },
+ {
+  "id": "electrochargeii",
+  "key": "DA_ElectrochargeII",
+  "name": "电火花 II",
+  "desc": "友军每受到4次攻击，会对附近的敌人造成50~140(基于当前阶段)魔法伤害(1秒冷却)。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Electrocharge-II.png"
+ },
+ {
+  "id": "epicrolldown",
+  "key": "DA_EpicRolldown",
+  "name": "8级D干的传说",
+  "desc": "在你到达8级时，获得20次商店刷新。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/EpicRolldown_II.png"
+ },
+ {
+  "id": "epoch",
+  "key": "DA_Epoch",
+  "name": "新纪元",
+  "desc": "立刻以及每阶段开始时，获得4经验值和2次免费刷新。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Epoch_II.png"
+ },
+ {
+  "id": "epochplus",
+  "key": "DA_EpochPlus",
+  "name": "新纪元+",
+  "desc": "立刻以及每阶段开始时，获得8经验值和2次免费刷新。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Epoch_II.png"
+ },
+ {
+  "id": "exclusivecustomization",
+  "key": "DA_ExclusiveCustomization",
+  "name": "专属定制",
+  "desc": "获得1个【幸运装备宝箱】、1个【装备拆卸器】和7金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ExclusiveCustomization_II.png"
+ },
+ {
+  "id": "expedition",
+  "key": "DA_Expedition",
+  "name": "远征",
+  "desc": "在每回合开始时，失去备战席最右侧栏位的弈子。当你通过这种方式失去的弈子总价值达到33金币时，获得强力奖励。立刻获得1个3费弈子。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Expedition_I.png"
+ },
+ {
+  "id": "explosivegrowth",
+  "key": "DA_ExplosiveGrowth",
+  "name": "爆炸式增长",
+  "desc": "立刻以及接下来的3个回合开始时，获得7经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ExplosiveGrowth_II.png"
+ },
+ {
+  "id": "explosivegrowthplus",
+  "key": "DA_ExplosiveGrowthPlus",
+  "name": "爆炸式增长+",
+  "desc": "立刻以及接下来的3个回合开始时，获得10经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ExplosiveGrowth_II.png"
+ },
+ {
+  "id": "extrabuckles",
+  "key": "DA_ExtraBuckles",
+  "name": "战时补给：巨人腰带",
+  "desc": "获得1个【巨人腰带】。在你的弈子们承受75000伤害后，额外获得2个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ExtraBuckles_I.png"
+ },
+ {
+  "id": "faetraitaugment",
+  "key": "DA_18_FaeTraitAugment",
+  "name": "巨化术",
+  "desc": "【花仙子】弈子的【皮克斯仙灵】体型变大，并提供50%额外物理加成和法术加成。【花仙子】弈子们立刻获得10%物理加成和法术加成。获得1个【霞】和1个【洛】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "feelinglucky",
+  "key": "DA_FeelingLucky",
+  "name": "手气不错",
+  "desc": "获得12金币，然后抛掷1枚硬币。如果硬币正面朝上，额外获得4金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/FeelingLucky_I.png"
+ },
+ {
+  "id": "findyourcenter",
+  "key": "DA_FindYourCenter",
+  "name": "C位的觉悟",
+  "desc": "战斗开始时，位于棋盘中心的那个己方弈子获得15%伤害增幅和25%最大生命值。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/FindYourCenter_I.png"
+ },
+ {
+  "id": "flexible",
+  "key": "DA_Flexible",
+  "name": "灵活摇摆",
+  "desc": "获得1个随机纹章。在每阶段开始时，获得1个随机纹章。你的队伍每携带1个纹章，就会获得30生命值。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Flexible_II.png"
+ },
+ {
+  "id": "florafatalisaugment",
+  "key": "DA_18_FloraFatalisAugment",
+  "name": "致命丽花",
+  "desc": "获得1个【绝命花妖纹章】。携带该纹章的弈子从【绝命花妖】羁绊中获得双倍增益。获得3金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "florafatalisaugmentplus",
+  "key": "DA_18_FloraFatalisAugmentPlus",
+  "name": "致命丽花",
+  "desc": "获得1个【绝命花妖纹章】。携带该纹章的弈子从【绝命花妖】羁绊中获得双倍增益。获得3金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "flowingtears",
+  "key": "DA_FlowingTears",
+  "name": "战时补给：女神之泪",
+  "desc": "获得1个【女神之泪】。在你的弈子们消耗6500法力值后，额外获得2个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GriefoftheGreatGoddess_I.png"
+ },
+ {
+  "id": "focusedfire",
+  "key": "DA_FocusedFire",
+  "name": "集中火力",
+  "desc": "你的队伍获得10%物理加成。每5秒，额外获得5%。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/MarksMan_I.png"
+ },
+ {
+  "id": "forgedinstrength",
+  "key": "DA_ForgedInStrength",
+  "name": "神力天铸",
+  "desc": "获得1件随机神器。当你降至35生命值时，额外获得1件随机神器、1件随机成装、以及2件随机基础装备。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ForgedInStrength_III.png"
+ },
+ {
+  "id": "fourcing",
+  "key": "DA_18_FOURcing",
+  "name": "四之力",
+  "desc": "获得1个随机4费弈子。你的弈子每携带1件装备，你的队伍获得120生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "frontlinefoundation",
+  "key": "DA_FrontlineFoundation",
+  "name": "前线地基",
+  "desc": "获得1个2星1费坦克弈子，以及一个与其职业相匹配的纹章。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/FrontlineFoundation_II.png"
+ },
+ {
+  "id": "futurefocused",
+  "key": "DA_FutureFocused",
+  "name": "高瞻远瞩",
+  "desc": "你失去20玩家生命值，但在5个玩家对战回合后，获得3个4费弈子和8金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "gaingold",
+  "key": "DA_GainGold",
+  "name": "获得21金币",
+  "desc": "获得21金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Windfall2.png"
+ },
+ {
+  "id": "giantandmighty",
+  "key": "DA_GiantAndMighty",
+  "name": "大而有力",
+  "desc": "你的队伍体型变大，获得200生命值和10%最大生命值。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GiantandMighty_III.png"
+ },
+ {
+  "id": "gildedsteel",
+  "key": "DA_GildedSteel",
+  "name": "镀金钢铁",
+  "desc": "获得2个5费弈子。如果你登场了至少一个5费弈子，你的1至4费弈子们获得8%伤害减免。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GildedSteel_II.png"
+ },
+ {
+  "id": "glasscannon-gold",
+  "key": "DA_GlassCannon_Gold",
+  "name": "玻璃大炮 II",
+  "desc": "在后排开始战斗的友军，在战斗开始时的生命值为80%，但会获得25%伤害增幅。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GlassCannon_II.png"
+ },
+ {
+  "id": "glasscannon-silver",
+  "key": "DA_GlassCannon_Silver",
+  "name": "玻璃大炮 I",
+  "desc": "在后排开始战斗的友军，在战斗开始时的生命值为80%，但会获得16%伤害增幅。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GlassCannon_I.png"
+ },
+ {
+  "id": "goinglong",
+  "key": "DA_GoingLong",
+  "name": "遥遥领先",
+  "desc": "你不再获得利息。立刻获得10金币。回合开始时：获得4经验值。\n\n10",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Going-Long-III.png"
+ },
+ {
+  "id": "goldenegg",
+  "key": "DA_GoldenEgg",
+  "name": "金蛋",
+  "desc": "获得1个大金蛋，需要11个回合来孵化，在孵化时提供大量战利品。赢得玩家对战回合后会使孵化倒计时加快1个额外回合。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/The-Golden-Egg-III.png"
+ },
+ {
+  "id": "goldengamble",
+  "key": "DA_GoldenGamble",
+  "name": "黄金赌约",
+  "desc": "获得2金币，并抛掷1枚硬币。如果硬币正面朝上，获得1个【光明版幸运装备宝箱】。如果硬币反面朝上，获得2个【成装锻造器】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GoldenGamble_III.png"
+ },
+ {
+  "id": "goldengambleplus",
+  "key": "DA_GoldenGamblePlus",
+  "name": "黄金赌约+",
+  "desc": "获得3金币，并抛掷1枚硬币。如果硬币正面朝上，获得1个【光明版幸运装备宝箱】。如果硬币反面朝上，获得2个【成装锻造器】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GoldenGamble_III.png"
+ },
+ {
+  "id": "goldengambleplusplus",
+  "key": "DA_GoldenGamblePlusPlus",
+  "name": "黄金赌约++",
+  "desc": "获得6金币，并抛掷1枚硬币。如果硬币正面朝上，获得1个【光明版幸运装备宝箱】。如果硬币反面朝上，获得2个【成装锻造器】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GoldenGamble_III.png"
+ },
+ {
+  "id": "goodforsomethingi",
+  "key": "DA_18_GoodForSomethingI",
+  "name": "有用之材 I",
+  "desc": "未携带装备的弈子们在阵亡时有40%几率掉落1金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Good-For-Something-I.png"
+ },
+ {
+  "id": "grouphugi",
+  "key": "DA_GroupHugI",
+  "name": "拥抱 I",
+  "desc": "战斗开始时：弈子为其他邻格弈子提供6护甲和魔抗。这个效果可以叠加。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GroupHug1_I.png"
+ },
+ {
+  "id": "grouphugii",
+  "key": "DA_GroupHugII",
+  "name": "拥抱 II",
+  "desc": "战斗开始时：弈子为其他邻格弈子提供9护甲和魔抗。这个效果可以叠加。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GroupHug2_II.png"
+ },
+ {
+  "id": "hardbargain",
+  "key": "DA_HardBargain",
+  "name": "砍价高手",
+  "desc": "你无法选择你的选秀奖励。每次选秀回合获得额外的6玩家生命值和8金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/HardBargain_II.png"
+ },
+ {
+  "id": "hardcommit",
+  "key": "DA_HardCommit",
+  "name": "硬性承诺",
+  "desc": "获得1个随机纹章。立刻以及每阶段开始时，获得该羁绊的1个1星弈子，且该弈子的费用相当于当前阶段数(最多为5)，并获得3金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/HardCommit_III.png"
+ },
+ {
+  "id": "healingorbsi",
+  "key": "DA_HealingOrbsI",
+  "name": "治疗法球 I",
+  "desc": "当1名敌人阵亡时，1名附近的友军治疗250生命值。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Healing-Orbs-I.png"
+ },
+ {
+  "id": "healingorbsii",
+  "key": "DA_HealingOrbsII",
+  "name": "治疗法球 II",
+  "desc": "当1名敌人阵亡时，1名附近的友军治疗575生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Healing-Orbs-II.png"
+ },
+ {
+  "id": "heartofsteel",
+  "key": "DA_HeartOfSteel",
+  "name": "心之钢",
+  "desc": "获得1个【坚定之心】。【坚定之心】的携带者每存活10秒，【坚定之心】就会额外获得16永久最大生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/HealthyGains_II.png"
+ },
+ {
+  "id": "hedgefund",
+  "key": "DA_HedgeFund",
+  "name": "对冲基金",
+  "desc": "获得22金币。你的最大利息提升至10金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/RichGetRicher3.png"
+ },
+ {
+  "id": "heroicgrabbag",
+  "key": "DA_HeroicGrabBag",
+  "name": "英勇福袋",
+  "desc": "获得2个【次级英雄复制器】。获得4金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Heroic-Grab-Bag-II.png"
+ },
+ {
+  "id": "heroicgrabbagplus",
+  "key": "DA_HeroicGrabBagPlus",
+  "name": "英勇福袋+",
+  "desc": "获得2个【次级英雄复制器】。获得8金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Heroic-Grab-Bag-II.png"
+ },
+ {
+  "id": "heroicgrabbagplusplus",
+  "key": "DA_HeroicGrabBagPlusPlus",
+  "name": "英勇福袋++",
+  "desc": "获得2个【次级英雄复制器】。获得14金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Heroic-Grab-Bag-II.png"
+ },
+ {
+  "id": "holdtheline",
+  "key": "DA_HoldTheLine",
+  "name": "坚守防线",
+  "desc": "战斗开始时，你的前排每有1名弈子，后两排的弈子就会获得9%法术加成和8%物理加成。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/HoldTheLine_III.png"
+ },
+ {
+  "id": "hustler",
+  "key": "DA_Hustler",
+  "name": "花到上头",
+  "desc": "你不再获得利息，但会在每个玩家对战回合开始时获得3金币。立刻获得3金币。\n\n10",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Hyperroll2.png"
+ },
+ {
+  "id": "infernotraitaugment",
+  "key": "DA_18_InfernoTraitAugment",
+  "name": "烧起来",
+  "desc": "在上场对战中造成最多伤害的【地狱火】弈子将会着火，获得55%攻击速度。获得1个【韦鲁斯】和1个【阿卡丽】。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "infinityprotection",
+  "key": "DA_InfinityProtection",
+  "name": "三相庇护",
+  "desc": "立刻获得3金币。在3-7回合，获得1个【三相之力】。【三相之力】为同一排的友军提供12%生命值护盾。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/InfinityProtection_II.png"
+ },
+ {
+  "id": "investedplus",
+  "key": "DA_InvestedPlus",
+  "name": "投资+",
+  "desc": "获得26金币。在每回合开始时，超过50金币后，每拥有10金币就会获得1次商店刷新(最多80金币)。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Invested-III.png"
+ },
+ {
+  "id": "investedplusplus",
+  "key": "DA_InvestedPlusPlus",
+  "name": "投资++",
+  "desc": "获得45金币。在每回合开始时，超过50金币后，每拥有10金币就会获得1次商店刷新(最多80金币)。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Invested-III.png"
+ },
+ {
+  "id": "investmentstrategy",
+  "key": "DA_InvestmentStrategy",
+  "name": "投资策略 II",
+  "desc": "你每获得1利息，你弈子们获得8永久最大生命值。你的最大利息提升2。立刻获得8金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/InvestmentStrategy_III.png"
+ },
+ {
+  "id": "investmentstrategyi",
+  "key": "DA_InvestmentStrategyI",
+  "name": "投资策略 I",
+  "desc": "你每获得1利息，你弈子们获得8永久最大生命值。立刻获得4金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/InvestmentStrategy_II.png"
+ },
+ {
+  "id": "ironassets",
+  "key": "DA_IronAssets",
+  "name": "黑铁资产",
+  "desc": "获得1个【基础装备锻造器】和3金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Iron-Assets-I.png"
+ },
+ {
+  "id": "itemgrabbag",
+  "key": "DA_ItemGrabBag",
+  "name": "装备百宝袋 I",
+  "desc": "获得1件随机成装。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ItemGrabBag1.png"
+ },
+ {
+  "id": "jeweledlotus-i",
+  "key": "DA_JeweledLotus_I",
+  "name": "珠光莲花 I",
+  "desc": "你的队伍获得10%暴击几率和技能暴击。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Jeweled-Lotus-II.png"
+ },
+ {
+  "id": "jeweledlotus-ii",
+  "key": "DA_JeweledLotus_II",
+  "name": "珠光莲花 II",
+  "desc": "你的队伍获得25%暴击几率，10%暴击伤害和【技能暴击】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Jeweled-Lotus-III.png"
+ },
+ {
+  "id": "kickstart",
+  "key": "DA_KickStart",
+  "name": "博弈开启",
+  "desc": "获得1个随机2星2费弈子和1金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/KickStart_I.png"
+ },
+ {
+  "id": "kingslayer",
+  "key": "DA_Kingslayer",
+  "name": "弑君突刺",
+  "desc": "在赢得玩家对战回合后，获得1金币。如果这位玩家之前的生命值多于你的生命值，转而获得6金币。获得1金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Kingslayer_I.png"
+ },
+ {
+  "id": "lategamescaling",
+  "key": "DA_LateGameScaling",
+  "name": "后期收益",
+  "desc": "在每场玩家战斗回合开始时，获得2经验值。你的5费弈子们获得12%生命值和12%攻击速度。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/LateGameScaling_II.png"
+ },
+ {
+  "id": "lategamespecialist",
+  "key": "DA_LateGameSpecialist",
+  "name": "后期专家",
+  "desc": "当你到达9级时，获得27金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Late-Game-Specialist-I.png"
+ },
+ {
+  "id": "latentforge",
+  "key": "DA_LatentForge",
+  "name": "休眠锻炉",
+  "desc": "在8场玩家对战回合后，获得1个【神器锻造器】。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Long-time-Crafting-I.png"
+ },
+ {
+  "id": "legionofthrees",
+  "key": "DA_LegionOfThrees",
+  "name": "三幻神",
+  "desc": "获得1个随机纹章。你的3费弈子们和携带着纹章的友军获得150生命值和12%攻击速度。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/LegionofThrees_II.png"
+ },
+ {
+  "id": "levelup",
+  "key": "DA_LevelUp",
+  "name": "升级咯！",
+  "desc": "在你购买经验值时，获得额外2经验值。立刻获得6经验值。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/LevelUp3.png"
+ },
+ {
+  "id": "livingforge",
+  "key": "DA_LivingForge",
+  "name": "活体锻炉",
+  "desc": "立刻以及每9场玩家对战回合后，获得1个【神器锻造器】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Living-Forge-III.png"
+ },
+ {
+  "id": "loadeddice",
+  "key": "DA_LoadedDice",
+  "name": "灌铅骰子",
+  "desc": "你在投掷骰子或抛掷硬币时总能更幸运。\n\n投掷1个骰子，获得与点数相等的金币。然后抛掷1枚硬币，如果硬币正面朝上，获得1金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "luckygloves",
+  "key": "DA_LuckyGloves",
+  "name": "幸运手套",
+  "desc": "【窃贼手套】总会为你的弈子们提供理想的装备。获得2个【拳套】和4金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Lucky-Gloves-III.png"
+ },
+ {
+  "id": "luckyglovesplus",
+  "key": "DA_LuckyGlovesPlus",
+  "name": "幸运手套+",
+  "desc": "【窃贼手套】总会为你的弈子们提供理想的装备。立刻获得2个【拳套】，然后在4场玩家对战回合后获得另一个。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Lucky-Gloves-III.png"
+ },
+ {
+  "id": "luxurysubscription",
+  "key": "DA_LuxurySubscription",
+  "name": "奢侈品订购",
+  "desc": "获得1个包裹，包含1个5费弈子、1个2星1费弈子和3金币。\n\n在接下来的2个阶段开始时，再次获得该包裹。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/LuxurySubscription_III.png"
+ },
+ {
+  "id": "magicroll",
+  "key": "DA_MagicRoll",
+  "name": "魔法投掷",
+  "desc": "投掷3个骰子。基于总点数获得奖励。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/A-Magical-Roll-II.png"
+ },
+ {
+  "id": "makeshiftarmori",
+  "key": "DA_MakeshiftArmorI",
+  "name": "应急护甲 I",
+  "desc": "没有携带任何装备的弈子获得30护甲和魔抗。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Makeshift1.png"
+ },
+ {
+  "id": "makeshiftarmorii",
+  "key": "DA_MakeshiftArmorII",
+  "name": "应急护甲 II",
+  "desc": "没有携带任何装备的弈子获得50护甲和魔抗。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Makeshift2.png"
+ },
+ {
+  "id": "maliciousmonetization",
+  "key": "DA_MaliciousMonetization",
+  "name": "恶意货币化",
+  "desc": "获得4金币。接下来的2个回合，敌方弈子在被击杀时会掉落2金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/MirroredMonetization_II.png"
+ },
+ {
+  "id": "maxbuild",
+  "key": "DA_MaxBuild",
+  "name": "顶尖构筑",
+  "desc": "获得10次免费商店刷新。当你到达9级时，获得3次免费商店刷新和1个【英雄复制器】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/MaxBuild_II.png"
+ },
+ {
+  "id": "moneyhungry-notbroken",
+  "key": "DA_MoneyHungry_NotBroken",
+  "name": "贪财",
+  "desc": "立刻获得7金币，然后在每阶段开始时获得7金币。拾取金币会令你的小小英雄变大。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/MoneyHungry1_II.png"
+ },
+ {
+  "id": "moneyhungryplus",
+  "key": "DA_MoneyHungryPlus",
+  "name": "贪财+",
+  "desc": "立刻获得10金币，然后在每阶段开始时获得7金币。拾取金币会令你的小小英雄变大。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/MoneyHungry2_II.png"
+ },
+ {
+  "id": "moneymonsoon",
+  "key": "DA_MoneyMonsoon",
+  "name": "摇钱树",
+  "desc": "立刻并在剩余游戏时间内每回合获得7金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/MoneyMonsoon_III.png"
+ },
+ {
+  "id": "nestinganvils",
+  "key": "DA_NestingAnvils",
+  "name": "锻造器套娃",
+  "desc": "获得1个【神器锻造器】。在你开启它之后，获得1个【基础装备锻造器】。开启这个【基础装备锻造器】后，又获得8金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "nestinganvilsplus",
+  "key": "DA_NestingAnvilsPlus",
+  "name": "锻造器套娃+",
+  "desc": "获得1个【神器锻造器】。在你开启它之后，获得1个【基础装备锻造器】。开启这个【基础装备锻造器】后，又获得12金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "noscoutnopivot",
+  "key": "DA_NoScoutNoPivot",
+  "name": "不侦察，不变阵",
+  "desc": "参与玩家对战回合后，弈子无法再回到备战席或出售。在玩家对战回合后，你的队伍获得1%生命值、1%物理加成和法术加成。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/NoScoutNoPivot_II.png"
+ },
+ {
+  "id": "onebufftwobuff",
+  "key": "DA_OneBuffTwoBuff",
+  "name": "1个霸符，2个霸符",
+  "desc": "获得1个【红霸符】、1个【蓝霸符】和1个【英雄复制器】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/OneBuffTwoBuff_III.png"
+ },
+ {
+  "id": "onestwosthree",
+  "key": "DA_18_OnesTwosThree",
+  "name": "一一二三",
+  "desc": "获得2个1费弈子、1个2费弈子和1个3费弈子。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "onetwofive",
+  "key": "DA_18_OneTwoFive",
+  "name": "一，二，五！",
+  "desc": "获得1件随机基础装备、2金币和1个随机5费弈子。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/One-Two-Five-I.png"
+ },
+ {
+  "id": "pandorasitemsi",
+  "key": "DA_PandorasItemsI",
+  "name": "潘朵拉的装备 I",
+  "desc": "回合开始时：你备战席的装备会随机变化。\n\n获得1件随机基础装备。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Pandora1.png"
+ },
+ {
+  "id": "pandorasitemsii",
+  "key": "DA_PandorasItemsII",
+  "name": "潘朵拉的装备 II",
+  "desc": "回合开始时：你备战席的装备会随机变化。\n\n获得2件随机基础装备。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Pandora2.png"
+ },
+ {
+  "id": "pandorasitemsiii",
+  "key": "DA_PandorasItemsIII",
+  "name": "潘朵拉的装备 III",
+  "desc": "回合开始时：你备战席的装备会随机变化。\n\n获得1件光明武器。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Pandora3.png"
+ },
+ {
+  "id": "partialascension",
+  "key": "DA_PartialAscension",
+  "name": "部分飞升",
+  "desc": "在战斗开始12秒后，你的单位们获得20%伤害增幅。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Ascension1.png"
+ },
+ {
+  "id": "patienceisavirtue",
+  "key": "DA_PatienceIsAVirtue",
+  "name": "耐心是一种美德",
+  "desc": "立刻获得4次刷新。每回合，如果你在上回合未购买任何弈子，则会获得1次免费刷新。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PatienceIsAVirtue_I.png"
+ },
+ {
+  "id": "patientstudy",
+  "key": "DA_PatientStudy",
+  "name": "耐心学习",
+  "desc": "在玩家对战回合后，如果你赢了则获得2经验值，如果你输了则获得3经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Learning-From-Experience-II.png"
+ },
+ {
+  "id": "pilfer",
+  "key": "DA_Pilfer",
+  "name": "挖角",
+  "desc": "每回合，获得你在上场对战中首先击杀的那个弈子的1个1星复制体。当你通过这种方式获得的弈子总价值达到21金币时，获得1个【窃贼手套】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Pilfer_II.png"
+ },
+ {
+  "id": "portableforge",
+  "key": "DA_PortableForge",
+  "name": "便携锻炉",
+  "desc": "在4件神器中选择1件。神器是可以提供独特效果的强力装备。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PortableForge2.png"
+ },
+ {
+  "id": "prismaticticket",
+  "key": "DA_PrismaticTicket",
+  "name": "棱彩门票",
+  "desc": "每当你的商店刷新时，你都有45%几率获得1次免费刷新。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GoldenTicket3.png"
+ },
+ {
+  "id": "promisedprotection",
+  "key": "DA_PromisedProtection",
+  "name": "承诺之护",
+  "desc": "获得1个【圣盾使的誓约】。【圣盾使的誓约】为其携带者提供自所有来源的20%额外法力值和200最大生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PromisedProtection_II.png"
+ },
+ {
+  "id": "quickstreaks",
+  "key": "DA_QuickStreaks",
+  "name": "连败连胜才能连鸡",
+  "desc": "你现在赢得或输掉对战后，增加的连胜或连败数翻倍。获得2金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "radiantrascal",
+  "key": "DA_RadiantRascal",
+  "name": "光明无赖",
+  "desc": "获得1个【光明版窃贼手套】。每回合装备2件随机光明武器。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Roll-the-Dice-III.png"
+ },
+ {
+  "id": "radiantrelic",
+  "key": "DA_RadiantRelic",
+  "name": "光明圣物",
+  "desc": "从5件光明武器中选择1件。获得1个【装备拆卸器】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/RadiantRelic-III.png"
+ },
+ {
+  "id": "recombobulator",
+  "key": "DA_Recombobulator",
+  "name": "变形重组器",
+  "desc": "你棋盘上的弈子们永久变形为1个比自身高1费的随机弈子(最高5费)。获得2个【装备拆卸器】和3次免费刷新。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Recombobulator-I.png"
+ },
+ {
+  "id": "replication",
+  "key": "DA_Replication",
+  "name": "反响",
+  "desc": "在3件基础装备中选择1件。在接下来的2个回合，都会获得1件该基础装备。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Replication-II.png"
+ },
+ {
+  "id": "residualmagic",
+  "key": "DA_18_ResidualMagic",
+  "name": "残留魔力",
+  "desc": "你的队伍获得60生命值。你每次购买【自然仙灵】，都会将该加成提升10。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "residualmagicplus",
+  "key": "DA_18_ResidualMagicPlus",
+  "name": "残留魔力+",
+  "desc": "你的队伍获得75生命值。你每次购买【自然仙灵】，都会将该加成提升10。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "residualmagicplusplus",
+  "key": "DA_18_ResidualMagicPlusPlus",
+  "name": "残留魔力++",
+  "desc": "你的队伍获得90生命值。你每次购买【自然仙灵】，都会将该加成提升10。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "retribution",
+  "key": "DA_Retribution",
+  "name": "正义报复",
+  "desc": "获得2个【正义之手】。携带【正义之手】的友军获得技能暴击和25%暴击几率。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Retribution_III.png"
+ },
+ {
+  "id": "riftbeasttraitaugment",
+  "key": "DA_18_RiftbeastTraitAugment",
+  "name": "欧米茄之怪",
+  "desc": "你现在可以选择第二个被【阿尔法印记】标记的【峡谷野怪】。获得1个【峡谷迅捷蟹】、1个【绯红树怪】和1个【苍蓝哨戒】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "rivalsaugment",
+  "key": "DA_18_RivalsAugment",
+  "name": "世纪和解",
+  "desc": "你可以同时登场【雷恩加尔】和【卡兹克】且不触发【宿敌】羁绊的负面效果。他们会在彼此施放技能时获得加成。获得1个【雷恩加尔】和1个【卡兹克】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "rollingfordays",
+  "key": "DA_RollingForDays",
+  "name": "D个痛快！",
+  "desc": "获得10次免费商店刷新。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Rolling-For-Days-I.png"
+ },
+ {
+  "id": "salvagebin",
+  "key": "DA_SalvageBin",
+  "name": "打捞桶",
+  "desc": "立刻获得1件随机成装，并在8场玩家对战回合后获得1件基础装备。出售弈子会将其携带的成装拆分成基础装备(冠冕系装备和纹章除外)。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Salvage2.png"
+ },
+ {
+  "id": "salvagebinplus",
+  "key": "DA_SalvageBinPlus",
+  "name": "打捞桶+",
+  "desc": "立刻获得1件随机成装，并在4场玩家对战回合后获得1件基础装备。出售弈子会将其携带的成装拆分成基础装备(冠冕系装备和纹章除外)。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Salvage2.png"
+ },
+ {
+  "id": "seraphimsstaff",
+  "key": "DA_SeraphimsStaff",
+  "name": "炽天使之拥",
+  "desc": "获得1个【大天使之杖】。如果【大天使之杖】的携带者拥有90%或以上的法术加成，【大天使之杖】还会为其额外提供2法力回复。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SeraphimsStaff_II.png"
+ },
+ {
+  "id": "shimmerscaleessence",
+  "key": "DA_ShimmerscaleEssence",
+  "name": "金鳞精萃",
+  "desc": "获得1个【大亨之铠】。在7场玩家对战回合后，获得1个【投机者之刃】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ShimmerscaleEssence_III.png"
+ },
+ {
+  "id": "shoppingspree",
+  "key": "DA_ShoppingSpree",
+  "name": "大买特买",
+  "desc": "在你升级时，获得相当于你等级数+1的免费商店刷新次数。获得6金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Silver-ticket-III.png"
+ },
+ {
+  "id": "silverspoon",
+  "key": "DA_SilverSpoon",
+  "name": "银汤匙",
+  "desc": "获得10经验值。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Silver-Spoon-I.png"
+ },
+ {
+  "id": "slammin",
+  "key": "DA_Slammin",
+  "name": "物尽其用",
+  "desc": "获得3金币。在每场玩家对战回合结束时，如果你的备战席没有任何装备(消耗品除外)，获得2经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Slammin_II.png"
+ },
+ {
+  "id": "slamminplus",
+  "key": "DA_SlamminPlus",
+  "name": "物尽其用+",
+  "desc": "立刻获得4金币和10经验值。在每场玩家对战回合结束时，如果你的备战席没有任何装备(消耗品除外)，获得2经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Slammin_II.png"
+ },
+ {
+  "id": "sliceoflife",
+  "key": "DA_SliceOfLife",
+  "name": "人生切片",
+  "desc": "每阶段2次，获得1个随机弈子。其费用会随阶段数提升。这个效果会在收到1个5费弈子后结束。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Slice_of_Life_I.png"
+ },
+ {
+  "id": "slightlymagicroll",
+  "key": "DA_SlightlyMagicRoll",
+  "name": "轻量魔法投掷",
+  "desc": "投掷1个骰子。基于总点数获得奖励。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SlightlyMagicRoll_I.png"
+ },
+ {
+  "id": "smallgrabbag",
+  "key": "DA_SmallGrabBag",
+  "name": "小小福袋",
+  "desc": "获得2件随机基础装备。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SmallGrabBag_I.png"
+ },
+ {
+  "id": "sololeveling",
+  "key": "DA_SoloLeveling",
+  "name": "独自升级",
+  "desc": "在接下来的5场对战，你的队伍规模为1，但你登场的那个弈子拥有巨幅提升过的各属性。该弈子的每次击杀都会使你获得1经验值。在此之后，获得2件基础装备。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SoloLeveling_II.png"
+ },
+ {
+  "id": "soloplate",
+  "key": "DA_SoloPlate",
+  "name": "单身板甲",
+  "desc": "获得1个【石像鬼石板甲】。战斗开始时：如果友军是所在排的唯一弈子并携带了【石像鬼石板甲】，该弈子获得17%最大生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SoloPlate_II.png"
+ },
+ {
+  "id": "soulawakening",
+  "key": "DA_SoulAwakening",
+  "name": "灵魂唤醒",
+  "desc": "战斗开始时：你的队伍每秒获得1.5%物理加成和法术加成，持续10秒。在最大层数时，造成12%额外真实伤害。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/AwakenedSoul_III.png"
+ },
+ {
+  "id": "speedydoublekill",
+  "key": "DA_SpeedyDoubleKill",
+  "name": "一波带走俩",
+  "desc": "获得1个【鬼索的狂暴之刃】。当2名玩家淘汰后，获得40金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SpeedyDoubleKill_II.png"
+ },
+ {
+  "id": "spiritofredemption",
+  "key": "DA_SpiritOfRedemption",
+  "name": "救赎盔甲",
+  "desc": "获得1个【振奋盔甲】。每5秒，【振奋盔甲】会治疗1格内的友军7.5%已损失生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SpiritofRedemption_II.png"
+ },
+ {
+  "id": "spreadingroots",
+  "key": "DA_SpreadingRoots",
+  "name": "蔓延之根",
+  "desc": "获得2个随机纹章和1金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SpreadingRoots_II.png"
+ },
+ {
+  "id": "spreadingrootsplus",
+  "key": "DA_SpreadingRootsPlus",
+  "name": "蔓延之根+",
+  "desc": "获得2个随机纹章、1个【装备重铸器】和2金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SpreadingRoots_II.png"
+ },
+ {
+  "id": "staffsmith",
+  "key": "DA_Staffsmith",
+  "name": "杖之工匠",
+  "desc": "获得2件由【无用大棒】合成的随机成装。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Rodsmith_II.png"
+ },
+ {
+  "id": "standunited",
+  "key": "DA_StandUnited",
+  "name": "联合作战",
+  "desc": "在你的队伍之中，每有1个已激活的非唯一羁绊，你的单位们就会获得1.5%物理加成和1.5%法术加成。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/StandUnited1.png"
+ },
+ {
+  "id": "sweettreats",
+  "key": "DA_SweetTreats",
+  "name": "甜点",
+  "desc": "获得1个【神器锻造器】。你的弈子们每携带1件装备，你的队伍就会获得16生命值。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SweetTreats_III.png"
+ },
+ {
+  "id": "swordoverflow",
+  "key": "DA_SwordOverflow",
+  "name": "大剑溢流",
+  "desc": "获得4个【暴风大剑】。你的【暴风大剑】提供+4攻击速度。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/BladeOverflow_III.png"
+ },
+ {
+  "id": "swordsmith",
+  "key": "DA_Swordsmith",
+  "name": "剑之工匠",
+  "desc": "获得2件由【暴风大剑】合成的随机成装。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Swordsmith_II.png"
+ },
+ {
+  "id": "tacticianskitchen",
+  "key": "DA_TacticiansKitchen",
+  "name": "锅铲厨房",
+  "desc": "获得1个随机纹章。在3个回合后，获得1个【金锅铲冠冕】。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TacticiansKitchen_III.png"
+ },
+ {
+  "id": "teambuilding",
+  "key": "DA_TeamBuilding",
+  "name": "团队建设",
+  "desc": "获得1个【次级英雄复制器】。在5场玩家对战回合后获得另一个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Building-an-army-I.png"
+ },
+ {
+  "id": "thegoldendragon",
+  "key": "DA_TheGoldenDragon",
+  "name": "金霖龙",
+  "desc": "获得1个【大亨之铠】。携带【大亨之铠】的弈子们占用1个弈子栏位，但获得700生命值和20%伤害减免。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TheGoldenDragon_II.png"
+ },
+ {
+  "id": "thetower",
+  "key": "DA_TheTower",
+  "name": "高塔",
+  "desc": "获得1个巨大的【训练假人】。每4秒，电击距离最近的3个敌人，造成5%最大生命值的真实伤害。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TheTower_I.png"
+ },
+ {
+  "id": "thetraittree",
+  "key": "DA_TheTraitTree",
+  "name": "羁绊树",
+  "desc": "获得3个随机纹章和2金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TheTraitTree_III.png"
+ },
+ {
+  "id": "thetraittreeplus",
+  "key": "DA_TheTraitTreePlus",
+  "name": "羁绊树+",
+  "desc": "获得3个随机纹章、1个【装备重铸器】和4金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TheTraitTree_III.png"
+ },
+ {
+  "id": "timeskip",
+  "key": "DA_TimeSkip",
+  "name": "时间跳跃",
+  "desc": "在接下来的3个回合中禁用你的商店。然后获得32经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TimeSkip_II.png"
+ },
+ {
+  "id": "tonsofstatsi",
+  "key": "DA_TonsOfStatsI",
+  "name": "成吨的属性",
+  "desc": "你的队伍获得44生命值、4%物理加成、4%法术加成、4护甲、4魔法抗性、4%攻击速度和4法力值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Tons-of-Stats-II.png"
+ },
+ {
+  "id": "tonsofstatsii",
+  "key": "DA_TonsOfStatsII",
+  "name": "成吨的属性！",
+  "desc": "你的队伍获得88生命值、8%物理加成、8%法术加成、8护甲、8魔法抗性、8%攻击速度和8法力值。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Tons-of-Stats-II.png"
+ },
+ {
+  "id": "tradesector",
+  "key": "DA_TradeSector",
+  "name": "DD街区",
+  "desc": "每回合获得1次免费商店刷新。获得2金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Trade2.png"
+ },
+ {
+  "id": "tradesectorplus",
+  "key": "DA_TradeSectorPlus",
+  "name": "DD街区+",
+  "desc": "每回合获得1次免费商店刷新。获得8金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Trade2.png"
+ },
+ {
+  "id": "traitladder",
+  "key": "DA_TraitLadder",
+  "name": "羁绊天梯",
+  "desc": "获得1个随机纹章。在1场玩家对战回合中登场2个非唯一羁绊后，获得1个奖励。此后提高获得奖励所需的羁绊数，以及奖励的规模。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "twinguardians",
+  "key": "DA_TwinGuardians",
+  "name": "双子守护神",
+  "desc": "如果你的第一排有且只有2名友军，为他们提供100生命值、35护甲和35魔法抗性。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TwinGuardians_I.png"
+ },
+ {
+  "id": "upwardmobility",
+  "key": "DA_UpwardMobility",
+  "name": "上进心",
+  "desc": "购买经验值的费用减少1。每当你升级时，获得2生命值和1次免费刷新。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/UpwardMobility_III.png"
+ },
+ {
+  "id": "urf",
+  "key": "DA_URF",
+  "name": "厨神阿福",
+  "desc": "获得1个【金铲铲】。携带了【金铲铲】或【金锅锅】系装备的弈子们获得20%攻击速度和3法力回复。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/UltraRapidFire_II.png"
+ },
+ {
+  "id": "urfsgrabbag",
+  "key": "DA_UrfsGrabBag",
+  "name": "阿福的百宝袋",
+  "desc": "获得1个【金铲铲】、3件随机基础装备和5金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Urfs-Grab-Bag-III.png"
+ },
+ {
+  "id": "verticalityi",
+  "key": "DA_VerticalityI",
+  "name": "纵深 I",
+  "desc": "每有1名拥有相同羁绊的友军，这些弈子们就会获得1.5%物理加成、1.5%法术加成、1.5护甲和1.5魔法抗性。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "verticalityii",
+  "key": "DA_VerticalityII",
+  "name": "纵深 II",
+  "desc": "每有1名拥有相同羁绊的友军，这些弈子们就会获得2%物理加成、2%法术加成、2护甲和2魔法抗性。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "verticalityiii",
+  "key": "DA_VerticalityIII",
+  "name": "纵深 III",
+  "desc": "每有1名拥有相同羁绊的友军，这些弈子们就会获得3.5%物理加成、3.5%法术加成、3.5护甲和3.5魔法抗性。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "wandoverflow",
+  "key": "DA_WandOverflow",
+  "name": "法杖溢流",
+  "desc": "获得4个【无用大棒】。你的【无用大棒】提供+5攻击速度。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/WandOverflow_III.png"
+ },
+ {
+  "id": "warpath",
+  "key": "DA_Warpath",
+  "name": "征战之路",
+  "desc": "获得1个2星2费弈子。在造成80玩家伤害后，获得1个装有高费弈子们和装备的宝箱。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Warpath_II.png"
+ },
+ {
+  "id": "weighttheworth",
+  "key": "DA_18_WeightTheWorth",
+  "name": "等待得值",
+  "desc": "每当你将1个弈子升至3星时，在剩余游戏时间内的每回合都会获得1个其1星复制体。将与该弈子相同的弈子再次升至3星时，提供额外的1星复制体。获得1个【次级英雄复制器】和1个【微型英雄复制器】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "westicktogether",
+  "key": "DA_WeStickTogether",
+  "name": "水乳交融",
+  "desc": "获得1个随机纹章和1个【成装锻造器】。与该纹章有同一羁绊的友军获得30%攻击速度。0 0",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/WeStickTogether_III.png"
+ },
+ {
+  "id": "wisprebateplus",
+  "key": "DA_18_WispRebatePlus",
+  "name": "仙灵报恩",
+  "desc": "你每次购买【自然仙灵】，都会获得2金币。立刻获得4金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "wisprebateplusplus",
+  "key": "DA_18_WispRebatePlusPlus",
+  "name": "仙灵报恩+",
+  "desc": "你每次购买【自然仙灵】，都会获得2金币。立刻获得8金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T1.png"
+ },
+ {
+  "id": "worththewait",
+  "key": "DA_WorththeWait",
+  "name": "值得等待",
+  "desc": "获得1个随机1费弈子。每回合开始时都会获得该弈子的又一个1星复制体，持续至本局游戏结束。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/WorthTheWait_II.png"
+ },
+ {
+  "id": "worththewaitii",
+  "key": "DA_WorththeWaitII",
+  "name": "值得等待 II",
+  "desc": "获得1个随机2费弈子的2个1星复制体。每回合开始时都会获得该弈子的又一个1星复制体，持续至本局游戏结束。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/WorthTheWait_III.png"
+ },
+ {
+  "id": "wovenmagic",
+  "key": "DA_WovenMagic",
+  "name": "纺织魔法",
+  "desc": "获得1件随机基础装备。你的弈子们每消耗2200法力值，就会提供1件额外基础装备(最大：0/3)。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/WovenMagic_III.png"
+ },
+ {
+  "id": "youngandwildandfree",
+  "key": "DA_YoungAndWildAndFree",
+  "name": "不拘一格",
+  "desc": "选秀环节期间，你可自由移动。获得5金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Young-and-wild-and-free-I.png"
+ },
+ {
+  "id": "coventraitaugment-loottoap",
+  "key": "DA_18_CovenTraitAugment_LootToAP",
+  "name": "黑暗仪式",
+  "desc": "将【魔女精粹】兑换为奖励时，不再提供战利品，而是为【魔女】弈子们提供法术加成。获得1个【卡蜜尔】、1个【伊莉丝】和1个【凯特琳】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "cyberneticimplants-gold",
+  "key": "DA_CyberneticImplants_Gold",
+  "name": "源计划植入",
+  "desc": "你携带1件装备的弈子们获得100生命值和15%物理加成。获得1个【暴风大剑】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Cybernetic2.png"
+ },
+ {
+  "id": "cyberneticuplink-gold",
+  "key": "DA_CyberneticUplink_Gold",
+  "name": "源计划上行链路",
+  "desc": "你携带1件装备的弈子们获得100生命值和2法力回复。获得1个【女神之泪】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Cybernetic-Uplink-II.png"
+ },
+ {
+  "id": "lunartraitaugment",
+  "key": "DA_18_LunarTraitAugment",
+  "name": "日月同辉",
+  "desc": "每登场1个不同的【日蚀骑士】弈子，你的【月蚀骑士】弈子们获得100生命值和8%伤害增幅。获得1个【蕾欧娜】、1个【凯尔】和1个【厄斐琉斯】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "lunartraitaugmentplus",
+  "key": "DA_18_LunarTraitAugmentPlus",
+  "name": "日月同辉＋",
+  "desc": "每登场1个不同的【日蚀骑士】弈子，你的【月蚀骑士】弈子们获得100生命值和8%伤害增幅。获得1个【蕾欧娜】、1个【凯尔】和1个【厄斐琉斯】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "solartraitaugment",
+  "key": "DA_18_SolarTraitAugment",
+  "name": "太阳的抉择",
+  "desc": "获得1个【蕾欧娜】、1个【凯尔】和1个【瑟庄妮】。【蕾欧娜】每回合获得60永久最大生命值，每登场1名不同的3星弈子，该加成还会提升10。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "plotarmor",
+  "key": "DA_PlotArmor",
+  "name": "应急护盾",
+  "desc": "你的队伍获得8护甲和魔法抗性。在生命值降至50%以下时，这个加成提升至40，持续至战斗结束。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PlotArmor_II.png"
+ },
+ {
+  "id": "primalaugment-nidalee",
+  "key": "DA_18_PrimalAugment_Nidalee",
+  "name": "兽性本能",
+  "desc": "【野兽之灵】额外提供一种【兽灵赐福】。立刻获得1个【蔚】，在3个回合后，获得1个【奈德丽】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "primalaugmentplus-nidalee",
+  "key": "DA_18_PrimalAugmentPlus_Nidalee",
+  "name": "兽性本能+",
+  "desc": "【野兽之灵】额外提供一种【兽灵赐福】。获得1个【蔚】和1个【奈德丽】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "primalaugmentplus-sivir",
+  "key": "DA_18_PrimalAugmentPlus_Sivir",
+  "name": "兽性本能+",
+  "desc": "【野兽之灵】额外提供一种【兽灵赐福】。获得1个【蔚】和1个【希维尔】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "primalaugment-sivir",
+  "key": "DA_18_PrimalAugment_Sivir",
+  "name": "兽性本能",
+  "desc": "【野兽之灵】额外提供一种【兽灵赐福】。立刻获得1个【蔚】，在3个回合后，获得1个【希维尔】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "nestingdollsplus",
+  "key": "DA_NestingDollsPlus",
+  "name": "弈子套娃",
+  "desc": "当1个弈子在战斗中阵亡后，召唤1个降低1星的复制体，其生命值只有60%。获得3次免费重随。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "nestingdollsplusplus",
+  "key": "DA_NestingDollsPlusPlus",
+  "name": "弈子套娃",
+  "desc": "当1个弈子在战斗中阵亡后，召唤1个降低1星的复制体，其生命值只有60%。获得3次免费重随。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "itsmebaby",
+  "key": "DA_ItsMeBaby",
+  "name": "是我，宝贝！",
+  "desc": "棋盘的右下角出现1顶【聚光灯】。在其中的弈子获得15%伤害增幅和15%攻击速度，并且其每参与5次击杀就会掉落1金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "pandorasbench",
+  "key": "DA_PandorasBench",
+  "name": "潘朵拉的备战席",
+  "desc": "在每回合开始时，处在备战席最右侧3个栏位的弈子变为随机的同费用弈子。获得4金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Pandoras-Bench-II.png"
+ },
+ {
+  "id": "deadliercaps",
+  "key": "DA_DeadlierCaps",
+  "name": "更要命的帽子",
+  "desc": "获得1个【灭世者的死亡之帽】。【灭世者的死亡之帽】提供1法力回复，并且它的携带者每参与击杀一次，它就会永久获得1%法术加成。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/DeadlierCaps_II.png"
+ },
+ {
+  "id": "luxaugmentii",
+  "key": "DA_18_LuxAugmentII",
+  "name": "创世神",
+  "desc": "开启1个武器库，并在3个羁绊选项中选择1个。获得1个该羁绊的【拉克丝】和1个【朔极之矛】。\n\n你棋盘上的羁绊会更有可能出现在该武器库中。【拉克丝】为她选定的羁绊提供+2计数。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T3.png"
+ },
+ {
+  "id": "golddestiny",
+  "key": "DA_GoldDestiny",
+  "name": "黄金命运",
+  "desc": "获得1个随机黄金阶强化符文和3金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GoldenDestiny_II.png"
+ },
+ {
+  "id": "golddestinyplus",
+  "key": "DA_GoldDestinyPlus",
+  "name": "黄金命运+",
+  "desc": "获得1个随机黄金阶强化符文和6金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GoldenDestiny_II.png"
+ },
+ {
+  "id": "min-max",
+  "key": "DA_Min_Max",
+  "name": "可大可小",
+  "desc": "获得1个【金制拆卸器】和4件随机基础装备。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/MinMax_III.png"
+ },
+ {
+  "id": "missedconnections",
+  "key": "DA_MissedConnections",
+  "name": "别再错过",
+  "desc": "获得每个1费弈子各1个。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missed-Connections-I.png"
+ },
+ {
+  "id": "prismaticdestiny",
+  "key": "DA_PrismaticDestiny",
+  "name": "棱彩命运",
+  "desc": "获得1个随机棱彩阶强化符文和4金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PrismaticDestiny_III.png"
+ },
+ {
+  "id": "prismaticdestinyplus",
+  "key": "DA_PrismaticDestinyPlus",
+  "name": "棱彩命运+",
+  "desc": "获得1个随机棱彩阶强化符文和10金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PrismaticDestiny_III.png"
+ },
+ {
+  "id": "silverdestiny",
+  "key": "DA_SilverDestiny",
+  "name": "白银命运",
+  "desc": "获得1个随机白银阶强化符文和2金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SilverDestiny_I.png"
+ },
+ {
+  "id": "silverdestinyplus",
+  "key": "DA_SilverDestinyPlus",
+  "name": "白银命运+",
+  "desc": "获得1个随机白银阶强化符文和4金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SilverDestiny_I.png"
+ },
+ {
+  "id": "silverdestinyplusplus",
+  "key": "DA_SilverDestinyPlusPlus",
+  "name": "白银命运++",
+  "desc": "获得1个随机白银阶强化符文和7金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SilverDestiny_I.png"
+ },
+ {
+  "id": "sprykinaugment",
+  "key": "DA_18_SprykinAugment",
+  "name": "毛茸茸小朋友",
+  "desc": "当【约德尔人和他们的毛茸茸大朋友】羁绊激活时，获得第二个【毛茸茸大朋友】召唤物，但仅有原来的35%强度。获得1个【提莫】、1个【维迦】和1个【可酷伯】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "constructacompanion",
+  "key": "DA_ConstructACompanion",
+  "name": "挑个好伙计！",
+  "desc": "你购买的下个1费弈子变为3星。获得2金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ConstructaCompanion_III.png"
+ },
+ {
+  "id": "forgeafriend",
+  "key": "DA_ForgeAFriend",
+  "name": "锻造挚友",
+  "desc": "你购买的下个1费弈子变为3星。获得5金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ConstructaCompanion_III.png"
+ },
+ {
+  "id": "buildabud",
+  "key": "DA_BuildABud",
+  "name": "来个好伙计！",
+  "desc": "获得1个随机3星1费弈子。获得6金币。",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ConstructaCompanion_III.png"
+ },
+ {
+  "id": "tft17-augment-pykecarry",
+  "key": "TFT17_Augment_PykeCarry",
+  "name": "职业杀手",
+  "desc": "获得1个【派克】。你最强大的那个【派克】成为一名物理战士，在你的队伍参与击杀时产生金币，并且获得一个在击杀时重置的技能。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ContractKiller_II.png"
+ },
+ {
+  "id": "tft17-augment-kaylegodaugment",
+  "key": "TFT17_Augment_KayleGodAugment",
+  "name": "凯尔的恩赐",
+  "desc": "你的队伍每携带一件不同的成装，就会获得10生命值、1%物理加成和1%法术加成。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentKayle_II.png"
+ },
+ {
+  "id": "tft17-augment-ahrigodaugment",
+  "key": "TFT17_Augment_AhriGodAugment",
+  "name": "阿狸的恩赐",
+  "desc": "你的队伍获得2%x等级数的物理加成和法术加成。这局游戏接下来的时间里，每回合获得2经验值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentAhri_II.png"
+ },
+ {
+  "id": "tft17-augment-nasuscarry",
+  "key": "TFT17_Augment_NasusCarry",
+  "name": "邦！",
+  "desc": "获得1个【内瑟斯】。你最强大的那个【内瑟斯】成为一名物理战士，他的技能现在是单体目标技能，每完成一次击杀都会变得更强。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Bonk_I.png"
+ },
+ {
+  "id": "tft17-augment-aurelionsolgodaugment",
+  "key": "TFT17_Augment_AurelionSolGodAugment",
+  "name": "奥瑞利安·索尔的恩赐",
+  "desc": "在3个探险中选择1个，向【奥瑞利安·索尔】证明你自己。\n\n已选择的探险：",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentAurelionSol_II.png"
+ },
+ {
+  "id": "tft17-augment-sorakagodaugment",
+  "key": "TFT17_Augment_SorakaGodAugment",
+  "name": "索拉卡的恩赐",
+  "desc": "你每损失1玩家生命值，你的队伍就会获得2.5生命值。在每场玩家对战开始时，回复额外的1玩家生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentSoraka_II.png"
+ },
+ {
+  "id": "tft17-augment-kaylegodaugment-scrapper",
+  "key": "TFT17_Augment_KayleGodAugment_Scrapper",
+  "name": "斗神的恩赐",
+  "desc": "战斗开始时：最多3个基础装备暂时变为成装。获得3个【装备拆卸器】和1个【分解器】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "tft17-augment-yasuogodaugment-paintedpower",
+  "key": "TFT17_Augment_YasuoGodAugment_PaintedPower",
+  "name": "亚索的恩赐",
+  "desc": "提高50%【亚索】的绘制格的效果。如果你只有2个绘制格，获得8金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentYasuo_II.png"
+ },
+ {
+  "id": "tft17-augment-yasuogodaugment-morehexes",
+  "key": "TFT17_Augment_YasuoGodAugment_MoreHexes",
+  "name": "亚索的共享聚光灯",
+  "desc": "【亚索】的绘制格也会影响邻格的单位，效能为100%。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ShareSpotlight2.png"
+ },
+ {
+  "id": "tft17-augment-aurelionsolgodaugment-boonofresurrection",
+  "key": "TFT17_Augment_AurelionSolGodAugment_BoonOfResurrection",
+  "name": "复活恩赐",
+  "desc": "在你第一次将被淘汰时，你会依然保持1生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "tft17-augment-evelynngodaugment-bloodprice",
+  "key": "TFT17_Augment_EvelynnGodAugment_BloodPrice",
+  "name": "猩红报偿",
+  "desc": "获得25小小英雄生命值。你商店的最右侧栏位需要花费小小英雄生命值，而非金币。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Missing-T2.png"
+ },
+ {
+  "id": "tft17-augment-varusgodaugment-boonofstars",
+  "key": "TFT17_Augment_VarusGodAugment_BoonOfStars",
+  "name": "韦鲁斯的恩赐",
+  "desc": "你的弈子们获得15x己方队伍总星级的生命值，并且你的5费概率提升2%。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentVarus_II.png"
+ },
+ {
+  "id": "tft17-augment-yasuogodaugment-goldenhex",
+  "key": "TFT17_Augment_YasuoGodAugment_GoldenHex",
+  "name": "亚索的黄金格",
+  "desc": "绘制1个【黄金格】。格内的单位获得250生命值、25%攻击速度，并在击杀敌人时掉落1金币。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/FindYourCenter_I.png"
+ },
+ {
+  "id": "tft17-augment-ekkogodaugment",
+  "key": "TFT17_Augment_EkkoGodAugment",
+  "name": "艾克的恩赐",
+  "desc": "获得【突变】，一个基于单位的定位为其提供强力进化的装备。获得2个【装备拆卸器】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentEkko_II.png"
+ },
+ {
+  "id": "tft17-augment-threshgodaugment",
+  "key": "TFT17_Augment_ThreshGodAugment",
+  "name": "锤石的恩赐",
+  "desc": "每回合，投掷一个骰子。基于该次投掷，获得一个加成。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentThresh_II.png"
+ },
+ {
+  "id": "tft17-augment-aatroxcarry",
+  "key": "TFT17_Augment_AatroxCarry",
+  "name": "星界连招",
+  "desc": "获得1个【亚托克斯】。你最强大的那个【亚托克斯】成为一名物理战士，他的技能现在会在三种不同的攻击方式间切换。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/AatroxHero_I.png"
+ },
+ {
+  "id": "tft17-augment-evelynngodaugment",
+  "key": "TFT17_Augment_EvelynnGodAugment",
+  "name": "伊芙琳的恩赐",
+  "desc": "你的队伍获得10%伤害减免。在你输掉对战回合时，额外失去1小小英雄生命值。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/GodAugmentEvelynn_II.png"
+ },
+ {
+  "id": "tft17-augment-poppycarry",
+  "key": "TFT17_Augment_PoppyCarry",
+  "name": "飙速木灵",
+  "desc": "获得1个【波比】。你最强大的那个【波比】成为一名远程物理术师，她会向她的目标发射1个高速木灵。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/PoppyHero_I.png"
+ },
+ {
+  "id": "tft17-augment-jaxcarry",
+  "key": "TFT17_Augment_JaxCarry",
+  "name": "摘星之志",
+  "desc": "获得1个【贾克斯】。你最强大的那个【【贾克斯】成为一个魔法战士，可以在攻击时造成额外魔法伤害并且在施放技能时获得可叠加的攻击速度。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/ReachForTheStars_II.png"
+ },
+ {
+  "id": "tft17-augment-apotheoticforge",
+  "key": "TFT17_Augment_ApotheoticForge",
+  "name": "神赐锻炉",
+  "desc": "从4件天赐神器中选出1件。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Job_s-Done-II.png"
+ },
+ {
+  "id": "tft17-augment-animasquad-commander",
+  "key": "TFT17_Augment_AnimaSquad_Commander",
+  "name": "幻灵指挥官",
+  "desc": "获得1个【贝蕾亚】、1个【金克丝】和1个【俄洛伊】。使你的当前和最大玩家生命值都提升5。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/AnimaCommander_II.png"
+ },
+ {
+  "id": "tft17-augment-leonacarry",
+  "key": "TFT17_Augment_LeonaCarry",
+  "name": "盾女",
+  "desc": "获得1个【蕾欧娜】。你最强大的那个【蕾欧娜】成为一个物理战士，可冲刺穿过敌人们以造成物理伤害并对命中的第一个目标造成晕眩。",
+  "tier": "银",
+  "tierKey": "silver",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/LeonaHero_I.TFT_Set17_PostLaunchAugments.png"
+ },
+ {
+  "id": "tft17-augment-arbiter-divineamendment",
+  "key": "TFT17_Augment_Arbiter_DivineAmendment",
+  "name": "神律新令",
+  "desc": "【法官】们为他们的【律法】添加第二种效果。\n获得1个【蕾欧娜】和【佐伊】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/DivineAmendment_II.TFT_Set17_PostLaunchAugments.png"
+ },
+ {
+  "id": "tft17-augment-mordekaisercarry",
+  "key": "TFT17_Augment_MordekaiserCarry",
+  "name": "热寂",
+  "desc": "获得1个【莫德凯撒】。你最强大的那个【莫德凯撒】成为一名魔法战士，他现在拥有一个缓慢成长的光环，能够持续造成伤害。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/StarConqueror_II.png"
+ },
+ {
+  "id": "tft17-augment-primordianprismaticaugment",
+  "key": "TFT17_Augment_PrimordianPrismaticAugment",
+  "name": "狂潮之心",
+  "desc": "所有3星弈子现在都会被计入【狂潮虫】的强度。在9级时，如果登场了6个独特的3星弈子，那么【海魔人】们就会召唤【海魔至尊】。获得3个【海魔人】弈子和2个【微型复制器】。\n\n已登场的独特3星弈子数量： / 6\n\n等级： / 9",
+  "tier": "prism",
+  "tierKey": "prism",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/HeartoftheSwarm_III.TFT_Set17_PostLaunchAugments.png"
+ },
+ {
+  "id": "tft17-augment-gragascarry",
+  "key": "TFT17_Augment_GragasCarry",
+  "name": "自我毁灭",
+  "desc": "获得1个【古拉加斯】。你最强大的那个【古拉加斯】成为一名魔法战士，他可以引发巨大爆炸，但也会对其自身造成伤害。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/SelfDestruct_II.png"
+ },
+ {
+  "id": "tft17-augment-darkstar-whitehole",
+  "key": "TFT17_Augment_DarkStar_WhiteHole",
+  "name": "战利品奇点",
+  "desc": "当【黑洞】吞噬敌人时，它会将其转变成太空物质。在获取了足够数量之后，该【黑洞】会将它转变为战利品！获得1个【科加斯】和1个【丽桑卓】。\n\n太空物质： /",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/WhiteHole_II.TFT_17_3.png"
+ },
+ {
+  "id": "tft17-augment-concentration",
+  "key": "TFT17_Augment_Concentration",
+  "name": "聚精会神",
+  "desc": "【神谕】们的技能持续时长变久25%到50%，基于具体技能。获得1个【佐伊】和1个【莫德凯撒】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Concentration_II.TFT_17_3.png"
+ },
+ {
+  "id": "tft17-augment-tourofthegalaxy",
+  "key": "TFT17_Augment_TourOfTheGalaxy",
+  "name": "银河巡旅",
+  "desc": "【旅人】们获得130生命值、13%物理加成和13%法术加成，此加成会在你每次对战一个新的玩家时提升10%。你会倾向于对战那些近期未与你对战过的玩家们。获得1个【派克】和1个【小木灵】。",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/TourOfTheGalaxy_II.TFT_Set17_PostLaunchAugments.png"
+ },
+ {
+  "id": "tft17-augment-timebreaker-timestream",
+  "key": "TFT17_Augment_Timebreaker_Timestream",
+  "name": "时间流",
+  "desc": "你的队伍获得100生命值。【未来战士】们在你每次刷新(包括免费刷新)时获得7生命值和0.3%攻击速度。获得1个【伊泽瑞尔】和1个【潘森】。\n\n(生命值：，攻击速度：%)",
+  "tier": "金",
+  "tierKey": "gold",
+  "icon": "https://c-tft-api.op.gg/img/set/18/tft-augment/Timestream_II.TFT_Set17_PostLaunchAugments.png"
+ }
+]
