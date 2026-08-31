@@ -424,6 +424,85 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
 .tag-with-icon{display:inline-flex;align-items:center;gap:6px;}
 .tag-ic{width:18px;height:18px;display:inline-block;border-radius:3px;border:1px solid var(--line-soft);background:var(--paper-2);}
 
+/* ---------- 攻略板块（/guides） ---------- */
+.guide-list{display:flex;flex-direction:column;gap:14px;}
+.guide-card{
+  display:block;padding:20px 22px;
+  background:var(--paper-hi);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  transition:border-color var(--d-base) var(--ease),transform var(--d-base) var(--ease);
+}
+.guide-card:hover{border-color:var(--gold);transform:translateY(-2px);}
+.guide-card-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+.guide-card-head h2{font-family:var(--serif);font-size:1.25rem;font-weight:600;letter-spacing:.02em;}
+.guide-season{
+  font-size:.75rem;letter-spacing:.1em;color:var(--wild);
+  border:1px solid var(--wild-soft);border-radius:2px;padding:2px 8px;
+  background:var(--wild-wash);white-space:nowrap;
+}
+.guide-card-sub{margin-top:6px;color:var(--ink-soft);font-size:.95rem;}
+.guide-card-summary{margin-top:10px;color:var(--ink-soft);font-size:.92rem;line-height:1.7;}
+.guide-card-foot{margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+
+/* 攻略详情 */
+.guide-article{max-width:760px;}
+.guide-head{margin-top:14px;}
+.guide-head h1{font-family:var(--serif);font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;line-height:1.25;margin-top:10px;}
+.guide-sub{margin-top:8px;color:var(--ink-soft);font-size:1rem;}
+.guide-meta{margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.guide-lead{
+  margin:22px 0 8px;padding:16px 18px;
+  background:var(--paper-hi);border-left:2px solid var(--gold);
+  border-radius:var(--radius);color:var(--ink-soft);line-height:1.75;
+}
+.guide-section{margin-top:34px;}
+.guide-section h2{
+  font-family:var(--serif);font-size:1.2rem;font-weight:600;letter-spacing:.02em;
+  padding-bottom:8px;border-bottom:1px solid var(--line-soft);margin-bottom:14px;
+}
+.guide-p{color:var(--ink-soft);line-height:1.85;margin-bottom:12px;}
+.guide-list-block{margin:0 0 14px;padding-left:20px;color:var(--ink-soft);line-height:1.85;}
+.guide-list-block li{margin-bottom:6px;}
+
+/* 有序步骤 */
+.guide-steps{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-direction:column;gap:12px;}
+.guide-steps li{display:flex;gap:12px;align-items:flex-start;color:var(--ink-soft);line-height:1.8;}
+.step-no{
+  flex:0 0 auto;width:22px;height:22px;border-radius:50%;
+  background:var(--wild);color:#fff;font-size:.78rem;
+  display:inline-flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.step-text{flex:1;}
+
+/* 表格 */
+.guide-table-wrap{overflow-x:auto;margin:0 0 16px;border:1px solid var(--line);border-radius:var(--radius);}
+.guide-table{width:100%;border-collapse:collapse;font-size:.9rem;}
+.guide-table th{
+  text-align:left;padding:10px 14px;background:var(--paper-2);
+  font-weight:600;color:var(--ink);border-bottom:1px solid var(--line);white-space:nowrap;
+}
+.guide-table td{padding:10px 14px;color:var(--ink-soft);border-bottom:1px solid var(--line-soft);line-height:1.6;}
+.guide-table tr:last-child td{border-bottom:none;}
+
+/* 提示条：tone-key 关键 / tone-warn 警告 / tone-info 说明 */
+.guide-callout{
+  display:flex;flex-direction:column;gap:4px;
+  margin:0 0 16px;padding:13px 16px;
+  border-radius:var(--radius);border:1px solid var(--line-soft);
+  background:var(--paper-hi);
+}
+.callout-title{font-size:.92rem;font-weight:600;}
+.callout-text{font-size:.9rem;line-height:1.75;color:var(--ink-soft);}
+.tone-key{border-left:2px solid var(--wild);background:var(--wild-wash);}
+.tone-key .callout-title{color:var(--wild);}
+.tone-warn{border-left:2px solid var(--t0);}
+.tone-warn .callout-title{color:var(--t0);}
+.tone-info{border-left:2px solid var(--gold);}
+.tone-info .callout-title{color:var(--gold);}
+
+.guide-foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:.82rem;line-height:1.7;}
+
 /* ---------- 移动端优先（手机竖屏 ≤720px） ---------- */
 @media (max-width: 720px) {
   .site-header{ padding:13px 16px; }
@@ -439,6 +518,11 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
   .season-desc{ font-size:.94rem; max-width:38ch; }
   .season-mechanic{ padding:12px 13px; max-width:none; }
   .hero-hex{ right:-30px; opacity:.12; }
+  .guide-card{ padding:16px 18px; }
+  .guide-card-head{ gap:8px; }
+  .guide-card-head h2{ font-size:1.1rem; }
+  .guide-table{ font-size:.85rem; }
+  .guide-table th,.guide-table td{ padding:8px 11px; }
 
   /* 首页阵容网格：手机单列，平板双列 */
   .home-grid{ grid-template-columns:1fr; max-width:none; }
