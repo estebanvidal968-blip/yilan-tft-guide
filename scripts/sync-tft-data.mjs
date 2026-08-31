@@ -355,12 +355,12 @@ async function main() {
         c._w += n;
         c._wp += n * ap;
 
-        const items = (b.itemNames || []).map((k) => itemMeta.get(k)?.id).filter(Boolean);
+        const items = (b.itemNames || []).map((k) => itemAlias.get(k)?.id).filter(Boolean);
         if (items.length < 2) continue; // 单件记录不进「最佳三件套」
         const rec = {
           items,
-          itemNames: (b.itemNames || []).map((k) => itemMeta.get(k)?.name || k),
-          itemIcons: (b.itemNames || []).map((k) => itemMeta.get(k)?.icon || ''),
+          itemNames: (b.itemNames || []).map((k) => itemAlias.get(k)?.name || k),
+          itemIcons: (b.itemNames || []).map((k) => itemAlias.get(k)?.icon || ''),
           n, ap,
           winRate: Number(b.winRate) || 0,
           top4Rate: Number(b.top4Rate) || 0,

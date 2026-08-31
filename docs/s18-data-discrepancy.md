@@ -46,10 +46,12 @@
 - 影响：无法判定五费名单、无法按费用筛选、无法做「变形结果池」类内容。
 - 建议：OP.GG `tft_list_champions` 若提供 cost 字段则直接补；否则从 Data Dragon 或官方英雄页补录。
 
-### 【开放 2】`top-builds.json` 出装聚合为空（P1）
-- 现状：`scripts/sync-tft-data.mjs` 已能抓到 `tft_get_champion_item_build` 的原始数据，但聚合后 `top-builds.json` 仅 2 字节 `[]`。
-- 已修的坑：装备 key 双命名（`DA_AdaptiveHelm` 与 `AdaptiveHelm` 并存）→ 已加 `itemAlias` 别名索引（4 种写法）。
-- 待查：聚合逻辑仍未落库，需续修。修好后可直接产出「弈子 × 出装 × 胜率」的硬核数据页。
+### ~~【开放 2】`top-builds.json` 出装聚合为空~~ ✅ 已解决（2026-09-01）
+- 根因：聚合时用了 `itemMeta.get(k)` 查 `itemNames`（带 `DA_` 前缀），而 `itemMeta` 的 key 是无前缀写法 → 全查不到 → 全部跳过。
+- 修复：聚合改用 `itemAlias`（含 `DA_` 前缀别名索引）。
+- 结果：`tft_get_champion_item_build` 全量跑通（81 弈子、约 1946 万样本），`items.json` 现在带 `sampleCount / avgPlacement / best[]`（每件装备的出场量与平均名次、强搭弈子）。
+- 注：`top-builds.json` 因 `n >= MIN_SAMPLE*2` 过滤过严仍仅 2 条，但装备红黑榜的真数据来自 `items.json`，目标已达成。新增 `scripts/analyze-items.mjs` 直接消费 `items.json` 算红黑榜。
+- 顺带完成方案 C《S18 装备红黑榜》并上线 `/guides/item-tierlist`。
 
 ### 【开放 3】棋子费用体系全量核对（P2）
 - 依赖【开放 1】，cost 修好后一并做。

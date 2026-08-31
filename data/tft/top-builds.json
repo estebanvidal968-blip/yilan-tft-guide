@@ -1,1 +1,54 @@
-[]
+[
+ {
+  "items": [
+   "florafatalisemblemaugment",
+   "dawncore",
+   "arcanegauntlet"
+  ],
+  "itemNames": [
+   "绝命花妖纹章",
+   "黎明核心",
+   "珠光护手"
+  ],
+  "itemIcons": [
+   "https://c-tft-api.op.gg/img/set/18/tft-item/DA_18_EmblemFloraFatalisAugment.png",
+   "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Artifact_Dawncore.png",
+   "https://c-tft-api.op.gg/img/set/18/tft-item/DA_JeweledGauntlet.png"
+  ],
+  "n": 1022,
+  "ap": 2.34,
+  "winRate": 0.4775,
+  "top4Rate": 0.864,
+  "delta": 1.864,
+  "champ": "veigar",
+  "champName": "邪恶小法师",
+  "champIcon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Veigar.png",
+  "cost": 3
+ },
+ {
+  "items": [
+   "flickerblade",
+   "guinsoosrageblade",
+   "runaanshurricane"
+  ],
+  "itemNames": [
+   "烁刃",
+   "鬼索的狂暴之刃",
+   "海妖之怒"
+  ],
+  "itemIcons": [
+   "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Artifact_NavoriFlickerblade.png",
+   "https://c-tft-api.op.gg/img/set/18/tft-item/DA_GuinsoosRageblade.png",
+   "https://c-tft-api.op.gg/img/set/18/tft-item/DA_KrakensFury.png"
+  ],
+  "n": 1356,
+  "ap": 3.73,
+  "winRate": 0.1504,
+  "top4Rate": 0.6541,
+  "delta": 0.905,
+  "champ": "caitlyn",
+  "champName": "皮城女警",
+  "champIcon": "https://ddragon.leagueoflegends.com/cdn/16.17.1/img/champion/Caitlyn.png",
+  "cost": null
+ }
+]
