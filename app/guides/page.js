@@ -1,4 +1,5 @@
 import { guides } from '@/content/guides';
+import AmbientField from '@/components/AmbientField';
 
 export const metadata = {
   title: '攻略 · 弈览',
@@ -8,10 +9,13 @@ export const metadata = {
 export default function GuidesPage() {
   return (
     <>
-      <h1 className="section-title">攻略</h1>
-      <p className="section-sub">
-        版本机制与进阶技巧，讲清「怎么来的」和「怎么做到」。当前 {guides.length} 篇。
-      </p>
+      <div className="guides-head">
+        <AmbientField count={14} />
+        <h1 className="section-title">攻略</h1>
+        <p className="section-sub">
+          版本机制与进阶技巧，讲清「怎么来的」和「怎么做到」。当前 {guides.length} 篇。
+        </p>
+      </div>
 
       <div className="guide-list">
         {guides.map((g, i) => (

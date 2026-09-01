@@ -504,6 +504,34 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
 .guide-foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:.82rem;line-height:1.7;}
 
 /* ---------- 移动端优先（手机竖屏 ≤720px） ---------- */
+/* ---------- WebGL 氛围层（AmbientField：克制的自然孢子漂浮） ---------- */
+.ambient-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
+
+/* 攻略列表头：承载氛围层的小横幅 */
+.guides-head{position:relative;overflow:hidden;padding:14px 0 22px;margin-bottom:22px;border-bottom:1px solid var(--line);}
+.guides-head > *{position:relative;z-index:1;}
+
+/* ---------- 攻略内装备「突变」标识（红榜必抢 / 黑榜慎选 / 奇效 / 特殊） ---------- */
+.item-flag{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:1px 9px 1px 7px;border-radius:999px;
+  font-size:.9em;line-height:1.55;font-weight:500;
+  border:1px solid var(--line);vertical-align:baseline;white-space:nowrap;
+}
+.item-flag::before{
+  font-size:.6rem;font-weight:700;letter-spacing:.04em;
+  padding:1px 5px;border-radius:999px;color:#fff;
+}
+.flag-must{border-color:color-mix(in srgb,var(--wild) 50%,var(--line));background:var(--wild-wash);color:var(--wild);}
+.flag-must::before{content:"必抢";background:var(--wild);}
+.flag-avoid{border-color:color-mix(in srgb,var(--t0) 42%,var(--line));background:color-mix(in srgb,var(--t0) 7%,var(--paper));color:var(--t0);}
+.flag-avoid::before{content:"慎选";background:var(--t0);}
+.flag-synergy{border-color:color-mix(in srgb,var(--gold) 48%,var(--line));background:color-mix(in srgb,var(--gold-soft) 14%,var(--paper));color:var(--gold);animation:flagPulse 2.6s var(--ease) infinite;}
+.flag-synergy::before{content:"奇效";background:var(--gold);color:var(--ink);}
+.flag-special{border-color:var(--gold-soft);background:color-mix(in srgb,var(--gold-soft) 12%,var(--paper));color:var(--ink-soft);}
+.flag-special::before{content:"特殊";background:var(--gold-soft);color:var(--ink);}
+@keyframes flagPulse{0%,100%{box-shadow:0 0 0 0 transparent;}50%{box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 16%,transparent);}}
+
 @media (max-width: 720px) {
   .site-header{ padding:13px 16px; }
   .brand-name{ font-size:1.1rem; }

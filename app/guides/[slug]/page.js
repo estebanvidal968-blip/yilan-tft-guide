@@ -14,6 +14,31 @@ export function generateMetadata({ params }) {
   };
 }
 
+// 装备「突变」标识：按 marks[key]=类型 把命中的装备名包成徽章；markCols 限定作用列
+function markCell(text, marks, col, markCols) {
+  if (typeof text !== 'string' || !marks) return text;
+  if (markCols && !markCols.includes(col)) return text;
+  const keys = Object.keys(marks).filter((k) => text.includes(k));
+  if (!keys.length) return text;
+  keys.sort((a, b) => b.length - a.length);
+  const re = new RegExp(keys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g');
+  const out = [];
+  let last = 0;
+  let m;
+  let i = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(
+      <span key={i++} className={`item-flag flag-${marks[m[0]]}`}>
+        {m[0]}
+      </span>
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 // 按 block 类型渲染，保持无 Markdown 依赖
 function Block({ block }) {
   switch (block.type) {
@@ -56,9 +81,9 @@ function Block({ block }) {
             <tbody>
               {block.rows.map((row, i) => (
                 <tr key={i}>
-                  {row.map((cell, j) => (
-                    <td key={j} style={{ textAlign: align[j] || 'left' }}>{cell}</td>
-                  ))}
+              {row.map((cell, j) => (
+                <td key={j} style={{ textAlign: align[j] || 'left' }}>{markCell(cell, block.marks, j, block.markCols)}</td>
+              ))}
                 </tr>
               ))}
             </tbody>

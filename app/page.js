@@ -1,6 +1,7 @@
 import CompCard from '@/components/CompCard';
 import HexMark from '@/components/HexMark';
 import TierTag from '@/components/TierTag';
+import AmbientField from '@/components/AmbientField';
 import { loadComps, loadVersions } from '@/lib/loadData';
 import { SEASON } from '@/lib/season';
 
@@ -14,6 +15,7 @@ export default async function Home() {
   return (
     <>
       <section className="hero">
+        <AmbientField />
         <HexMark size={320} className="hero-hex" />
 
         <span className="season-eyebrow">
