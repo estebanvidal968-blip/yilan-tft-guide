@@ -3,20 +3,49 @@ import IconImg from './IconImg';
 import FavoriteButton from './FavoriteButton';
 import LikeButton from './LikeButton';
 import icons from '@/data/icons.json';
+import { translateOpScore, formatWinRate, formatAvgPlacement } from '@/lib/opScore';
 
-export default function CompCard({ comp, index = 0 }) {
+export default function CompCard({ comp, index = 0, rank }) {
   const carry = comp.positions?.find((p) => p.carry);
   const costOf = {};
   (comp.positions || []).forEach((p) => {
     if (p.champ && p.cost != null) costOf[p.champ] = p.cost;
   });
 
+  const ts = translateOpScore(comp.stat?.opScore);
+
   return (
     <article className="comp-card enter" style={{ animationDelay: `${index * 70}ms` }}>
       <div className="cc-head">
-        <span className="cc-name">{comp.name}</span>
+        <div className="cc-head-l">
+          {typeof rank === 'number' && (
+            <span className={`cc-rank${rank <= 3 ? ' top' + rank : ''}`}>
+              <i>#</i>
+              {rank}
+            </span>
+          )}
+          <span className="cc-name">{comp.name}</span>
+        </div>
         <TierTag tier={comp.tier} />
       </div>
+
+      {ts ? (
+        <div className="cc-stats" aria-label="预估胜率与平均名次（基于 OP.GG opScore 翻译）">
+          <span className="cc-stat">
+            <i>预估胜率</i>
+            <b>{formatWinRate(ts.winRate)}</b>
+          </span>
+          <span className="cc-stat">
+            <i>平均名次</i>
+            <b>{formatAvgPlacement(ts.avgPlacement)}</b>
+          </span>
+          <span className="cc-stat dim">
+            <i>OP 分</i>
+            <b>{comp.stat?.opScore?.toFixed(2)}</b>
+          </span>
+        </div>
+      ) : null}
+
       <div className="cc-champs">{comp.coreChampions.join(' · ')}</div>
       <div className="cc-champ-icons">
         {comp.coreChampions.map((c) => (

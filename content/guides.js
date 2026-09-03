@@ -350,6 +350,7 @@ export const guides = [
               '密银黎明': 'synergy', '约德尔人和朋友纹章': 'synergy',
             },
             markCols: [2],
+            iconCols: [1, 2],
           },
           {
             type: 'callout',
@@ -380,6 +381,7 @@ export const guides = [
               '金锅锅': 'special', '各类纹章': 'special',
             },
             markCols: [0],
+            iconCols: [0],
           },
           {
             type: 'callout',
@@ -454,6 +456,7 @@ export const guides = [
               '智慧末刃': 'must', '烁刃': 'must', '绝命花妖纹章': 'must',
             },
             markCols: [0],
+            iconCols: [0],
           },
           {
             type: 'list',
@@ -485,6 +488,7 @@ export const guides = [
               '大亨之铠': 'avoid', '黑荆棘纹章': 'avoid',
             },
             markCols: [0],
+            iconCols: [0],
           },
           {
             type: 'callout',

@@ -1,5 +1,10 @@
 import { guides, getGuide } from '@/content/guides';
 import { notFound } from 'next/navigation';
+import IconImg from '@/components/IconImg';
+import { loadItemIcons } from '@/lib/loadData';
+
+// 装备官方图标（140/140 全覆盖），构建期一次性读入，不进前端包
+const ITEM_ICONS = loadItemIcons();
 
 export function generateStaticParams() {
   return guides.map((g) => ({ slug: g.slug }));
@@ -14,29 +19,47 @@ export function generateMetadata({ params }) {
   };
 }
 
-// 装备「突变」标识：按 marks[key]=类型 把命中的装备名包成徽章；markCols 限定作用列
-function markCell(text, marks, col, markCols) {
-  if (typeof text !== 'string' || !marks) return text;
-  if (markCols && !markCols.includes(col)) return text;
-  const keys = Object.keys(marks).filter((k) => text.includes(k));
-  if (!keys.length) return text;
-  keys.sort((a, b) => b.length - a.length);
-  const re = new RegExp(keys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g');
+const ICON_KEYS = Object.keys(ITEM_ICONS);
+
+// 表格单元格渲染：一次正则扫描同时处理「装备官方图标」与「突变徽章」。
+//   iconCols            —— 该列出现的装备名配上官方图标（140/140 覆盖）
+//   marks / markCols    —— 该列命中的装备名包成徽章（必抢 / 慎选 / 奇效 / 特殊）
+// 二者命中同一个词时合并渲染：[徽章标签] [图标] 装备名
+function renderCell(text, block, col) {
+  if (typeof text !== 'string') return text;
+  const useIcon = Array.isArray(block.iconCols) && block.iconCols.includes(col);
+  const useMark = Boolean(block.marks) && Array.isArray(block.markCols) && block.markCols.includes(col);
+  if (!useIcon && !useMark) return text;
+
+  // 先用 includes 做廉价过滤，再只对命中的词建正则 —— 避免每个单元格都编译 140 词的巨型正则
+  const keys = new Set();
+  if (useMark) Object.keys(block.marks).forEach((k) => text.includes(k) && keys.add(k));
+  if (useIcon) ICON_KEYS.forEach((k) => text.includes(k) && keys.add(k));
+  if (!keys.size) return text;
+
+  const all = Array.from(keys).sort((a, b) => b.length - a.length); // 长词优先，避免子串误判
+  const re = new RegExp(all.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g');
   const out = [];
   let last = 0;
-  let m;
   let i = 0;
+  let m;
   while ((m = re.exec(text)) !== null) {
     if (m.index > last) out.push(text.slice(last, m.index));
-    out.push(
-      <span key={i++} className={`item-flag flag-${marks[m[0]]}`}>
+    const icon = useIcon ? ITEM_ICONS[m[0]] : null;
+    const mark = useMark ? block.marks[m[0]] : null;
+    const body = (
+      <>
+        {icon ? <IconImg src={icon} alt={m[0]} className="cell-ic" circle={false} /> : null}
         {m[0]}
-      </span>
+      </>
     );
+    if (mark) out.push(<span key={i++} className={`item-flag flag-${mark}`}>{body}</span>);
+    else if (icon) out.push(<span key={i++} className="item-ic">{body}</span>);
+    else out.push(m[0]);
     last = m.index + m[0].length;
   }
   if (last < text.length) out.push(text.slice(last));
-  return out;
+  return out.length ? out : text;
 }
 
 // 按 block 类型渲染，保持无 Markdown 依赖
@@ -82,7 +105,7 @@ function Block({ block }) {
               {block.rows.map((row, i) => (
                 <tr key={i}>
               {row.map((cell, j) => (
-                <td key={j} style={{ textAlign: align[j] || 'left' }}>{markCell(cell, block.marks, j, block.markCols)}</td>
+                <td key={j} data-label={block.headers[j]} style={{ textAlign: align[j] || 'left' }}>{renderCell(cell, block, j)}</td>
               ))}
                 </tr>
               ))}

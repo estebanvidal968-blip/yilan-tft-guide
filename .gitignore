@@ -20,3 +20,10 @@ data/social/
 .DS_Store
 Thumbs.db
 *.log
+
+# 调试 / 验证产物（本地抓取与截图，不入库）
+__qr__/
+__screens__/
+__verify__/
+*.html
+*.xml

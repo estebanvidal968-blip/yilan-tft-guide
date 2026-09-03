@@ -1,6 +1,7 @@
 import './globals.css';
 import HexMark from '@/components/HexMark';
 import SiteNav from '@/components/SiteNav';
+import ShareFab from '@/components/ShareFab';
 
 export const metadata = {
   title: '弈览 · 金铲铲 S18 攻略',
@@ -37,11 +38,13 @@ export default function RootLayout({ children }) {
         <footer className="site-footer">
           <span>弈览 · 金铲铲 S18 自然之力攻略</span>
           <span className="footer-links">
+            <a href="/share">分享给朋友</a>
             <a href="/about">关于</a>
             <a href="/privacy">隐私政策</a>
             <span className="muted">数据来源 OP.GG + 混元生成</span>
           </span>
         </footer>
+        <ShareFab />
       </body>
     </html>
   );

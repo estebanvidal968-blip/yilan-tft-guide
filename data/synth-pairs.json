@@ -1,0 +1,353 @@
+[
+  {
+    "from": [
+      "belt",
+      "belt"
+    ],
+    "to": "狂徒铠甲",
+    "toId": "warmogsarmor",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_WarmogsArmor.png"
+  },
+  {
+    "from": [
+      "belt",
+      "bow"
+    ],
+    "to": "纳什之牙",
+    "toId": "nashorstooth",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_NashorsTooth.png"
+  },
+  {
+    "from": [
+      "belt",
+      "cloak"
+    ],
+    "to": "薄暮法袍",
+    "toId": "evenshroud",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Evenshroud.png"
+  },
+  {
+    "from": [
+      "belt",
+      "glove"
+    ],
+    "to": "强袭者的链枷",
+    "toId": "guardbreaker",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_StrikersFlail.png"
+  },
+  {
+    "from": [
+      "belt",
+      "rod"
+    ],
+    "to": "莫雷洛秘典",
+    "toId": "morellonomicon",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Morellonomicon.png"
+  },
+  {
+    "from": [
+      "belt",
+      "sword"
+    ],
+    "to": "斯特拉克的挑战护手",
+    "toId": "steraksgage",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_SteraksGage.png"
+  },
+  {
+    "from": [
+      "belt",
+      "tear"
+    ],
+    "to": "振奋盔甲",
+    "toId": "redemption",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_SpiritVisage.png"
+  },
+  {
+    "from": [
+      "belt",
+      "vest"
+    ],
+    "to": "日炎斗篷",
+    "toId": "sunfirecape",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_SunfireCape.png"
+  },
+  {
+    "from": [
+      "bow",
+      "bow"
+    ],
+    "to": "疾射火炮",
+    "toId": "rapidfirecannon",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Artifact_RapidFireCannon.png"
+  },
+  {
+    "from": [
+      "bow",
+      "cloak"
+    ],
+    "to": "海妖之怒",
+    "toId": "runaanshurricane",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_KrakensFury.png"
+  },
+  {
+    "from": [
+      "bow",
+      "glove"
+    ],
+    "to": "最后的轻语",
+    "toId": "lastwhisper",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_LastWhisper.png"
+  },
+  {
+    "from": [
+      "bow",
+      "rod"
+    ],
+    "to": "鬼索的狂暴之刃",
+    "toId": "guinsoosrageblade",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_GuinsoosRageblade.png"
+  },
+  {
+    "from": [
+      "bow",
+      "sword"
+    ],
+    "to": "巨人杀手",
+    "toId": "giantslayer",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_GiantSlayer.png"
+  },
+  {
+    "from": [
+      "bow",
+      "tear"
+    ],
+    "to": "虚空之杖",
+    "toId": "voidstaff",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_VoidStaff.png"
+  },
+  {
+    "from": [
+      "bow",
+      "vest"
+    ],
+    "to": "泰坦的坚决",
+    "toId": "titansresolve",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_TitansResolve.png"
+  },
+  {
+    "from": [
+      "cloak",
+      "cloak"
+    ],
+    "to": "巨龙之爪",
+    "toId": "dragonsclaw",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_DragonsClaw.png"
+  },
+  {
+    "from": [
+      "cloak",
+      "glove"
+    ],
+    "to": "水银",
+    "toId": "quicksilver",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Quicksilver.png"
+  },
+  {
+    "from": [
+      "cloak",
+      "rod"
+    ],
+    "to": "离子火花",
+    "toId": "ionicspark",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_IonicSpark.png"
+  },
+  {
+    "from": [
+      "cloak",
+      "sword"
+    ],
+    "to": "饮血剑",
+    "toId": "bloodthirster",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Bloodthirster.png"
+  },
+  {
+    "from": [
+      "cloak",
+      "tear"
+    ],
+    "to": "适应性头盔",
+    "toId": "adaptivehelm",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_AdaptiveHelm.png"
+  },
+  {
+    "from": [
+      "cloak",
+      "vest"
+    ],
+    "to": "石像鬼石板甲",
+    "toId": "ironwill",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_GargoyleStoneplate.png"
+  },
+  {
+    "from": [
+      "fryingpan",
+      "fryingpan"
+    ],
+    "to": "金锅锅冠冕",
+    "toId": "tacticiansshield",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_TacticiansShield.png"
+  },
+  {
+    "from": [
+      "fryingpan",
+      "spatula"
+    ],
+    "to": "金锅铲冠冕",
+    "toId": "tacticianscape",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_TacticiansCape.png"
+  },
+  {
+    "from": [
+      "glove",
+      "glove"
+    ],
+    "to": "窃贼手套",
+    "toId": "thiefsgloves",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_ThiefsGloves.png"
+  },
+  {
+    "from": [
+      "glove",
+      "rod"
+    ],
+    "to": "珠光护手",
+    "toId": "arcanegauntlet",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_JeweledGauntlet.png"
+  },
+  {
+    "from": [
+      "glove",
+      "sword"
+    ],
+    "to": "无尽之刃",
+    "toId": "infinityedge",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_InfinityEdge.png"
+  },
+  {
+    "from": [
+      "glove",
+      "tear"
+    ],
+    "to": "正义之手",
+    "toId": "handofjustice",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_HandOfJustice.png"
+  },
+  {
+    "from": [
+      "glove",
+      "vest"
+    ],
+    "to": "坚定之心",
+    "toId": "steadfastheart",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_SteadfastHeart.png"
+  },
+  {
+    "from": [
+      "rod",
+      "rod"
+    ],
+    "to": "灭世者的死亡之帽",
+    "toId": "rabadonsdeathcap",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_RabadonsDeathcap.png"
+  },
+  {
+    "from": [
+      "rod",
+      "sword"
+    ],
+    "to": "海克斯科技枪刃",
+    "toId": "hextechgunblade",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_HextechGunblade.png"
+  },
+  {
+    "from": [
+      "rod",
+      "tear"
+    ],
+    "to": "大天使之杖",
+    "toId": "ludensecho",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_ArchangelsStaff.png"
+  },
+  {
+    "from": [
+      "rod",
+      "vest"
+    ],
+    "to": "冕卫",
+    "toId": "crownguard",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Crownguard.png"
+  },
+  {
+    "from": [
+      "spatula",
+      "spatula"
+    ],
+    "to": "金铲铲冠冕",
+    "toId": "forceofnature",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_TacticiansCrown.png"
+  },
+  {
+    "from": [
+      "sword",
+      "sword"
+    ],
+    "to": "死亡之刃",
+    "toId": "lordsedge",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_Deathblade.png"
+  },
+  {
+    "from": [
+      "sword",
+      "tear"
+    ],
+    "to": "朔极之矛",
+    "toId": "spearofshojin",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_SpearOfShojin.png"
+  },
+  {
+    "from": [
+      "sword",
+      "vest"
+    ],
+    "to": "夜之锋刃",
+    "toId": "guardianangel",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_EdgeOfNight.png"
+  },
+  {
+    "from": [
+      "tear",
+      "tear"
+    ],
+    "to": "蓝霸符",
+    "toId": "bluesentinel",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_BlueBuff.png"
+  },
+  {
+    "from": [
+      "tear",
+      "vest"
+    ],
+    "to": "圣盾使的誓约",
+    "toId": "fimbulwinter",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_ProtectorsVow.png"
+  },
+  {
+    "from": [
+      "vest",
+      "vest"
+    ],
+    "to": "棘刺背心",
+    "toId": "bramblevest",
+    "toIcon": "https://c-tft-api.op.gg/img/set/18/tft-item/DA_BrambleVest.png"
+  }
+]

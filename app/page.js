@@ -1,8 +1,10 @@
 import CompCard from '@/components/CompCard';
 import HexMark from '@/components/HexMark';
-import TierTag from '@/components/TierTag';
-import AmbientField from '@/components/AmbientField';
-import { loadComps, loadVersions } from '@/lib/loadData';
+import HeroField from '@/components/HeroField';
+import VersionOnePager from '@/components/VersionOnePager';
+import { loadComps, loadVersions, loadTraits } from '@/lib/loadData';
+import itemsTft from '@/data/tft/items.json';
+import champs from '@/data/tft/champs.json';
 import { SEASON } from '@/lib/season';
 
 export default async function Home() {
@@ -10,12 +12,30 @@ export default async function Home() {
   const comps = await loadComps();
   const current = versions.find((v) => v.isCurrent) || versions[0];
   const list = comps.filter((c) => c.versionId === current.versionId);
-  const tiers = ['T0', 'T1', 'T2'];
+  // 按 OP.GG 强度分（opScore）降序排，整页一把排 + 名次
+  const ranked = [...list].sort((a, b) => (b.stat?.opScore || 0) - (a.stat?.opScore || 0));
+
+  // 热门搜索：用真实长尾问句把用户导到内页（装备问答页 / 羁绊页），做内链 + 留存。
+  // 数据驱动：取「给谁带」数据最全的成装 + 被阵容使用最多的羁绊，避免硬编码 id 出错。
+  const hotItems = (itemsTft || [])
+    .filter((i) => i.kind === '成装' && (i.best || []).length > 0)
+    .sort((a, b) => (b.best || []).length - (a.best || []).length)
+    .slice(0, 8)
+    .map((i) => ({ label: `S${SEASON.no} ${i.name} 给谁带`, href: `/item/${i.id}` }));
+  const hotTraits = (loadTraits() || [])
+    .slice(0, 6)
+    .map((t) => ({ label: `S${SEASON.no} ${t.name} 羁绊怎么玩`, href: `/trait/${encodeURIComponent(t.name)}` }));
+  const hotChamps = (champs || [])
+    .filter((c) => (c.sampleCount || 0) > 0)
+    .sort((a, b) => (b.sampleCount || 0) - (a.sampleCount || 0))
+    .slice(0, 6)
+    .map((c) => ({ label: `S${SEASON.no} ${c.name} 出什么装备`, href: `/champion/${c.id}` }));
+  const hotSearch = [...hotItems, ...hotTraits, ...hotChamps];
 
   return (
     <>
       <section className="hero">
-        <AmbientField />
+        <HeroField />
         <HexMark size={320} className="hero-hex" />
 
         <span className="season-eyebrow">
@@ -57,28 +77,28 @@ export default async function Home() {
         </span>
       </section>
 
-      <h2 className="section-title">阵容速查</h2>
-      <p className="section-sub">按强度分档，点击查看运营思路与克制关系。</p>
+      <section className="hot-search">
+        <div className="hot-search-head">
+          <span className="hot-search-title">🔥 大家都在搜</span>
+          <a className="hot-search-more" href="/trait">全部羁绊 ›</a>
+        </div>
+        <div className="hot-search-chips">
+          {hotSearch.map((h) => (
+            <a key={h.href} className="hot-chip" href={h.href}>{h.label}</a>
+          ))}
+        </div>
+      </section>
 
-      {tiers.map((t) => {
-        const group = list.filter((c) => c.tier === t);
-        if (!group.length) return null;
-        return (
-          <div key={t} style={{ marginBottom: 30 }}>
-            <div className="row" style={{ marginBottom: 12 }}>
-              <TierTag tier={t} />
-              <span className="muted" style={{ fontSize: '.85rem' }}>
-                {group.length} 套
-              </span>
-            </div>
-            <div className="comp-grid home-grid">
-              {group.map((c, i) => (
-                <CompCard key={c.compId} comp={c} index={i} />
-              ))}
-            </div>
-          </div>
-        );
-      })}
+      <h2 className="section-title">阵容强度榜</h2>
+      <p className="section-sub">按 OP.GG 强度分（opScore）从高到低排序 · 点击查看运营思路与克制关系。</p>
+
+      <div className="comp-grid home-grid">
+        {ranked.map((c, i) => (
+          <CompCard key={c.compId} comp={c} index={i} rank={i + 1} />
+        ))}
+      </div>
+
+      <VersionOnePager />
     </>
   );
 }

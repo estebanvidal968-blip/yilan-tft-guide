@@ -6,3 +6,10 @@ npm-debug.log*
 .env.local
 .env
 *.log
+
+# 调试 / 验证产物（本地抓取与截图，不进镜像）
+__qr__
+__screens__
+__verify__
+*.html
+*.xml
