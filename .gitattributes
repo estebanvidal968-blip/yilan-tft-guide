@@ -1,0 +1,4 @@
+# 强制 shell 脚本与服务器配置用 LF 换行（Linux 执行必需）
+*.sh text eol=lf
+Caddyfile text eol=lf
+*.md text eol=lf
