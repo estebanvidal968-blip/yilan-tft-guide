@@ -4,6 +4,7 @@ import StationMap from '@/components/StationMap';
 import FavoriteButton from '@/components/FavoriteButton';
 import LikeButton from '@/components/LikeButton';
 import CommentSection from '@/components/CommentSection';
+import CompGuide from '@/components/CompGuide';
 import IconImg from '@/components/IconImg';
 import icons from '@/data/icons.json';
 
@@ -106,36 +107,6 @@ export default async function CompDetail({ params }) {
           ),
         }
       : null,
-    comp.earlyGame || comp.midGame || comp.lateGame
-      ? {
-          title: '运营节奏',
-          body: (
-            <>
-              {comp.earlyGame && <p>前期：{comp.earlyGame}</p>}
-              {comp.midGame && <p>中期：{comp.midGame}</p>}
-              {comp.lateGame && <p>后期：{comp.lateGame}</p>}
-            </>
-          ),
-        }
-      : null,
-    comp.counters?.length || comp.counteredBy?.length
-      ? {
-          title: '克制关系',
-          body: (
-            <>
-              <p>克制：{comp.counters.length ? comp.counters.join('、') : '—'}</p>
-              <p>被克：{comp.counteredBy.length ? comp.counteredBy.join('、') : '—'}</p>
-            </>
-          ),
-        }
-      : null,
-    comp.selectionGuide
-      ? { title: '阵容选取 · 符文搭配', body: <p>{comp.selectionGuide}</p> }
-      : null,
-    comp.pickTips
-      ? { title: '选奕子小技巧', body: <p>{comp.pickTips}</p> }
-      : null,
-    { title: 'AI 点评', body: <p>{comp.aiComment}</p> },
     { title: '玩家评论', body: <CommentSection compId={comp.compId} /> },
   ].filter(Boolean);
 
@@ -167,6 +138,7 @@ export default async function CompDetail({ params }) {
               {p.body}
             </div>
           ))}
+          <CompGuide comp={comp} />
         </div>
       </div>
     </div>

@@ -89,6 +89,22 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* 新手/宗师双入口：把不同水平用户导向对应阅读路径，提升留存与转化 */}
+      <section className="dual-entry">
+        <a className="dual-card dual-beginner" href={`/comp/${ranked[0]?.compId || ''}`}>
+          <span className="dual-kicker">新手 · 直接抄</span>
+          <span className="dual-title">照着阵容码上分</span>
+          <span className="dual-desc">给一套当前版本最强的阵容 + 一键复制阵容码，3 步就能上手，不用懂运营。</span>
+          <span className="dual-go">看最强阵容 ›</span>
+        </a>
+        <a className="dual-card dual-master" href="/guides">
+          <span className="dual-kicker">宗师 · 看深度</span>
+          <span className="dual-title">运营思路与克制</span>
+          <span className="dual-desc">阵容选取信号、符文搭配、节奏与站位细节，把每一套玩到极致。</span>
+          <span className="dual-go">读深度攻略 ›</span>
+        </a>
+      </section>
+
       <h2 className="section-title">阵容强度榜</h2>
       <p className="section-sub">按 OP.GG 强度分（opScore）从高到低排序 · 点击查看运营思路与克制关系。</p>
 

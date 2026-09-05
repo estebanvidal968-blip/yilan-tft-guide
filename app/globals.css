@@ -1217,6 +1217,65 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
 .share-notes li{font-size:.85rem;color:var(--ink-soft);line-height:1.65;}
 .share-notes b{color:var(--ink);}
 
+/* ---------- 阵容攻略统一模板 + 新手/宗师双入口 ---------- */
+.comp-guide{margin-top:4px;}
+/* 难度切换：分段控件，金色激活态 */
+.lv-toggle{
+  display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;
+  background:var(--paper);margin-bottom:6px;
+}
+.lv-seg{
+  appearance:none;border:0;background:transparent;cursor:pointer;
+  font-family:var(--sans);font-size:.9rem;color:var(--ink-soft);
+  padding:9px 18px;transition:background var(--d-base) var(--ease),color var(--d-base) var(--ease);
+}
+.lv-seg + .lv-seg{border-left:1px solid var(--line);}
+.lv-seg.on{background:var(--gold);color:#fff;font-weight:600;}
+.lv-seg:not(.on):hover{background:var(--paper-hi);color:var(--ink);}
+
+/* 阵容码块 */
+.code-block{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:12px 14px;border:1px solid var(--line);background:var(--paper-hi);
+  border-radius:var(--radius);
+}
+.code-block code{
+  flex:1;min-width:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:.86rem;line-height:1.6;color:var(--ink);word-break:break-all;white-space:pre-wrap;
+}
+.code-block .btn{flex:none;align-self:center;}
+.code-detail{margin-top:10px;}
+.code-detail summary{cursor:pointer;font-size:.82rem;color:var(--mute);user-select:none;}
+.code-detail summary:hover{color:var(--ink);}
+.code-detail pre{
+  margin-top:8px;padding:12px 14px;border:1px dashed var(--line);border-radius:var(--radius);
+  background:var(--paper-2);font-size:.8rem;line-height:1.6;color:var(--ink-soft);white-space:pre-wrap;overflow:auto;
+}
+
+/* 首页双入口 */
+.dual-entry{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:4px 0 36px;}
+.dual-card{
+  display:flex;flex-direction:column;gap:7px;
+  padding:22px 24px;border:1px solid var(--line);border-radius:8px;
+  background:linear-gradient(180deg,var(--paper-hi),var(--paper));
+  transition:border-color var(--d-base) var(--ease),transform var(--d-slow) var(--ease-out-quint),box-shadow var(--d-base) var(--ease);
+}
+.dual-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(27,25,22,.08);}
+.dual-beginner:hover{border-color:var(--gold);}
+.dual-master:hover{border-color:var(--wild);}
+.dual-kicker{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;}
+.dual-beginner .dual-kicker{color:var(--gold);}
+.dual-master .dual-kicker{color:var(--wild);}
+.dual-title{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--ink);}
+.dual-desc{font-size:.9rem;line-height:1.65;color:var(--ink-soft);}
+.dual-go{margin-top:4px;font-size:.9rem;font-weight:600;}
+.dual-beginner .dual-go{color:var(--gold);}
+.dual-master .dual-go{color:var(--wild);}
+
+@media (max-width: 640px){
+  .dual-entry{grid-template-columns:1fr;}
+}
+
 @media(max-width:520px){
   .share-qr canvas{width:150px;height:150px;}
   .share-fab{right:12px;bottom:12px;padding:8px 12px;font-size:.8rem;}

@@ -5,8 +5,10 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 # 依赖先行，利用镜像层缓存
+# npm 源走国内镜像（大陆服务器直连 registry.npmjs.org 会超时）
 COPY package.json package-lock.json* ./
-RUN npm install
+RUN npm config set registry https://registry.npmmirror.com \
+  && npm install --ignore-scripts
 
 # 拷贝源码并生产构建（data/*.opgg.json 已随仓库，无需联网）
 COPY . .
