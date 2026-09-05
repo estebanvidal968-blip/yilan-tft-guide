@@ -1276,6 +1276,24 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
   .dual-entry{grid-template-columns:1fr;}
 }
 
+/* ---------- 信息差长尾专栏 ---------- */
+.info-gap{margin:0 0 40px;padding-top:6px;}
+.info-gap-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px;}
+.info-gap-title{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--ink);}
+.info-gap-more{font-size:.85rem;color:var(--mute);}
+.info-gap-more:hover{color:var(--ink);}
+.info-gap-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.info-gap-card{
+  display:flex;flex-direction:column;gap:8px;padding:18px 20px;
+  border:1px solid var(--line);border-radius:8px;background:var(--paper-hi);
+  transition:border-color var(--d-base) var(--ease),transform var(--d-slow) var(--ease-out-quint),box-shadow var(--d-base) var(--ease);
+}
+.info-gap-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(27,25,22,.08);border-color:var(--wild);}
+.info-gap-season{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--wild);font-weight:600;}
+.info-gap-card h3{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--ink);line-height:1.4;}
+.info-gap-card p{font-size:.85rem;line-height:1.6;color:var(--ink-soft);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.info-gap-go{margin-top:auto;font-size:.85rem;font-weight:600;color:var(--wild);}
+
 @media(max-width:520px){
   .share-qr canvas{width:150px;height:150px;}
   .share-fab{right:12px;bottom:12px;padding:8px 12px;font-size:.8rem;}

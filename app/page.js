@@ -3,6 +3,7 @@ import HexMark from '@/components/HexMark';
 import HeroField from '@/components/HeroField';
 import VersionOnePager from '@/components/VersionOnePager';
 import { loadComps, loadVersions, loadTraits } from '@/lib/loadData';
+import { guides } from '@/content/guides';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import { SEASON } from '@/lib/season';
@@ -31,6 +32,12 @@ export default async function Home() {
     .slice(0, 6)
     .map((c) => ({ label: `S${SEASON.no} ${c.name} 出什么装备`, href: `/champion/${c.id}` }));
   const hotSearch = [...hotItems, ...hotTraits, ...hotChamps];
+
+  // 信息差长尾专栏：官方不写、OP.GG 不显示、老玩家口口相传的实操知识。
+  // 优先展示新增的 S18 信息差文，兼收高价值进阶攻略，吃长尾搜索流量并反哺主站。
+  const infoGap = guides
+    .filter((g) => g.tags.includes('信息差'))
+    .slice(0, 4);
 
   return (
     <>
@@ -104,6 +111,26 @@ export default async function Home() {
           <span className="dual-go">读深度攻略 ›</span>
         </a>
       </section>
+
+      {/* 信息差长尾专栏：老玩家才知道的实操知识，吃长尾搜索流量 */}
+      {infoGap.length > 0 && (
+        <section className="info-gap">
+          <div className="info-gap-head">
+            <span className="info-gap-title">老玩家才知道</span>
+            <a className="info-gap-more" href="/guides">全部攻略 ›</a>
+          </div>
+          <div className="info-gap-list">
+            {infoGap.map((g) => (
+              <a key={g.slug} className="info-gap-card" href={`/guides/${g.slug}`}>
+                <span className="info-gap-season">{g.season}</span>
+                <h3>{g.title}</h3>
+                <p>{g.summary}</p>
+                <span className="info-gap-go">读这篇 ›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       <h2 className="section-title">阵容强度榜</h2>
       <p className="section-sub">按 OP.GG 强度分（opScore）从高到低排序 · 点击查看运营思路与克制关系。</p>
