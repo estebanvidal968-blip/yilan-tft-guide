@@ -9,7 +9,6 @@ const nav = [
   { href: '/champions', label: '弈子', match: (p) => p.startsWith('/champion') },
   { href: '/play', label: '玩什么', match: (p) => p.startsWith('/play') },
   { href: '/tools', label: '工具', match: (p) => p.startsWith('/tools') },
-  { href: '/versions', label: '版本', match: (p) => p.startsWith('/version') || p.startsWith('/changelog') },
   { href: '/guides', label: '攻略', match: (p) => p.startsWith('/guides') },
   { href: '/mine', label: '我的', match: (p) => p.startsWith('/mine') },
 ];

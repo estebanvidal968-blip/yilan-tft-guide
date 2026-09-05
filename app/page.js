@@ -1,7 +1,6 @@
 import CompCard from '@/components/CompCard';
 import HexMark from '@/components/HexMark';
 import HeroField from '@/components/HeroField';
-import VersionOnePager from '@/components/VersionOnePager';
 import { loadComps, loadVersions, loadTraits } from '@/lib/loadData';
 import { guides } from '@/content/guides';
 import itemsTft from '@/data/tft/items.json';
@@ -140,8 +139,6 @@ export default async function Home() {
           <CompCard key={c.compId} comp={c} index={i} rank={i + 1} />
         ))}
       </div>
-
-      <VersionOnePager />
     </>
   );
 }

@@ -91,10 +91,6 @@ export default function ItemsPage() {
           <strong>🗳️ 本周最爱投票</strong>
           <span className="muted">S18 10 套 T0 · 一周一投</span>
         </a>
-        <a href="/changelog" className="items-tool">
-          <strong>📜 版本归档</strong>
-          <span className="muted">每周一图速报</span>
-        </a>
       </div>
     </div>
   );

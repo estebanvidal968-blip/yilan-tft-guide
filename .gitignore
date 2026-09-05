@@ -20,6 +20,16 @@ data/social/
 .DS_Store
 Thumbs.db
 *.log
+*.log.err
+
+# 本地起服脚本 / 临时探针（不入库）
+preview-local.bat
+start-3400.cmd
+server-3400.*
+repo.json
+自动开浏览器
+__probe.json
+__probe__.*
 
 # 调试 / 验证产物（本地抓取与截图，不入库）
 __qr__/
