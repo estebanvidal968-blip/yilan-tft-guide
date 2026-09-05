@@ -124,9 +124,17 @@ export default async function CompDetail({ params }) {
         </span>
         <LikeButton compId={comp.compId} />
         <FavoriteButton type="comp" id={comp.compId} />
+        <a
+          className="detail-feedback"
+          href={`/feedback?comp=${encodeURIComponent(comp.compId)}&name=${encodeURIComponent(comp.name)}`}
+        >
+          纠错 / 反馈
+        </a>
       </div>
       <div className="detail-meta">
-        {ver?.name} · {ver?.patchNo} · 来源 {comp.source}
+        {ver?.name} · {ver?.patchNo} · 来源 {comp.source || '国服实测'}
+        {comp.updatedAt ? <span className="dm-updated"> · 最后更新 {comp.updatedAt}</span> : null}
+        {comp.sourceNote ? <span className="dm-note">（{comp.sourceNote}）</span> : null}
       </div>
 
       <div className="detail-grid">

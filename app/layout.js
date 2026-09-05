@@ -39,9 +39,10 @@ export default function RootLayout({ children }) {
           <span>弈览 · 金铲铲 S18 自然之力攻略</span>
           <span className="footer-links">
             <a href="/share">分享给朋友</a>
+            <a href="/feedback">纠错 / 反馈</a>
             <a href="/about">关于</a>
             <a href="/privacy">隐私政策</a>
-            <span className="muted">数据来源 OP.GG + 混元生成</span>
+            <span className="muted">数据源：金铲铲国服 S18 实测（非全球服 OP.GG）</span>
           </span>
         </footer>
         <ShareFab />

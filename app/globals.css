@@ -1299,3 +1299,67 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
   .share-fab{right:12px;bottom:12px;padding:8px 12px;font-size:.8rem;}
   .share-actions .btn{flex:1 1 auto;}
 }
+
+/* ---------- 数据口径横幅（首页 / 国服实测标注） ---------- */
+.data-banner{
+  display:flex;align-items:center;gap:10px;
+  margin:18px 0 8px;padding:10px 16px;
+  border:1px solid var(--line);border-left:3px solid var(--wild);
+  border-radius:var(--radius);background:var(--wild-wash);
+  font-size:.85rem;color:var(--ink-soft);line-height:1.5;
+}
+.data-banner b{color:var(--wild);font-weight:700;}
+.db-dot{width:8px;height:8px;border-radius:50%;background:var(--wild);flex:none;}
+
+.info-gap-top{margin:14px 0 36px;}
+
+/* CompCard 底部数据口径行 */
+.cc-meta{display:flex;align-items:center;gap:8px;margin-top:6px;font-size:.74rem;color:var(--mute);}
+.cc-source{
+  display:inline-block;padding:1px 7px;border-radius:10px;
+  background:var(--wild-wash);color:var(--wild);font-weight:600;border:1px solid var(--wild-soft);
+}
+.cc-updated{color:var(--mute);}
+
+/* CompDetail 数据口径 */
+.dm-updated{color:var(--mute);}
+.dm-note{color:var(--wild);}
+.detail-feedback{
+  margin-left:auto;align-self:center;font-size:.82rem;font-weight:600;color:var(--wild);
+  border:1px solid var(--wild-soft);border-radius:var(--radius);padding:5px 12px;
+  text-decoration:none;white-space:nowrap;
+}
+.detail-feedback:hover{background:var(--wild-wash);}
+
+/* ---------- 纠错 / 反馈 ---------- */
+.feedback-page{max-width:680px;}
+.feedback-head{margin-bottom:18px;}
+.feedback-form{
+  display:flex;flex-direction:column;gap:16px;background:var(--paper-hi);
+  border:1px solid var(--line);border-radius:8px;padding:22px 24px;
+}
+.ff-related{font-size:.88rem;color:var(--ink-soft);background:var(--wild-wash);border-radius:var(--radius);padding:8px 12px;}
+.ff-related b{color:var(--wild);}
+.ff-field{display:flex;flex-direction:column;gap:8px;}
+.ff-label{font-size:.85rem;font-weight:600;color:var(--ink-soft);}
+.ff-label .req{color:var(--t0);font-style:normal;}
+.ff-types{display:flex;flex-wrap:wrap;gap:8px;}
+.ff-type{
+  font-size:.85rem;padding:8px 14px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--paper);color:var(--ink-soft);cursor:pointer;transition:all var(--d-base) var(--ease);
+}
+.ff-type:hover{border-color:var(--wild-soft);}
+.ff-type.on{background:var(--wild);border-color:var(--wild);color:#fff;font-weight:600;}
+.ff-text,.ff-input{
+  font:inherit;font-size:.92rem;color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:var(--radius);padding:10px 12px;resize:vertical;
+}
+.ff-text:focus,.ff-input:focus{outline:none;border-color:var(--wild);box-shadow:0 0 0 2px var(--wild-wash);}
+.ff-actions{display:flex;align-items:center;gap:14px;}
+.ff-ok{color:var(--wild);font-weight:600;font-size:.9rem;}
+.ff-err{color:var(--t0);font-weight:600;font-size:.9rem;}
+.ff-note{font-size:.78rem;color:var(--mute);margin:0;}
+
+@media(max-width:520px){
+  .detail-feedback{margin-left:0;align-self:flex-start;}
+}

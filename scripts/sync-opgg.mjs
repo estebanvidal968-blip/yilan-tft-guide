@@ -13,6 +13,7 @@ import { dirname, resolve } from 'node:path';
 import { fetchMetaDecks } from '../lib/opgg.js';
 import { generateComment } from '../lib/hunyuan.js';
 import { applyManualCopy, loadCopyLibrary } from '../lib/compCopy.js';
+import { applyCnMeta } from '../lib/cnMeta.js';
 import { seasonLabel } from '../lib/season.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -43,6 +44,13 @@ console.log(`  文案库命中 ${fromLib} 套（零调用），LLM/模板生成 
 // 统一从文案库回填，避免每次同步后丢失。
 const { applied } = applyManualCopy(comps);
 console.log(`  文案库回填选取思路/选子技巧：${applied} 套`);
+
+// OP.GG 是全球服数据，与金铲铲国服平衡不一致（T0 梯队不同、机制有差异）。
+// 统一从国服校准库回填 tier / 去重 / 补国服独有阵容 / 标注口径。
+const cnMeta = applyCnMeta(comps);
+console.log(
+  `  国服校准：tier 重排 ${cnMeta.tierApplied} 套 / 去重 ${cnMeta.deduped} 条 / 补国服阵容 ${cnMeta.added} 套 → 共 ${cnMeta.total} 套`
+);
 
 const today = new Date().toISOString().slice(0, 10);
 // 赛季名统一取自 lib/season.js，换赛季只改那一处

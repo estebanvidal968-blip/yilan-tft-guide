@@ -15,6 +15,7 @@ import { dirname, resolve } from 'node:path';
 import { fetchMetaDecks } from '../lib/opgg.js';
 import { generateComment, generateRuneGuide, generatePickTips } from '../lib/hunyuan.js';
 import { loadCopyLibrary, applyManualCopy } from '../lib/compCopy.js';
+import { applyCnMeta } from '../lib/cnMeta.js';
 import { seasonLabel, SEASON } from '../lib/season.js';
 import { buildCompCode, buildCompCodeCompact } from '../lib/compcode.js';
 
@@ -86,6 +87,12 @@ for (const c of comps) {
 const { applied } = applyManualCopy(comps); // 文案库回填 selectionGuide/pickTips（人工优先）
 console.log(`  AI 文案：文案库命中 ${fromLib} / LLM 生成 ${fromLLM}`);
 console.log(`  文案库回填 selectionGuide·pickTips：${applied} 套`);
+
+// OP.GG 是全球服数据，与金铲铲国服平衡不一致，统一用国服校准库覆盖 tier / 去重 / 补国服阵容
+const cnMeta = applyCnMeta(comps);
+console.log(
+  `  国服校准：tier 重排 ${cnMeta.tierApplied} 套 / 去重 ${cnMeta.deduped} 条 / 补国服阵容 ${cnMeta.added} 套 → 共 ${cnMeta.total} 套`
+);
 
 // ④ 写回 data
 const tierCount = { T0: 0, T1: 0, T2: 0 };

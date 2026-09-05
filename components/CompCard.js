@@ -63,6 +63,10 @@ export default function CompCard({ comp, index = 0, rank }) {
         ))}
       </div>
       <p className="cc-comment">{comp.aiComment}</p>
+      <div className="cc-meta">
+        <span className="cc-source">{comp.source || '国服实测'}</span>
+        {comp.updatedAt ? <span className="cc-updated">最后更新 {comp.updatedAt}</span> : null}
+      </div>
       {carry && (
         <div className="cc-carry">
           <span className="cc-carry-lead">

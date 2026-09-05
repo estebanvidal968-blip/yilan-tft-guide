@@ -1,7 +1,7 @@
 import CompCard from '@/components/CompCard';
 import HexMark from '@/components/HexMark';
 import HeroField from '@/components/HeroField';
-import { loadComps, loadVersions, loadTraits } from '@/lib/loadData';
+import { loadComps, loadVersions, loadTraits, loadCnMeta } from '@/lib/loadData';
 import { guides } from '@/content/guides';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
@@ -14,6 +14,10 @@ export default async function Home() {
   const list = comps.filter((c) => c.versionId === current.versionId);
   // 按 OP.GG 强度分（opScore）降序排，整页一把排 + 名次
   const ranked = [...list].sort((a, b) => (b.stat?.opScore || 0) - (a.stat?.opScore || 0));
+
+  // 国服 meta 校准库：用于首页「数据口径」与「最后更新」标注
+  const meta = loadCnMeta() || {};
+  const metaUpdatedAt = meta.updatedAt || '';
 
   // 热门搜索：用真实长尾问句把用户导到内页（装备问答页 / 羁绊页），做内链 + 留存。
   // 数据驱动：取「给谁带」数据最全的成装 + 被阵容使用最多的羁绊，避免硬编码 id 出错。
@@ -79,7 +83,7 @@ export default async function Home() {
 
         <span className="version-pill">
           <span className="dot" />
-          OP.GG 实时同步 · {current.releaseDate}
+          国服 S18 实测 · 最后更新 {metaUpdatedAt || current.releaseDate}
         </span>
       </section>
 
@@ -94,6 +98,34 @@ export default async function Home() {
           ))}
         </div>
       </section>
+
+      {/* 数据口径说明：明确国服实测、非全球服 OP.GG，并展示最后更新日期 */}
+      <div className="data-banner">
+        <span className="db-dot" />
+        <span>
+          数据口径：金铲铲国服 S18 实测 meta（非全球服 OP.GG）· 最后更新 <b>{metaUpdatedAt}</b>
+        </span>
+      </div>
+
+      {/* 信息差长尾专栏：老玩家才知道的实操知识，吃长尾搜索流量 —— 上移提升曝光 */}
+      {infoGap.length > 0 && (
+        <section className="info-gap info-gap-top">
+          <div className="info-gap-head">
+            <span className="info-gap-title">老玩家才知道 · 信息差</span>
+            <a className="info-gap-more" href="/guides">全部攻略 ›</a>
+          </div>
+          <div className="info-gap-list">
+            {infoGap.map((g) => (
+              <a key={g.slug} className="info-gap-card" href={`/guides/${g.slug}`}>
+                <span className="info-gap-season">{g.season}</span>
+                <h3>{g.title}</h3>
+                <p>{g.summary}</p>
+                <span className="info-gap-go">读这篇 ›</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 新手/宗师双入口：把不同水平用户导向对应阅读路径，提升留存与转化 */}
       <section className="dual-entry">
@@ -111,28 +143,8 @@ export default async function Home() {
         </a>
       </section>
 
-      {/* 信息差长尾专栏：老玩家才知道的实操知识，吃长尾搜索流量 */}
-      {infoGap.length > 0 && (
-        <section className="info-gap">
-          <div className="info-gap-head">
-            <span className="info-gap-title">老玩家才知道</span>
-            <a className="info-gap-more" href="/guides">全部攻略 ›</a>
-          </div>
-          <div className="info-gap-list">
-            {infoGap.map((g) => (
-              <a key={g.slug} className="info-gap-card" href={`/guides/${g.slug}`}>
-                <span className="info-gap-season">{g.season}</span>
-                <h3>{g.title}</h3>
-                <p>{g.summary}</p>
-                <span className="info-gap-go">读这篇 ›</span>
-              </a>
-            ))}
-          </div>
-        </section>
-      )}
-
       <h2 className="section-title">阵容强度榜</h2>
-      <p className="section-sub">按 OP.GG 强度分（opScore）从高到低排序 · 点击查看运营思路与克制关系。</p>
+      <p className="section-sub">按金铲铲国服 S18 实测 tier 从高到低排序 · 点击查看运营思路与克制关系。</p>
 
       <div className="comp-grid home-grid">
         {ranked.map((c, i) => (
