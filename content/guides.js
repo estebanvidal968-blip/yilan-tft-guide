@@ -12,6 +12,7 @@
 export const guides = [
   {
     slug: 'high-transmute',
+    cover: { kind: '机制', stat: { v: '0', k: '费点化' }, hook: '三星 4 费直点三星 5 费' },
     title: '高阶变形术：三星五费完成攻略',
     subtitle: '0 费仙灵把三星 4 费直接点化成三星 5 费 · S18 自然之力',
     summary:
@@ -193,6 +194,7 @@ export const guides = [
   },
   {
     slug: 'rune-comp-matrix',
+    cover: { kind: '机制', stat: { v: '283', k: '枚符文' }, icons: [{ t: 'aug', n: '珍藏财宝 III' }, { t: 'aug', n: '大百宝袋' }], hook: '哪个符文配哪套阵容' },
     title: 'S18 自然之力 · 阵容×海克斯配对表',
     subtitle: '选对强化符文胜率翻倍 · 10 套 OP.GG T0 阵容的必拿符文',
     summary:
@@ -301,6 +303,7 @@ export const guides = [
   },
   {
     slug: 'item-synergy',
+    cover: { kind: '装备', stat: { v: '3', k: '组黄金搭配' }, icons: [{ t: 'item', n: '鬼索的狂暴之刃' }, { t: 'item', n: '死亡之刃' }, { t: 'item', n: '最后的轻语' }], hook: '单件平庸，凑对才起飞' },
     title: 'S18 奇效出装：别照推荐装，这几个弈子换件装备直接封神',
     subtitle: '基于 OP.GG 十套 T0 阵容核心装的反直觉替换',
     summary:
@@ -406,6 +409,7 @@ export const guides = [
   },
   {
     slug: 'item-tierlist',
+    cover: { kind: '装备', stat: { v: '140', k: '件全评' }, icons: [{ t: 'item', n: '死亡之刃' }, { t: 'item', n: '蓝霸符' }, { t: 'item', n: '石像鬼石板甲' }], hook: '闭眼拿的还是陷阱装' },
     title: 'S18 装备红黑榜：哪些必抢、哪些被高估',
     subtitle: '基于 OP.GG 1946 万场出装统计 · 名次越低越强',
     summary:
@@ -521,6 +525,7 @@ export const guides = [
   },
   {
     slug: 's18-fairy-refresh',
+    cover: { kind: '机制', stat: { v: 'S18', k: '仙灵刷新' }, hook: '自然仙灵怎么刷、何时刷' },
     title: 'S18 自然仙灵：商店刷新规律与高胜率卡法',
     subtitle: '每 2 次刷新出现一次 · 0 费仙灵的「卡金币法」能大幅提高命中率 · S18 自然之力',
     summary:
@@ -622,6 +627,7 @@ export const guides = [
   },
   {
     slug: 's18-econ-timing',
+    cover: { kind: '经济', stat: { v: '10', k: '金利息线' }, icons: [{ t: 'aug', n: '高级贷款' }, { t: 'aug', n: '大百宝袋' }], hook: '什么时候花钱，什么时候憋' },
     title: 'S18 前期经济与升级节奏：3-2 / 4-2 损益表',
     subtitle: '什么时候该上 7、8 人口 · 卡利息的得失一眼算清 · S18 自然之力',
     summary:
@@ -721,6 +727,7 @@ export const guides = [
   },
   {
     slug: 'crash-comp-transform',
+    cover: { kind: '运营', stat: { v: '<30', k: '血止损' }, hook: '开局崩了怎么救，别硬追原阵容' },
     title: '天崩局怎么转型：血量崩了别硬扛，三条生路照着选',
     subtitle: '血量跌破 50 怎么办 · 硬转 / 苟分 / 卖血赌命的决策树 · S18 自然之力',
     summary:
@@ -822,6 +829,7 @@ export const guides = [
   },
   {
     slug: 'level8-vs-9',
+    cover: { kind: '经济', stat: { v: '8', k: '还是 9' }, icons: [{ t: 'aug', n: '高级贷款+' }], hook: '多上人口 vs 多 D 一轮' },
     title: '8 人口还是上 9：一张决策表告诉你什么时候该冲',
     subtitle: '上 9 的代价与收益 · 按阵容类型分的冲分纪律 · S18 自然之力',
     summary:
@@ -901,6 +909,7 @@ export const guides = [
   },
   {
     slug: 'when-to-reroll',
+    cover: { kind: '运营', stat: { v: '4-2', k: '分水岭' }, hook: '卡利息慢 D 还是血量告急速 D' },
     title: '什么时候 D 牌：时机判断比手速重要',
     subtitle: '速 D vs 卡利息 D · 阶段 × 经济 × 血量的时机表 · S18 自然之力',
     summary:
@@ -987,6 +996,7 @@ export const guides = [
   },
 {
   "slug": "item-component-priority",
+  cover: { kind: '装备', stat: { v: '4', k: '类关键散件' }, icons: [{ t: 'item', n: '反曲之弓' }, { t: 'item', n: '锁子甲' }, { t: 'item', n: '巨人腰带' }], hook: '散件是期权，别急着行权' },
   "title": "散件优先级陷阱：别无脑合大件，留对散件更赚",
   "subtitle": "先合大件还是留关键散件 · 90% 的人合早了 · S18 自然之力",
   "summary": "很多人一拿到两个散件就立刻合成大件，但版本里几件关键散件（反曲之弓、锁子甲、巨人腰带）同时是多个核心装的构件，早合等于锁死后续选择。先想清楚这局走哪套装备路线，再决定留什么。",
@@ -1077,6 +1087,7 @@ export const guides = [
 },
 {
   "slug": "eco-augment-value",
+  cover: { kind: '经济', stat: { v: '8', k: '枚经济符文' }, icons: [{ t: 'aug', n: '珍藏财宝 III' }, { t: 'aug', n: '高级贷款' }, { t: 'aug', n: '大百宝袋' }], hook: '实际收益远高于你的直觉' },
   "title": "经济类海克斯被低估的真实收益",
   "subtitle": "珍藏财宝 III / 高级贷款 / 大百宝袋 到底值不值 · S18 自然之力",
   "summary": "战力类海克斯看着爽，但经济类海克斯（珍藏财宝 III、高级贷款、大百宝袋、生日礼物）提供的金币折算成战力，往往比一个 +战力 符文更高。很多玩家无脑拿战力，反而亏了经济节奏。",
@@ -1138,6 +1149,7 @@ export const guides = [
 },
 {
   "slug": "lose-streak-econ",
+  cover: { kind: '经济', stat: { v: '5', k: '连败阈值' }, icons: [{ t: 'aug', n: '高级贷款' }, { t: 'aug', n: '生日礼物' }], hook: '什么时候该主动卖血' },
   "title": "连败经济学：故意连败往往比硬保连胜更赚",
   "subtitle": "收菜窗口与利息机制 · 为什么强手也常走连败 · S18 自然之力",
   "summary": "很多休闲玩家一输就慌，拼命保连胜。但版本里连败有连败利息、有更高概率拿装备的选秀位，强手经常主动走连败攒经济，再在 4 阶段一次性收菜成型。",
@@ -1227,6 +1239,7 @@ export const guides = [
 },
 {
   "slug": "carousel-priority",
+  cover: { kind: '运营', stat: { v: '3', k: '档拿取顺序' }, icons: [{ t: 'item', n: '反曲之弓' }, { t: 'item', n: '巨人腰带' }], hook: '散件、金币、棋子先拿哪个' },
   "title": "选秀（carousel）版本优先级：什么时候拿装备、什么时候拿棋子",
   "subtitle": "选秀拿错东西=白给一轮 · 按阶段定优先级 · S18 自然之力",
   "summary": "选秀（每轮野怪后的抢装备环节）很多人无脑拿装备，但前期拿关键一费棋、后期拿高费主 C，价值经常高于一件散件。拿什么取决于你这局的缺口。",
@@ -1308,6 +1321,7 @@ export const guides = [
 },
 {
   "slug": "global-vs-cn-traps",
+  cover: { kind: '机制', stat: { v: '国服', k: '口径为准' }, hook: '照搬全球服攻略会踩的坑' },
   "title": "版本陷阱：OP.GG 全球服高胜率但国服水土不服的阵容",
   "subtitle": "为什么照搬全球服 T0 在国服会掉分 · 数据差异怎么看 · S18 自然之力",
   "summary": "站点阵容口径以国服 S18 实测 meta 为准，不是全球服 OP.GG。全球服某些高胜率阵容在国服因为棋子数值、环境对手不同，表现会打折。照搬容易踩坑。",
@@ -1368,6 +1382,7 @@ export const guides = [
 },
 {
   "slug": "item-crit-system",
+  cover: { kind: '装备', stat: { v: '3', k: '件套质变' }, icons: [{ t: 'item', n: '死亡之刃' }, { t: 'item', n: '最后的轻语' }, { t: 'item', n: '巨人杀手' }], hook: '物理主 C 三件核心装怎么选' },
   "title": "暴击体系深度：死亡之刃 / 最后的轻语 / 巨人杀手 的适用边界",
   "subtitle": "物理主 C 三件核心装怎么选 · 不是无脑都出 · S18 自然之力",
   "summary": "物理主 C 的装备常围绕暴击与破甲展开，但死亡之刃（叠攻击）、最后的轻语（破甲）、巨人杀手（打肉）适用场景完全不同。搞清楚谁是你的对手，再决定出哪件。",
@@ -1449,6 +1464,7 @@ export const guides = [
 },
 {
   "slug": "item-ap-system",
+  cover: { kind: '装备', stat: { v: '3', k: '件成型' }, icons: [{ t: 'item', n: '灭世者的死亡之帽' }, { t: 'item', n: '蓝霸符' }, { t: 'item', n: '莫雷洛秘典' }], hook: '法强、回蓝、重伤缺一不可' },
   "title": "法强体系深度：灭世者的死亡之帽 / 大天使之杖 / 莫雷洛秘典 的 carry 选择",
   "subtitle": "法师/法术主 C 三件套怎么搭 · 续航与重伤怎么补 · S18 自然之力",
   "summary": "法术主 C（如维迦、阿狸、黛安娜）的核心是法强与回蓝。灭世帽拉高法强上限，大天使之杖靠蓝量转法强，莫雷洛秘典补重伤。三件定位不同，混搭要看主 C 机制。",
@@ -1530,6 +1546,7 @@ export const guides = [
 },
 {
   "slug": "item-tank-system",
+  cover: { kind: '装备', stat: { v: '3', k: '件撑住' }, icons: [{ t: 'item', n: '石像鬼石板甲' }, { t: 'item', n: '狂徒铠甲' }, { t: 'item', n: '棘刺背心' }], hook: '护甲、魔抗、血量按对手选' },
   "title": "前排肉装深度：石像鬼石板甲 / 巨龙之爪 / 狂徒铠甲 / 振奋盔甲 取舍",
   "subtitle": "前排该堆抗还是堆血 · 魔抗 vs 护甲怎么分 · S18 自然之力",
   "summary": "前排（蕾欧娜、瑟庄妮、墨菲特）的装备决定你能不能拖到主 C 输出。石像鬼石板甲（双抗随敌数）、巨龙之爪（魔抗）、狂徒铠甲（血量）、振奋盔甲（魔抗+回血）定位不同，按对手伤害类型选。",
@@ -1616,6 +1633,7 @@ export const guides = [
 },
 {
   "slug": "item-mana-system",
+  cover: { kind: '装备', stat: { v: '2', k: '回合内开大' }, icons: [{ t: 'item', n: '蓝霸符' }, { t: 'item', n: '朔极之矛' }, { t: 'item', n: '大天使之杖' }], hook: '技能开不出来的主 C 都是废的' },
   "title": "启动装深度：蓝霸符 / 朔极之矛 / 离子火花 的回蓝逻辑",
   "subtitle": "主 C 放不出技能=空有装备 · 回蓝装怎么选 · S18 自然之力",
   "summary": "很多主 C 没回蓝装就放不出技能，再高的攻击/法强也空转。蓝霸符（开局满蓝）、朔极之矛（普攻回蓝）、离子火花（减敌魔抗+法强）是三种不同回蓝/启动思路。",
@@ -1697,6 +1715,7 @@ export const guides = [
 },
 {
   "slug": "item-artifacts",
+  cover: { kind: '装备', stat: { v: '顶配', k: '不可强求' }, hook: '神器很强，但别当规划根基' },
   "title": "特殊装备（神器）深度：窃贼手套 / 冕卫 / 正义之手 哪些版本答案",
   "subtitle": "神器不是随便给的 · 适配谁才强 · S18 自然之力",
   "summary": "特殊装备（神器）没有合成路径，靠野怪/符文掉，数值往往超模但带副作用。窃贼手套（随机装）、冕卫（护盾）、正义之手（随机增益）用对了是版本答案，用错了浪费。",
@@ -1778,6 +1797,7 @@ export const guides = [
 },
 {
   "slug": "champ-carry-item",
+  cover: { kind: '弈子', stat: { v: '2', k: '件算及格' }, icons: [{ t: 'champ', n: '德莱文' }, { t: 'champ', n: '厄斐琉斯' }, { t: 'champ', n: '阿狸' }], hook: '三大主 C 的装备及格线' },
   "title": "主C装备阈值：几件神装算成型",
   "subtitle": "德莱文 / 厄斐琉斯 / 阿狸 的装备及格线 · S18 自然之力",
   "summary": "主 C 不是有装备就行，要有「成型线」：通常两件套算能打，三件套算质变。不同主 C 及格线不同，本文以德莱文（物理）、厄斐琉斯（物理多形态）、阿狸（法术）为例讲阈值。",
@@ -1859,6 +1879,7 @@ export const guides = [
 },
 {
   "slug": "champ-frontline",
+  cover: { kind: '弈子', stat: { v: '3', k: '条站位原则' }, icons: [{ t: 'champ', n: '蕾欧娜' }, { t: 'champ', n: '墨菲特' }, { t: 'champ', n: '瑟庄妮' }], hook: '谁站第一排，谁缩后面' },
   "title": "前排棋子的装备与站位：蕾欧娜 / 瑟庄妮 / 墨菲特 的坦度分配",
   "subtitle": "前排站得住主 C 才输出 · 谁吃肉装谁站前 · S18 自然之力",
   "summary": "前排决定主 C 能活多久。蕾欧娜、瑟庄妮、墨菲特这类坦克棋子要吃肉装、站最前排扛伤害。本文讲前排的装备分配与站位逻辑。",
@@ -1940,6 +1961,7 @@ export const guides = [
 },
 {
   "slug": "item-counter",
+  cover: { kind: '装备', stat: { v: '3', k: '类反制装' }, icons: [{ t: 'item', n: '最后的轻语' }, { t: 'item', n: '莫雷洛秘典' }, { t: 'item', n: '棘刺背心' }], hook: '对手出什么，你就该出什么' },
   "title": "装备反制：对面出什么，我该出什么克制装",
   "subtitle": "巨龙之爪 vs 法、轻语 vs 坦 · 见招拆招 · S18 自然之力",
   "summary": "装备不是闷头出自己的，要看对手。对面法 C 多就堆魔抗，对面大肉就破甲，对面回血就重伤。本文给一张「对手→克制装」速查表。",
@@ -2031,6 +2053,7 @@ export const guides = [
 },
 {
   "slug": "trait-item-synergy",
+  cover: { kind: '机制', stat: { v: '羁绊', k: '决定装备' }, icons: [{ t: 'item', n: '法师纹章' }, { t: 'item', n: '神谕纹章' }, { t: 'item', n: '绝命花妖纹章' }], hook: '同羁绊，装备优先级完全不同' },
   "title": "羁绊×装备联动：特定羁绊的装备偏好",
   "subtitle": "法师纹章+法强、神谕+回蓝 · 羁绊决定装备路线 · S18 自然之力",
   "summary": "羁绊不只加属性，还决定你的装备该往哪走。法师/神谕类羁绊吃回蓝和法强，战神/决斗类吃攻速和攻击。理解联动，装备才不浪费。",
@@ -2112,6 +2135,7 @@ export const guides = [
 },
 {
   "slug": "item-recipe-gamble",
+  cover: { kind: '装备', stat: { v: '稳', k: '字当头' }, icons: [{ t: 'item', n: '窃贼手套' }, { t: 'item', n: '锁子甲' }, { t: 'item', n: '反曲之弓' }], hook: '赌纹章/神器是增益不是根基' },
   "title": "装备合成博弈：小件分配与抢装备心理",
   "subtitle": "抢散件、留余地、赌纹章 · 装备层的心理战 · S18 自然之力",
   "summary": "装备不只是「合出来」，更是和对手抢散件、在野怪/选秀里博弈。谁先抢到关键散件、谁留了变阵余地，往往决定后期上限。本文讲装备层的博弈。",

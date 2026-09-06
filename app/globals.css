@@ -737,12 +737,13 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
 /* ---------- 攻略板块（/guides） ---------- */
 .guide-list{display:flex;flex-direction:column;gap:14px;}
 .guide-card{
-  display:block;padding:20px 22px;
+  display:flex;gap:16px;align-items:flex-start;padding:20px 22px;
   background:var(--paper-hi);
   border:1px solid var(--line);
   border-radius:var(--radius);
   transition:border-color var(--d-base) var(--ease),transform var(--d-base) var(--ease);
 }
+.guide-card-body{flex:1;min-width:0;}
 .guide-card:hover{border-color:var(--gold);transform:translateY(-2px);}
 .guide-card-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;}
 .guide-card-head h2{font-family:var(--serif);font-size:1.25rem;font-weight:600;letter-spacing:.02em;}
@@ -754,6 +755,87 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
 .guide-card-sub{margin-top:6px;color:var(--ink-soft);font-size:.95rem;}
 .guide-card-summary{margin-top:10px;color:var(--ink-soft);font-size:.92rem;line-height:1.7;}
 .guide-card-foot{margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+
+/* ── 攻略封面模板 ───────────────────────────────────────────
+   每篇只需在 content/guides.js 填 cover（kind / stat / icons / hook），
+   kind 决定主色与几何符号：装备=金菱形 经济=绿圆 运营=蓝三角 弈子=紫方 机制=红环。
+   形状互不相同，不只靠颜色区分。 */
+.gc-gold{--gc:#9C7C3C;--gc-bg:#EFE9DC;--gc-bd:#D8C79A;}
+.gc-wild{--gc:#4E6B4A;--gc-bg:#EEF2EA;--gc-bd:#B8CCB4;}
+.gc-blue{--gc:#4C8FD6;--gc-bg:#E9F1FA;--gc-bd:#A8C8E8;}
+.gc-purple{--gc:#A86CC9;--gc-bg:#F2EAF7;--gc-bd:#CFAEE2;}
+.gc-red{--gc:#B23A2E;--gc-bg:#FAEDEB;--gc-bd:#E0AFA8;}
+
+.guide-cover{border-radius:var(--radius);}
+
+/* 列表卡片：左侧竖排封面块，作扫读锚点 */
+.gc-panel{
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  width:104px;flex-shrink:0;padding:12px 8px 10px;
+  background:var(--gc-bg);border:1px solid var(--gc-bd);
+}
+.gc-panel .gc-kind{
+  font-size:.68rem;letter-spacing:.14em;color:var(--gc);
+  font-weight:600;
+}
+.gc-visual{display:flex;align-items:center;justify-content:center;min-height:34px;}
+.gc-icons{display:flex;gap:3px;align-items:center;justify-content:center;flex-wrap:wrap;}
+.gc-ic{width:28px;height:28px;border-radius:2px;display:block;}
+.icon-fallback.gc-ic{
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;background:var(--gc-bg);color:var(--gc);
+}
+/* 无官方图标时的品类几何符号，五种形状互不相同 */
+.gc-glyph{display:block;}
+.gl-diamond{width:22px;height:22px;background:var(--gc);transform:rotate(45deg);}
+.gl-circle{width:24px;height:24px;background:var(--gc);border-radius:50%;}
+.gl-triangle{width:26px;height:23px;background:var(--gc);clip-path:polygon(50% 0,100% 100%,0 100%);}
+.gl-square{width:22px;height:22px;background:var(--gc);}
+.gl-ring{
+  width:24px;height:24px;border:4px solid var(--gc);
+  border-radius:50%;background:transparent;box-sizing:border-box;
+}
+.gc-stat{text-align:center;line-height:1;}
+.gc-stat-v{
+  display:block;font-family:var(--serif);font-size:1.45rem;
+  font-weight:700;color:var(--gc);line-height:1;
+}
+.gc-stat-k{display:block;margin-top:4px;font-size:.66rem;color:var(--mute);letter-spacing:.02em;}
+.gc-panel .gc-no{font-size:.62rem;color:var(--mute);letter-spacing:.08em;}
+
+/* 详情页：顶部横幅封面 */
+.gc-hero{
+  margin-top:14px;padding:18px 20px;
+  background:var(--gc-bg);border:1px solid var(--gc-bd);
+}
+.gc-hero-bar{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:14px;
+}
+.gc-hero .gc-kind{font-size:.7rem;letter-spacing:.14em;color:var(--gc);font-weight:600;}
+.gc-hero .gc-no{font-size:.68rem;color:var(--mute);letter-spacing:.08em;}
+.gc-hero-body{display:flex;gap:18px;align-items:center;}
+.gc-hero-visual{
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  width:92px;height:92px;background:var(--paper-hi);
+  border:1px solid var(--gc-bd);border-radius:var(--radius);
+}
+.gc-hero-visual .gc-ic{width:36px;height:36px;}
+.gc-hero-visual .gl-diamond{width:32px;height:32px;}
+.gc-hero-visual .gl-circle{width:34px;height:34px;}
+.gc-hero-visual .gl-triangle{width:38px;height:33px;}
+.gc-hero-visual .gl-square{width:32px;height:32px;}
+.gc-hero-visual .gl-ring{width:34px;height:34px;border-width:5px;}
+.gc-hero-text{flex:1;min-width:0;display:block;}
+.gc-hero .gc-stat{text-align:left;margin-bottom:8px;}
+.gc-hero .gc-stat-v{display:inline-block;font-size:2rem;}
+.gc-hero .gc-stat-k{display:inline-block;margin:0 0 0 6px;font-size:.78rem;}
+.gc-hero-title{
+  font-family:var(--serif);font-size:clamp(1.5rem,4vw,2rem);
+  font-weight:700;line-height:1.3;color:var(--ink);margin:0;
+}
+.gc-hero-sub{display:block;margin-top:8px;color:var(--ink-soft);font-size:.95rem;line-height:1.6;}
+.gc-hook{display:block;margin-top:8px;color:var(--gc);font-size:.88rem;line-height:1.6;}
 
 /* 攻略详情 */
 .guide-article{max-width:760px;}
@@ -869,9 +951,17 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
   .season-desc{ font-size:.94rem; max-width:38ch; }
   .season-mechanic{ padding:12px 13px; max-width:none; }
   .hero-hex{ right:-30px; opacity:.12; }
-  .guide-card{ padding:16px 18px; }
+  .guide-card{ padding:16px 18px; gap:12px; }
   .guide-card-head{ gap:8px; }
   .guide-card-head h2{ font-size:1.1rem; }
+  /* 封面块在窄屏收窄，给右侧文字留够空间 */
+  .gc-panel{ width:86px; padding:10px 6px 8px; gap:6px; }
+  .gc-stat-v{ font-size:1.2rem; }
+  .gc-stat-k{ font-size:.62rem; }
+  .gc-ic{ width:24px; height:24px; }
+  .gc-hero-body{ gap:14px; }
+  .gc-hero-visual{ width:72px; height:72px; }
+  .gc-hero-visual .gc-ic{ width:30px; height:30px; }
   .guide-table{ font-size:.85rem; }
   .guide-table th,.guide-table td{ padding:8px 11px; }
 

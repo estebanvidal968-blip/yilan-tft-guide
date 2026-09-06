@@ -1,10 +1,13 @@
 import { guides, getGuide } from '@/content/guides';
 import { notFound } from 'next/navigation';
 import IconImg from '@/components/IconImg';
-import { loadItemIcons } from '@/lib/loadData';
+import { loadItemIcons, loadGuideIcons } from '@/lib/loadData';
+import GuideCover from '@/components/GuideCover';
 
 // 装备官方图标（140/140 全覆盖），构建期一次性读入，不进前端包
 const ITEM_ICONS = loadItemIcons();
+// 封面图标总表（装备 + 符文 + 棋子）
+const GUIDE_ICONS = loadGuideIcons();
 
 export function generateStaticParams() {
   return guides.map((g) => ({ slug: g.slug }));
@@ -132,14 +135,26 @@ export default function GuideDetailPage({ params }) {
   const g = getGuide(params.slug);
   if (!g) notFound();
 
+  const index = guides.findIndex((x) => x.slug === params.slug);
+  const coverIcons = ((g.cover && g.cover.icons) || [])
+    .map((ic) => ({ src: GUIDE_ICONS[`${ic.t}:${ic.n}`] || '', alt: ic.n }))
+    .filter((x) => x.src);
+
   return (
     <article className="guide-article">
       <a className="back-link" href="/guides">← 返回攻略</a>
 
+      <GuideCover
+        cover={g.cover}
+        index={index < 0 ? 0 : index}
+        icons={coverIcons}
+        mode="hero"
+        title={g.title}
+        subtitle={g.subtitle}
+      />
+
       <header className="guide-head">
         <span className="guide-season">{g.season}</span>
-        <h1>{g.title}</h1>
-        <p className="guide-sub">{g.subtitle}</p>
         <div className="guide-meta">
           <div className="kv">
             {g.tags.map((t) => (
