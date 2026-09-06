@@ -4,6 +4,12 @@ import IconImg from '@/components/IconImg';
 import { loadItemIcons, loadGuideIcons } from '@/lib/loadData';
 import GuideCover from '@/components/GuideCover';
 
+// 强制不缓存（no-store）：SSG 默认带 s-maxage=31536000（一年），部署后边缘节点
+// 会长期残留旧副本，且 deploy 工具无法主动 purge、也不响应客户端的 Cache-Control:
+// no-cache / PURGE。只能靠「源站不缓存」让 CDN 在旧副本 TTL 到期后回源取最新，
+// 永不再缓存出历史残留。当前已缓存的旧副本需等其 TTL 自然过期才会被新内容取代。
+export const revalidate = 0;
+
 // 装备官方图标（140/140 全覆盖），构建期一次性读入，不进前端包
 const ITEM_ICONS = loadItemIcons();
 // 封面图标总表（装备 + 符文 + 棋子）
