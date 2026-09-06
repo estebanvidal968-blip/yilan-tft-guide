@@ -38,3 +38,5 @@ __verify__/
 *.html
 *.xml
 yilan-src-*.tgz
+data/.truth-snapshot/
+data/weekly-diff-*.json
