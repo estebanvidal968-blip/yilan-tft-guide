@@ -45,10 +45,10 @@ sleep 10
 sudo docker ps --filter name=yilan --format '{{.Names}} | {{.Status}} | {{.Ports}}'
 sudo docker logs yilan 2>&1 | tail -8
 
-step "7/7 验证 /guides（应为 24）"
+step "7/7 验证 /guides（应为 25，含德莱文样板）"
 CODE=$(curl -s -o /tmp/g.html -w "%{http_code}" --max-time 20 http://127.0.0.1/guides)
 echo "HTTP=$CODE"
 N=$(grep -o 'href="/guides/[A-Za-z0-9-]*"' /tmp/g.html | sort -u | wc -l)
 echo "guides 链接去重 = $N"
-if [ "$N" != "24" ]; then echo "VERIFY_FAIL"; exit 1; fi
+if [ "$N" != "25" ]; then echo "VERIFY_FAIL"; exit 1; fi
 echo "DEPLOY_DONE"
