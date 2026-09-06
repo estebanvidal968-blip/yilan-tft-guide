@@ -2193,7 +2193,7 @@ export const guides = [
       ]
     }
   ]
-  ,
+},
   {
     "slug": "draven-operation-route",
     "cover": { kind: "弈子", stat: { v: "5", k: "费主C" }, icons: [{ t: "champ", n: "德莱文" }, { t: "item", n: "死亡之刃" }], hook: "5费主C从开局到站位的全链路节奏" },
