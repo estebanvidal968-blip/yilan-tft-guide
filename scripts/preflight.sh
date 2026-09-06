@@ -9,7 +9,7 @@ echo "==> 预检根: $ROOT"
 # 攻略篇数（python 计数，兼容 "slug": 与 slug: 两种键格式）
 N=$(python3 scripts/_count_guides.py content/guides.js 2>/dev/null \
    || python scripts/_count_guides.py content/guides.js 2>/dev/null)
-if [ -z "$N" ] || [ "$N" != "24" ]; then echo "FAIL: 攻略篇数 = ${N:-?} (期望 24)"; exit 1; fi
+if [ -z "$N" ] || [ "$N" != "25" ]; then echo "FAIL: 攻略篇数 = ${N:-?} (期望 25)"; exit 1; fi
 echo "攻略篇数 OK = $N"
 
 # 关键文件
