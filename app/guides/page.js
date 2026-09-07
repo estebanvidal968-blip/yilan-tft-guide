@@ -41,6 +41,7 @@ export default function GuidesPage() {
             key={g.slug}
             className="guide-card enter"
             href={`/guides/${g.slug}`}
+            data-slug={g.slug}
             style={{ animationDelay: `${i * 70}ms` }}
           >
             <GuideCover
