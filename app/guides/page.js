@@ -4,11 +4,11 @@ import { loadGuideIcons } from '@/lib/loadData';
 import AmbientField from '@/components/AmbientField';
 import GuideCover from '@/components/GuideCover';
 
-// 强制不缓存（no-store）：SSG 默认带 s-maxage=31536000（一年），部署后边缘节点
-// 会长期残留旧副本，且 deploy 工具无法主动 purge、也不响应客户端的 Cache-Control:
-// no-cache / PURGE。只能靠「源站不缓存」让 CDN 在旧副本 TTL 到期后回源取最新，
-// 永不再缓存出历史残留。当前已缓存的旧副本需等其 TTL 自然过期才会被新内容取代。
-export const revalidate = 0;
+// 强制动态渲染：列表必须始终反映 content/guides 的当前全量（含运营路线系列）。
+// 复用型部署沙箱的 next build 增量缓存可能保留旧版静态预渲染副本（停留在 24 篇），
+// 且 CDN 边缘节点对 no-store 响应仍可能残留历史 HTML。force-dynamic 让本页每次请求
+// 都从已编译的 guides 模块实时渲染，彻底规避「静态预渲染陈旧」导致的列表缺条目问题。
+export const dynamic = 'force-dynamic';
 
 // 封面用的官方图标（装备140 + 符文283 + 棋子55），构建期一次性读入，不进前端包
 const GUIDE_ICONS = loadGuideIcons();
