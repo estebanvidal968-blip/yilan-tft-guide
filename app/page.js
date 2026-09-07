@@ -7,6 +7,12 @@ import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import { SEASON } from '@/lib/season';
 
+// 显式禁用边缘缓存：默认 SSG 会带 s-maxage=31536000，CDN 边缘会长期复用旧副本，
+// 且部署工具无法主动 purge，导致改版后首页/列表长期停留在旧版本。no-store 强制每次回源。
+export const headers = () => ({
+  'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+});
+
 export default async function Home() {
   const versions = await loadVersions();
   const comps = await loadComps();
