@@ -7,8 +7,11 @@ import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import { SEASON } from '@/lib/season';
 
-// 显式禁用边缘缓存：默认 SSG 会带 s-maxage=31536000，CDN 边缘会长期复用旧副本，
-// 且部署工具无法主动 purge，导致改版后首页/列表长期停留在旧版本。no-store 强制每次回源。
+// 强制动态渲染 + 禁用边缘缓存：默认 SSG 首页带 s-maxage=31536000，CDN 边缘会长期
+// 复用旧副本，且部署工具无法主动 purge，导致新增攻略后首页信息差区长期停留在旧版本。
+// force-dynamic 让首页每次请求实时渲染（含最新 guides），headers 显式 no-store 兜底。
+export const dynamic = 'force-dynamic';
+
 export const headers = () => ({
   'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
 });
