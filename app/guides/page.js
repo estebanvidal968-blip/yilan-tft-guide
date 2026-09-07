@@ -1,4 +1,5 @@
 import { guides } from '@/content/guides';
+// 本页直接消费 content/guides 全量数组（含运营路线系列）；guides.js 新增条目后须随本页重新构建，否则列表页会停留在旧缓存。
 import { loadGuideIcons } from '@/lib/loadData';
 import AmbientField from '@/components/AmbientField';
 import GuideCover from '@/components/GuideCover';
