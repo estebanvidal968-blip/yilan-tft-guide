@@ -10,6 +10,12 @@ import GuideCover from '@/components/GuideCover';
 // 都从已编译的 guides 模块实时渲染，彻底规避「静态预渲染陈旧」导致的列表缺条目问题。
 export const dynamic = 'force-dynamic';
 
+// 显式禁用边缘缓存：默认 SSG/force-dynamic 可能带 stale-while-revalidate，
+// 导致 CDN 边缘长期复用旧副本（如停留在 24 篇）。no-store 强制每次回源，杜绝陈旧。
+export const headers = () => ({
+  'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+});
+
 // 封面用的官方图标（装备140 + 符文283 + 棋子55），构建期一次性读入，不进前端包
 const GUIDE_ICONS = loadGuideIcons();
 
