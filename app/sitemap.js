@@ -1,5 +1,6 @@
 import { headers } from 'next/headers';
 import { loadComps, loadTraits } from '@/lib/loadData';
+import { guides } from '@/content/guides';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import augments from '@/data/tft/augments.json';
@@ -62,8 +63,17 @@ export default async function sitemap() {
     priority: 0.6,
   }));
 
+  // 28 篇 S18 核心攻略页（站点主内容，最高优先级长尾入口）
+  const guideUrls = (guides || []).map((g) => ({
+    url: `${base}/guides/${g.slug}`,
+    lastModified: g.updatedAt ? new Date(g.updatedAt) : new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.9,
+  }));
+
   const staticUrls = [
     { url: `${base}/`, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },
+    { url: `${base}/guides`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${base}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
     { url: `${base}/privacy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
     { url: `${base}/items`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
@@ -76,5 +86,5 @@ export default async function sitemap() {
     { url: `${base}/tools/comp-gen`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.5 },
     { url: `${base}/share`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
   ];
-  return [...staticUrls, ...compUrls, ...itemUrls, ...traitUrls, ...champUrls, ...augUrls];
+  return [...staticUrls, ...guideUrls, ...compUrls, ...itemUrls, ...traitUrls, ...champUrls, ...augUrls];
 }
