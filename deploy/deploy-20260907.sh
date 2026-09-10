@@ -35,7 +35,7 @@ echo "  slug: 出现 $(grep -c 'slug:' "$APP/content/guides.js" 2>/dev/null || e
 
 step "5/9 docker build（npmmirror，约 2-4 分钟）"
 cd "$APP" || exit 1
-sudo docker build -t yilan:latest . > /tmp/docker-build.log 2>&1
+sudo docker build --build-arg CACHEBUST=$(date +%s) -t yilan:latest . > /tmp/docker-build.log 2>&1
 BE=$?
 echo "docker build EXIT=$BE"
 if [ $BE -ne 0 ]; then echo "BUILD_FAIL 末尾日志:"; tail -40 /tmp/docker-build.log; exit 1; fi
