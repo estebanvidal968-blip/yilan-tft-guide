@@ -10,12 +10,14 @@ COPY package.json package-lock.json* ./
 RUN npm config set registry https://registry.npmmirror.com \
   && npm install --ignore-scripts
 
-# 缓存击穿：每次构建传入变化的 CACHEBUST，强制 COPY 源码 + npm run build 重新执行，
-# 避免 Docker 层缓存复用旧代码导致“部署了但代码没更新”（npm install 层仍被复用，不拖慢）
+# 缓存击穿：每次构建传入变化的 CACHEBUST。
+# 注意：COPY 层本身按“被拷贝文件的内容校验和”命中缓存（文件真变了就会失效，无需 ARG 干预）；
+# 但 CACHEBUST 变化会让下方 build RUN 层强制失效、重新执行 npm run build，
+# 双重保险，杜绝“COPY 被误命中 / 构建没重跑 → 部署了但代码没更新”。
 ARG CACHEBUST
 # 拷贝源码并生产构建（data/*.opgg.json 已随仓库，无需联网）
 COPY . .
-RUN npm run build
+RUN echo "CACHEBUST=$CACHEBUST" && npm run build
 
 EXPOSE 3000
 
