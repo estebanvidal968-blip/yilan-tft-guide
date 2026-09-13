@@ -33,7 +33,7 @@ async function pushBaidu(urls) {
     return;
   }
   const body = urls.join('\n');
-  const res = await fetch(`http://data.zz.baidu.com/urls?site=${SITE}&token=${BAIDU_PUSH_TOKEN}`, {
+  const res = await fetch(`http://data.zz.baidu.com/urls?site=${SITE}&token=${BAIDU_TOKEN}`, {
     method: 'POST',
     headers: { 'Content-Type': 'text/plain' },
     body,
