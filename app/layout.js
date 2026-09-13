@@ -19,6 +19,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="zh-CN">
       <head>
+        {/* 百度站点验证（勿删，删除会导致验证失效、影响收录） */}
+        <meta name="baidu-site-verification" content="codeva-fba6mrp8Lr" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
