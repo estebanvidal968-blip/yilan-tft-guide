@@ -37,9 +37,11 @@ if [ -f "$ENV_FILE" ] && grep -Eq '^NEXT_PUBLIC_BAIDU_TONGJI_ID=.+' "$ENV_FILE";
   echo "检测到百度统计配置，将注入构建（值不打印）"
 fi
 
-sudo docker build -t yilan:latest $TONGJI_ARG . > /tmp/docker-build.log 2>&1
-if [ $? -ne 0 ]; then echo BUILD_FAIL; tail -40 /tmp/docker-build.log; exit 1; fi
-tail -5 /tmp/docker-build.log
+# 注意：构建日志必须放 /opt/yilan/（2026-09-17 实测：本机 root 无法写 /tmp 下
+# 属主为 ubuntu 的既有文件，会 Permission denied 导致脚本误判 BUILD_FAIL）
+sudo docker build -t yilan:latest $TONGJI_ARG . > /opt/yilan/docker-build.log 2>&1
+if [ $? -ne 0 ]; then echo BUILD_FAIL; tail -40 /opt/yilan/docker-build.log; exit 1; fi
+tail -5 /opt/yilan/docker-build.log
 echo BUILD_OK
 
 step "5/7 停旧容器 + 起新容器"
