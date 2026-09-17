@@ -15,6 +15,14 @@ RUN npm config set registry https://registry.npmmirror.com \
 # 但 CACHEBUST 变化会让下方 build RUN 层强制失效、重新执行 npm run build，
 # 双重保险，杜绝“COPY 被误命中 / 构建没重跑 → 部署了但代码没更新”。
 ARG CACHEBUST
+
+# 百度统计站点 ID —— 必须在【构建期】注入
+# 弈览全站为静态预渲染（Static/SSG），process.env 在 next build 阶段即被内联，
+# 因此运行时 docker run -e 传值无效；必须经 build-arg → ENV → next build 这条链路。
+# 未设置时 layout.js 自动跳过统计脚本渲染，不影响站点。
+ARG NEXT_PUBLIC_BAIDU_TONGJI_ID=""
+ENV NEXT_PUBLIC_BAIDU_TONGJI_ID=$NEXT_PUBLIC_BAIDU_TONGJI_ID
+
 # 拷贝源码并生产构建（data/*.opgg.json 已随仓库，无需联网）
 COPY . .
 RUN echo "CACHEBUST=$CACHEBUST" && npm run build

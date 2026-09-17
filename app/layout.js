@@ -15,6 +15,13 @@ export const viewport = {
   themeColor: '#F4F1EA',
 };
 
+// 百度统计站点 ID：经构建期 ARG 注入（站点为静态预渲染，运行时 env 无效）
+// 获取：百度统计控制台 → 站点列表 → 代码获取 → 取 hm.js? 后的 32 位 hash
+// 未配置时自动跳过渲染，不阻塞页面
+// 安全：强制校验 32 位十六进制，杜绝环境变量污染导致脚本注入
+const RAW_TONGJI_ID = (process.env.NEXT_PUBLIC_BAIDU_TONGJI_ID || '').trim();
+const TONGJI_ID = /^[0-9a-fA-F]{32}$/.test(RAW_TONGJI_ID) ? RAW_TONGJI_ID : '';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="zh-CN">
@@ -27,6 +34,14 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap"
           rel="stylesheet"
         />
+        {/* 百度统计：仅在配置了 BAIDU_TONGJI_ID 时注入，2026-09-17 */}
+        {TONGJI_ID ? (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?${TONGJI_ID}";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();`,
+            }}
+          />
+        ) : null}
       </head>
       <body>
         <header className="site-header">

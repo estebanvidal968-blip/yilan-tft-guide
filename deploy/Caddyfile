@@ -17,11 +17,88 @@
 
 # 正式域名 + 自动 HTTPS
 yilangames.com, www.yilangames.com {
-	reverse_proxy 127.0.0.1:3000
+	# ===== 访问统计报表（GoAccess，2026-09-17 添加）=====
+	# 报表目录 /var/www/yilan-stats，由 /opt/yilan/stats/refresh.sh 定时刷新
+	# 必须以 basicauth 保护：该页含真实 IP / Referer 等明细，禁止公网裸奔
+	@statsredir path /stats
+	redir @statsredir /stats/ 301
+
+	@stats path /stats/*
+	handle @stats {
+		basic_auth {
+			admin $2a$14$/qaIcbCL8b69ppffdIKWTuk1HWNuPbzP0b7ixiq1wk1Y5ZleKvGp.
+		}
+		uri strip_prefix /stats
+		root * /var/www/yilan-stats
+		file_server
+	}
+
+	# ===== 主站（Next.js）=====
+	handle {
+		reverse_proxy 127.0.0.1:3000
+	}
+
 	encode gzip
+	# 网络访问日志留存（网安法要求不少于 6 个月），2026-09-13
+	log {
+		output file /var/log/caddy/yilan-access.log {
+			roll_size 20MiB
+			roll_keep 12
+			roll_keep_for 720d
+		}
+		format json
+	}
 }
+
 
 # 未来其他游戏子站示例（解析加 A 记录后取消注释即可）：
 # lol.yilangames.com {
 # 	reverse_proxy 127.0.0.1:3001
 # }
+
+# ===== 万象棋攻略站 · 静态站 + Artalk 评论（2026-09-13 添加）=====
+wxq.yilangames.com {
+	encode gzip
+
+	# --- Artalk 前端静态资源：自托管，不走反代 ---
+	@artalk_dist path /artalk/dist/*
+	handle @artalk_dist {
+		root * /var/www/wxq-site
+		file_server
+	}
+
+	# --- Artalk 后端：评论 API + 管理后台 /artalk/sidebar/ ---
+	# 用 not path 显式排除 dist，两个 handle 互不重叠，
+	# 避免依赖 Caddy 对路径匹配器优先级的推断（2026-09-13）
+	@artalk_backend {
+		path /artalk/*
+		not path /artalk/dist/*
+	}
+	handle @artalk_backend {
+		uri strip_prefix /artalk
+		reverse_proxy 127.0.0.1:23366
+	}
+
+	# --- 网络访问日志留存（网安法要求不少于 6 个月）---
+	# Caddy 自带轮转：保留 720 天 / 单文件 20MiB / 最多 12 份，无需 logrotate
+	log {
+		output file /var/log/caddy/wxq-access.log {
+			roll_size 20MiB
+			roll_keep 12
+			roll_keep_for 720d
+		}
+		format json
+	}
+
+	# --- 静态站 ---
+	handle {
+		root * /var/www/wxq-site
+		try_files {path} {path}/index.html
+		file_server
+	}
+
+	handle_errors {
+		rewrite * /404.html
+		file_server
+	}
+}

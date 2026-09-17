@@ -39,9 +39,11 @@ bash scripts/deploy.sh all
    ```bash
    sudo docker stop yilan && sudo docker rm yilan
    sudo cp -a /opt/yilan/app.bak.<最新> /opt/yilan/app
-   sudo docker run -d --name yilan --restart unless-stopped -p 80:3000 \
+   sudo docker run -d --name yilan --restart unless-stopped \
+     -p 127.0.0.1:3000:3000 \
      -v /opt/yilan/data/social:/app/data/social yilan:latest
    ```
+   > 端口必须是 `127.0.0.1:3000:3000`（Caddy 已接管 80/443）。写 `-p 80:3000` 会抢占 Caddy 导致全站 502。
 
 ## 已踩坑（防回归）
 
