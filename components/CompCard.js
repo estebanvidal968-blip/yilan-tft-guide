@@ -1,5 +1,6 @@
 import TierTag from './TierTag';
 import IconImg from './IconImg';
+import CompLineupIcon from './CompLineupIcon';
 import FavoriteButton from './FavoriteButton';
 import LikeButton from './LikeButton';
 import icons from '@/data/icons.json';
@@ -47,14 +48,7 @@ export default function CompCard({ comp, index = 0, rank }) {
       ) : null}
 
       <div className="cc-champs">{comp.coreChampions.join(' · ')}</div>
-      <div className="cc-champ-icons">
-        {comp.coreChampions.map((c) => (
-          <span key={c} className={`unit-token ut-md cost${costOf[c] || 1}`}>
-            <IconImg src={icons.champion?.[c]} alt={c} fallback={c.slice(0, 1)} />
-            <span className="badge">S18</span>
-          </span>
-        ))}
-      </div>
+      <CompLineupIcon comp={comp} compact showNames={false} />
       <div className="cc-traits">
         {comp.traits.map((t) => (
           <span key={t} className="tag">

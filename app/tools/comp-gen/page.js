@@ -4,6 +4,7 @@ import CompGenClient from '@/components/CompGenClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
+  alternates: { canonical: '/tools/comp-gen' },
   title: '随机阵容生成器 · 弈览',
   description: 'S18 随机阵容生成器：手气抽一套版本强势阵容，或勾选已有棋子自动匹配最契合阵容，覆盖站位、C 位装备与 AI 点评。',
 };

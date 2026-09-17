@@ -4,6 +4,7 @@ import QuizClient from '@/components/QuizClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
+  alternates: { canonical: '/tools/quiz' },
   title: '装备合成速记小测 · 弈览',
   description: 'S18 多题型装备小测：合成、拆解、识装三种玩法，197+ 题池随机抽 10 题，5 分钟测出装备熟练度。',
 };

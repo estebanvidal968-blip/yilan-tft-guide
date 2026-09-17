@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/privacy' },
   title: '隐私政策 · 弈览',
   description: '弈览金铲铲 S18 攻略站的隐私与数据说明。',
 };

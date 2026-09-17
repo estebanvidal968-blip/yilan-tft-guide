@@ -4,6 +4,7 @@ import { SEASON } from '@/lib/season';
 // /trait —— 羁绊总览（内链 hub），列出 S18 全部羁绊及被多少阵容使用。
 
 export const metadata = {
+  alternates: { canonical: '/trait' },
   title: `S${SEASON.no} 羁绊总览 · 弈览`,
   description: `金铲铲 S${SEASON.no}「${SEASON.theme}」全部羁绊一览：每个羁绊被多少套强势阵容使用，点击查看该羁绊的阵容搭配与运营思路。`,
 };

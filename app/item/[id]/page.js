@@ -55,6 +55,7 @@ export function generateMetadata({ params }) {
   return {
     title: `${it.name} · 装备详情 · 弈览`,
     description: tail ? `${base}｜${tail}` : base,
+    alternates: { canonical: `/item/${it.id}` },
   };
 }
 

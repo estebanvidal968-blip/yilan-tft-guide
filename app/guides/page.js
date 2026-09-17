@@ -28,6 +28,7 @@ function resolveCoverIcons(cover) {
 export const metadata = {
   title: '攻略 · 弈览',
   description: '金铲铲之战 S18「自然之力」版本机制攻略：自然仙灵、变形术、追三技巧。',
+  alternates: { canonical: '/guides' },
 };
 
 export default function GuidesPage() {

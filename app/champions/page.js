@@ -5,6 +5,7 @@ import { SEASON } from '@/lib/season';
 // /champions —— 弈子总览（内链 hub），列出 S18 全部弈子，点击进入出装页。
 
 export const metadata = {
+  alternates: { canonical: '/champions' },
   title: `S${SEASON.no} 弈子出装总览 · 弈览`,
   description: `金铲铲 S${SEASON.no}「${SEASON.theme}」全部 ${champs.length} 个弈子的推荐出装、胜率与平均名次。点击查看每个弈子的主流出装思路。`,
 };

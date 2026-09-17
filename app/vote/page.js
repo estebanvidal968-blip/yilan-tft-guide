@@ -2,6 +2,7 @@ import comps from '@/data/comps.opgg.json';
 import VoteClient from '@/components/VoteClient';
 
 export const metadata = {
+  alternates: { canonical: '/vote' },
   title: '本周最爱阵容投票 · 弈览',
   description: 'S18 自然之力：10 套 T0 阵容本周最爱投票。',
 };

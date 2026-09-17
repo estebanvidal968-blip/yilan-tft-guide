@@ -6,6 +6,7 @@ import LikeButton from '@/components/LikeButton';
 import CommentSection from '@/components/CommentSection';
 import CompGuide from '@/components/CompGuide';
 import IconImg from '@/components/IconImg';
+import CompLineupIcon from '@/components/CompLineupIcon';
 import icons from '@/data/icons.json';
 
 export default async function CompDetail({ params }) {
@@ -44,6 +45,10 @@ export default async function CompDetail({ params }) {
     : [null].filter((r) => byRow[r]);
 
   const panels = [
+    {
+      title: '完整阵容一览',
+      body: <CompLineupIcon comp={comp} showNames />,
+    },
     {
       title: `上场棋子（${roster.length} 人口）`,
       body: (

@@ -11,6 +11,7 @@ const TIER_ORDER = [
 ];
 
 export const metadata = {
+  alternates: { canonical: '/augments' },
   title: `S${SEASON.no} 强化符文总览 · 弈览`,
   description: `金铲铲 S${SEASON.no}「${SEASON.theme}」全部 ${augments.length} 个强化符文（棱彩/金色/银色），点击查看每个符文的效果与用法。`,
 };

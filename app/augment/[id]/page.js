@@ -22,6 +22,7 @@ export function generateMetadata({ params }) {
   return {
     title: `S${SEASON.no} ${a.name} 符文 · 弈览`,
     description: `金铲铲 S${SEASON.no}「${SEASON.theme}」强化符文 ${a.name}（${TIER[a.tierKey]?.label || a.tier}）：${a.desc}`,
+    alternates: { canonical: `/augment/${a.id}` },
   };
 }
 

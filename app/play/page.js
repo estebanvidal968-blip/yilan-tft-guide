@@ -2,6 +2,7 @@ import comps from '@/data/comps.opgg.json';
 import PlayClient from '@/components/PlayClient';
 
 export const metadata = {
+  alternates: { canonical: '/play' },
   title: '我这局玩什么 · 弈览',
   description: 'S18 自然之力决策器：根据你的出装 / 节奏 / 风格偏好，匹配 10 套 T0 阵容中的 Top3。',
 };

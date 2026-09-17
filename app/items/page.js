@@ -58,6 +58,7 @@ const components = (baseItems || [])
 const shown = radiants.length + completed.length + components.length;
 
 export const metadata = {
+  alternates: { canonical: '/items' },
   title: '装备库 · 弈览',
   description: `S18 自然之力装备库 ${shown} 件：光明武器 ${radiants.length}、成装 ${completed.length}、散件 ${components.length}。支持名称搜索 + 类别筛选。`,
 };

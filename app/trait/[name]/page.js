@@ -18,6 +18,7 @@ export function generateMetadata({ params }) {
   return {
     title: `S18 ${t.name} 羁绊 · 弈览`,
     description: `金铲铲 S${SEASON.no}「${SEASON.theme}」${t.name}羁绊怎么玩？当前版本 ${t.count} 套阵容在用：${compNames}。附各阵容强度分与运营思路。`,
+    alternates: { canonical: `/trait/${encodeURIComponent(t.name)}` },
   };
 }
 

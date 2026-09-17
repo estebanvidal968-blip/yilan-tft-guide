@@ -19,6 +19,7 @@ export function generateMetadata({ params }) {
   return {
     title: `S${SEASON.no} ${c.name} 出装 · 弈览`,
     description: `金铲铲 S${SEASON.no}「${SEASON.theme}」${c.name}推荐出装：${topStr}。含各套出装的胜率、前四率、平均名次与增益数据。`,
+    alternates: { canonical: `/champion/${c.id}` },
   };
 }
 

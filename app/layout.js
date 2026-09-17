@@ -4,14 +4,28 @@ import SiteNav from '@/components/SiteNav';
 import ShareFab from '@/components/ShareFab';
 
 export const metadata = {
+  metadataBase: new URL('https://yilangames.com'),
   title: '弈览 · 金铲铲 S18 攻略',
   description: '金铲铲之战 S18「自然之力」版本同步、即查即用的阵容 / 装备 / 版本攻略。',
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    siteName: '弈览',
+    title: '弈览 · 金铲铲 S18 攻略',
+    description: '金铲铲之战 S18「自然之力」版本同步、即查即用的阵容 / 装备 / 版本攻略。',
+    url: 'https://yilangames.com',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '弈览 · 金铲铲 S18 攻略',
+    description: '金铲铲之战 S18「自然之力」版本同步、即查即用的阵容 / 装备 / 版本攻略。',
+  },
 };
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
   themeColor: '#F4F1EA',
 };
 

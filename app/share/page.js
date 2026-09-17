@@ -2,6 +2,7 @@ import ShareCard from '@/components/ShareCard';
 import CopyLine from '@/components/CopyLine';
 
 export const metadata = {
+  alternates: { canonical: '/share' },
   title: '分享中心 · 弈览',
   description:
     '把弈览分享给一起玩金铲铲的朋友：生成整站二维码与朋友圈海报，好友用微信或相机扫码即达，无需下载 App。',

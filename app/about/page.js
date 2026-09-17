@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/about' },
   title: '关于弈览 · 金铲铲 S18 攻略',
   description: '弈览是什么、数据从哪来、使用须知。',
 };

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
+  alternates: { canonical: '/tools' },
   title: '工具箱 · 弈览',
   description: '弈览工具箱：装备合成小测、出装模拟器、随机阵容生成器，把云顶攻略变成能玩的互动。',
 };

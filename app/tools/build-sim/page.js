@@ -4,6 +4,7 @@ import BuildSimClient from '@/components/BuildSimClient';
 export const dynamic = 'force-dynamic';
 
 export const metadata = {
+  alternates: { canonical: '/tools/build-sim' },
   title: '出装模拟器 · 弈览',
   description: 'S18 出装模拟器：选弈子 + 3 件装备，实时匹配 OP.GG 真实对局数据，给出胜率、前四率、名次增益与「奇效/陷阱」判定，可分享成绩卡。',
 };

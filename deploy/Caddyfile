@@ -17,6 +17,17 @@
 
 # 正式域名 + 自动 HTTPS
 yilangames.com, www.yilangames.com {
+	# ===== www → 非 www 归一（消除重复内容，聚合 SEO 权重，2026-09-18）=====
+	@www host www.yilangames.com
+	redir @www https://yilangames.com{uri} permanent
+
+	# ===== 漏洞扫描 / 探测路径：直接掐断并跳过访问日志（2026-09-18）=====
+	@scan path /wp-admin* /.env* /.git* /.aws* /phpmyadmin* /xmlrpc.php /wp-login* *.php
+	handle @scan {
+		log { output discard }
+		respond 444
+	}
+
 	# ===== 访问统计报表（GoAccess，2026-09-17 添加）=====
 	# 报表目录 /var/www/yilan-stats，由 /opt/yilan/stats/refresh.sh 定时刷新
 	# 必须以 basicauth 保护：该页含真实 IP / Referer 等明细，禁止公网裸奔

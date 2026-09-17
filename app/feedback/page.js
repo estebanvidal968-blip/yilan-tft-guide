@@ -1,6 +1,7 @@
 import FeedbackForm from '@/components/FeedbackForm';
 
 export const metadata = {
+  alternates: { canonical: '/feedback' },
   title: '纠错 / 反馈 · 弈览',
   description: '发现阵容数据有误或想提建议？通过表单直接告诉我们，无需邮箱。',
 };

@@ -1453,3 +1453,24 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
 @media(max-width:520px){
   .detail-feedback{margin-left:0;align-self:flex-start;}
 }
+
+/* ===== 阵容完整整图（CompLineupIcon）===== */
+.comp-lineup{
+  border:1px solid var(--line-soft);background:var(--paper-2);
+  border-radius:3px;padding:14px 14px 12px;
+}
+.cl-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));
+  gap:12px 10px;justify-items:center;
+}
+.cl-cell{display:flex;flex-direction:column;align-items:center;gap:6px;}
+.cl-name{
+  font-size:.72rem;line-height:1.15;color:var(--ink-soft);text-align:center;
+  max-width:62px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.cl-cell.is-carry .cl-name{color:var(--gold);font-weight:600;}
+/* 紧凑态（阵容卡内）：只露图标，网格更密 */
+.comp-lineup.is-compact{padding:12px 12px 10px;}
+.comp-lineup.is-compact .cl-grid{grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:9px 6px;}
+.comp-lineup.is-compact .cl-name{display:none;}
+.comp-lineup.is-compact .unit-token{--uts:32px;}

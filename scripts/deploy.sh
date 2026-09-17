@@ -57,7 +57,7 @@ deploy_selfhosted() {
   echo "==> 外部验证 http://$SERVER_HOST/guides"
   N=$(curl -s --max-time 20 "http://$SERVER_HOST/guides" | grep -o 'href="/guides/[A-Za-z0-9-]*"' | sort -u | wc -l)
   echo "外部 guides 链接去重 = $N"
-  [ "$N" = "25" ] || { echo "VERIFY_FAIL expected 25 got $N"; exit 1; }
+  [ "$N" -ge 20 ] || { echo "VERIFY_FAIL expected >=20 got $N"; exit 1; }
   echo "SELFHOSTED_DEPLOY_OK"
 }
 

@@ -25,6 +25,15 @@ export function generateMetadata({ params }) {
   return {
     title: `${g.title} · 弈览`,
     description: g.summary,
+    alternates: { canonical: `/guides/${g.slug}` },
+    openGraph: {
+      type: 'article',
+      title: `${g.title} · 弈览`,
+      description: g.summary,
+      url: `/guides/${g.slug}`,
+      locale: 'zh_CN',
+      siteName: '弈览',
+    },
   };
 }
 
@@ -146,6 +155,23 @@ export default function GuideDetailPage({ params }) {
     .map((ic) => ({ src: GUIDE_ICONS[`${ic.t}:${ic.n}`] || '', alt: ic.n }))
     .filter((x) => x.src);
 
+  // 相关阅读：按共享标签匹配，排除当前篇，取前 4（导权重 + 降跳出）
+  const related = guides
+    .filter((x) => x.slug !== g.slug && x.tags.some((t) => g.tags.includes(t)))
+    .slice(0, 4);
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: g.title,
+    description: g.summary,
+    datePublished: g.updatedAt,
+    dateModified: g.updatedAt,
+    author: { '@type': 'Organization', name: '弈览' },
+    publisher: { '@type': 'Organization', name: '弈览' },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://yilangames.com/guides/${g.slug}` },
+  };
+
   return (
     <article className="guide-article">
       <a className="back-link" href="/guides">← 返回攻略</a>
@@ -189,7 +215,24 @@ export default function GuideDetailPage({ params }) {
           {g.dataNote ||
             '数据来源：站点 OP.GG 实战阵容库与 S18 赛季元数据；机制随版本调整，以游戏内实际为准。'}
         </span>
+        {related.length ? (
+          <nav className="guide-related" aria-label="相关阅读">
+            <h3 className="related-title">相关阅读</h3>
+            <div className="related-list">
+              {related.map((r) => (
+                <a key={r.slug} className="related-card" href={`/guides/${r.slug}`}>
+                  <span className="related-card-title">{r.title}</span>
+                  <span className="muted related-card-sub">{r.subtitle}</span>
+                </a>
+              ))}
+            </div>
+          </nav>
+        ) : null}
       </footer>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
     </article>
   );
 }
