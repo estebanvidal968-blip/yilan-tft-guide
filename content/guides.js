@@ -9,6 +9,8 @@
 //
 // 新增一篇攻略：往 guides 数组里追加一个对象，并给 slug 一个唯一值即可。
 
+import { guidesWave1 } from './guides_wave1';
+
 export const guides = [
   {
     slug: 'high-transmute',
@@ -2422,6 +2424,7 @@ export const guides = [
       ]}
     ]
   }
+  , ...guidesWave1
 ];
 
 export function getGuide(slug) {

@@ -69,9 +69,15 @@ function loadCursor() {
     return {};
   }
 }
-function saveCursor(offset) {
+function saveCursor(offset, successCount = 0) {
   try {
-    writeFileSync(CURSOR_PATH, JSON.stringify({ offset, updatedAt: new Date().toISOString() }, null, 2));
+    const prev = loadCursor();
+    // 仅在真正推送成功时更新「上次成功日期」，用于同日复跑的幂等短路（FORCE_PUSH=1 可绕过）
+    const okDate = successCount > 0 ? new Date().toISOString().slice(0, 10) : prev.lastSuccessDate;
+    writeFileSync(
+      CURSOR_PATH,
+      JSON.stringify({ offset, updatedAt: new Date().toISOString(), lastSuccessDate: okDate }, null, 2)
+    );
   } catch (e) {
     console.warn('[baidu] 游标写入失败（不影响推送）:', e.message);
   }
@@ -93,7 +99,15 @@ async function pushBaidu(queue) {
     return;
   }
   const total = queue.length;
-  let offset = ((Number(loadCursor().offset) || 0) % total + total) % total;
+  const cursor = loadCursor();
+  const today = new Date().toISOString().slice(0, 10);
+  // 同日已成功推送过 → 直接短路，避免无意义的 4 次降批请求（配额按日发放，同日重跑必 over quota）
+  if (cursor.lastSuccessDate === today && !process.env.FORCE_PUSH) {
+    console.log(`[baidu] 今日（${today}）已成功推送过，跳过本轮（同日配额已用尽，重复调用无收益）。设 FORCE_PUSH=1 可强制重跑。`);
+    console.log(`[baidu] 本轮合计 success=0｜剩余配额=0（当日已用尽）｜队列 ${total} 条，断点 offset=${((Number(cursor.offset) || 0) % total + total) % total}`);
+    return;
+  }
+  let offset = ((Number(cursor.offset) || 0) % total + total) % total;
   let batch = Math.max(1, Number(process.env.PUSH_BATCH || 10));
   let success = 0;
   let remain = null;
@@ -110,7 +124,7 @@ async function pushBaidu(queue) {
       success += data.success;
       remain = typeof data.remain === 'number' ? data.remain : remain;
       offset = (offset + slice.length) % total;
-      saveCursor(offset);
+      saveCursor(offset, data.success);
       console.log(`[baidu] 批次 ${guard}: 推 ${slice.length} 条 -> success=${data.success} remain=${data.remain}`);
       if (remain === 0) {
         console.log('[baidu] 当日配额已用尽，停止。');
