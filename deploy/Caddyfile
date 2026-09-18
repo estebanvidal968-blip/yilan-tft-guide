@@ -24,7 +24,9 @@ yilangames.com, www.yilangames.com {
 	# ===== 漏洞扫描 / 探测路径：直接掐断并跳过访问日志（2026-09-18）=====
 	@scan path /wp-admin* /.env* /.git* /.aws* /phpmyadmin* /xmlrpc.php /wp-login* *.php
 	handle @scan {
-		log { output discard }
+		log {
+			output discard
+		}
 		respond 444
 	}
 
