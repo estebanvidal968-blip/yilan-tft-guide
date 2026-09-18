@@ -21,12 +21,11 @@ yilangames.com, www.yilangames.com {
 	@www host www.yilangames.com
 	redir @www https://yilangames.com{uri} permanent
 
-	# ===== 漏洞扫描 / 探测路径：直接掐断并跳过访问日志（2026-09-18）=====
+	# ===== 漏洞扫描 / 探测路径：直接掐断（2026-09-18）=====
+	# respond 444 直接断连，扫描器不会落到 Next.js（不再产生 404 噪声）；
+	# 访问日志仍会记录 444，但分析脚本按路径黑名单已将其排除，不污染 UV/PV。
 	@scan path /wp-admin* /.env* /.git* /.aws* /phpmyadmin* /xmlrpc.php /wp-login* *.php
 	handle @scan {
-		log {
-			output discard
-		}
 		respond 444
 	}
 
