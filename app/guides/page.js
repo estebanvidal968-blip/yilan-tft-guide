@@ -1,8 +1,14 @@
+import { Fragment } from 'react';
 import { guides } from '@/content/guides';
 // 本页直接消费 content/guides 全量数组（含运营路线系列）；guides.js 新增条目后须随本页重新构建，否则列表页会停留在旧缓存。
 import { loadGuideIcons } from '@/lib/loadData';
 import AmbientField from '@/components/AmbientField';
 import GuideCover from '@/components/GuideCover';
+import {
+  CATEGORY_ORDER,
+  CATEGORY_META,
+  guidesByCategory,
+} from '@/lib/guideCategories';
 
 // 强制动态渲染：列表必须始终反映 content/guides 的当前全量（含运营路线系列）。
 // 复用型部署沙箱的 next build 增量缓存可能保留旧版静态预渲染副本（停留在 24 篇），
@@ -32,50 +38,96 @@ export const metadata = {
 };
 
 export default function GuidesPage() {
+  const groups = guidesByCategory(guides);
+  const total = guides.length;
+
   return (
     <>
       <div className="guides-head">
         <AmbientField count={14} />
         <h1 className="section-title">攻略</h1>
         <p className="section-sub">
-          版本机制与进阶技巧，讲清「怎么来的」和「怎么做到」。当前 {guides.length} 篇。
+          版本机制与进阶技巧，讲清「怎么来的」和「怎么做到」。共 {total} 篇，按 6 大分类组织，点上方分类可快速筛选。
         </p>
       </div>
 
-      <div className="guide-list">
-        {guides.map((g, i) => (
-          <a
-            key={g.slug}
-            className="guide-card enter"
-            href={`/guides/${g.slug}`}
-            data-slug={g.slug}
-            style={{ animationDelay: `${i * 70}ms` }}
-          >
-            <GuideCover
-              cover={g.cover}
-              index={i}
-              icons={resolveCoverIcons(g.cover)}
-              mode="panel"
-            />
-            <div className="guide-card-body">
-              <div className="guide-card-head">
-                <h2>{g.title}</h2>
-                <span className="guide-season">{g.season}</span>
-              </div>
-              <p className="guide-card-sub">{g.cover?.hook || g.subtitle}</p>
-              <p className="guide-card-summary">{g.summary}</p>
-              <div className="guide-card-foot">
-                <div className="kv">
-                  {g.tags.map((t) => (
-                    <span key={t} className="tag">{t}</span>
-                  ))}
-                </div>
-                <span className="muted" style={{ fontSize: '.82rem' }}>
-                  更新 {g.updatedAt} · 约 {g.readMinutes} 分钟
-                </span>
-              </div>
+      <div className="cat-filter" role="tablist" aria-label="攻略分类筛选">
+        <input type="radio" name="gcat" id="gcat-all" className="cat-radio" defaultChecked />
+        <label htmlFor="gcat-all" className="cat-chip cat-chip-all">
+          全部<span className="cat-count">{total}</span>
+        </label>
+        {CATEGORY_ORDER.map((cat, i) => {
+          const n = groups.find((g) => g.cat === cat)?.items.length || 0;
+          return (
+            <Fragment key={cat}>
+              <input
+                type="radio"
+                name="gcat"
+                id={`gcat-${i}`}
+                className="cat-radio"
+                data-cat={cat}
+                style={{ '--cc': CATEGORY_META[cat].color }}
+              />
+              <label
+                htmlFor={`gcat-${i}`}
+                className="cat-chip"
+                data-cat={cat}
+                style={{ '--cc': CATEGORY_META[cat].color }}
+              >
+                {cat}
+                <span className="cat-count">{n}</span>
+              </label>
+            </Fragment>
+          );
+        })}
+      </div>
+
+      <div className="guide-sections">
+        {groups.map(({ cat, meta, items }) => (
+          <section key={cat} className="guide-section" data-cat={cat} style={{ '--cc': meta.color }} aria-label={cat}>
+            <div className="guide-section-head">
+              <span className="gsh-dot" />
+              <h2 className="gsh-title">{cat}</h2>
+              <span className="gsh-count">{items.length} 篇</span>
+              <span className="gsh-desc">{meta.desc}</span>
             </div>
-          </a>
+            <div className="guide-list">
+              {items.map((g, i) => (
+                <a
+                  key={g.slug}
+                  className="guide-card enter"
+                  href={`/guides/${g.slug}`}
+                  data-slug={g.slug}
+                  style={{ animationDelay: `${i * 70}ms` }}
+                >
+                  <GuideCover
+                    cover={g.cover}
+                    index={i}
+                    icons={resolveCoverIcons(g.cover)}
+                    mode="panel"
+                  />
+                  <div className="guide-card-body">
+                    <div className="guide-card-head">
+                      <h2>{g.title}</h2>
+                      <span className="guide-season">{g.season}</span>
+                    </div>
+                    <p className="guide-card-sub">{g.cover?.hook || g.subtitle}</p>
+                    <p className="guide-card-summary">{g.summary}</p>
+                    <div className="guide-card-foot">
+                      <div className="kv">
+                        {g.tags.map((t) => (
+                          <span key={t} className="tag">{t}</span>
+                        ))}
+                      </div>
+                      <span className="muted" style={{ fontSize: '.82rem' }}>
+                        更新 {g.updatedAt} · 约 {g.readMinutes} 分钟
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
     </>

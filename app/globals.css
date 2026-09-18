@@ -1474,3 +1474,67 @@ a.tag:hover{border-color:var(--gold);color:var(--ink);}
 .comp-lineup.is-compact .cl-grid{grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:9px 6px;}
 .comp-lineup.is-compact .cl-name{display:none;}
 .comp-lineup.is-compact .unit-token{--uts:32px;}
+
+/* ============ 攻略列表 · 六维分类（方案 A） ============ */
+/* 分类筛选条：纯 CSS 过滤（radio + label + :has），零 JS、服务端渲染即可用 */
+.cat-filter{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;
+  padding:14px 0;margin:0 0 6px;border-bottom:1px solid var(--line);
+}
+.cat-radio{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;}
+.cat-chip{
+  display:inline-flex;align-items:center;gap:7px;cursor:pointer;
+  font-size:.9rem;color:var(--ink-soft);
+  border:1px solid var(--line);background:var(--paper);
+  padding:7px 14px;border-radius:999px;
+  transition:border-color var(--d-base) var(--ease),color var(--d-base) var(--ease),background var(--d-base) var(--ease),box-shadow var(--d-base) var(--ease);
+}
+.cat-chip .cat-count{
+  font-size:.72rem;color:var(--mute);background:var(--paper-2);
+  border-radius:999px;padding:1px 8px;min-width:1.7em;text-align:center;
+}
+.cat-chip:hover{border-color:var(--ink);color:var(--ink);}
+/* 选中态：用分类色填充（「全部」落到 fallback 金色） */
+.cat-radio:checked + .cat-chip{
+  color:#fff;background:var(--cc,var(--gold));border-color:var(--cc,var(--gold));
+  box-shadow:0 2px 10px color-mix(in srgb,var(--cc,var(--gold)) 30%,transparent);
+}
+.cat-radio:checked + .cat-chip .cat-count{color:#fff;background:rgba(255,255,255,.22);}
+.cat-radio:focus-visible + .cat-chip{outline:2px solid var(--cc,var(--gold));outline-offset:2px;}
+
+/* 分组：每类一节，彩色左条 + 计数 + 一句话定位 */
+.guide-section{margin:0;}
+.guide-section-head{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  margin:30px 0 14px;padding:9px 0 9px 13px;
+  border-left:4px solid var(--cc,var(--gold));
+}
+.gsh-dot{width:10px;height:10px;border-radius:50%;background:var(--cc,var(--gold));flex:none;}
+.gsh-title{font-family:var(--serif);font-size:1.18rem;font-weight:600;color:var(--ink);letter-spacing:.03em;}
+.gsh-count{
+  font-size:.76rem;color:var(--cc,var(--ink-soft));
+  background:color-mix(in srgb,var(--cc,var(--gold)) 12%,var(--paper));
+  border:1px solid color-mix(in srgb,var(--cc,var(--gold)) 35%,var(--line));
+  border-radius:999px;padding:2px 9px;
+}
+.gsh-desc{font-size:.85rem;color:var(--ink-soft);margin-left:auto;}
+
+/* 卡片左侧按分类着色（inset 阴影，不干扰原有 hover 金色边框） */
+.guide-section .guide-card{box-shadow:inset 3px 0 0 color-mix(in srgb,var(--cc,var(--gold)) 55%,var(--line));}
+.guide-section .guide-card:hover{box-shadow:inset 3px 0 0 var(--cc,var(--gold));}
+
+/* 过滤逻辑：选中具体分类 → 先隐藏全部节，再显示匹配节；「全部」无 data-cat，不触发隐藏 */
+.cat-filter:has(input.cat-radio[data-cat]:checked) ~ .guide-sections .guide-section{display:none;}
+.cat-filter:has(input.cat-radio[data-cat="阵容攻略"]:checked) ~ .guide-sections .guide-section[data-cat="阵容攻略"]{display:block;}
+.cat-filter:has(input.cat-radio[data-cat="装备体系"]:checked) ~ .guide-sections .guide-section[data-cat="装备体系"]{display:block;}
+.cat-filter:has(input.cat-radio[data-cat="版本机制"]:checked) ~ .guide-sections .guide-section[data-cat="版本机制"]{display:block;}
+.cat-filter:has(input.cat-radio[data-cat="运营经济"]:checked) ~ .guide-sections .guide-section[data-cat="运营经济"]{display:block;}
+.cat-filter:has(input.cat-radio[data-cat="对局技巧"]:checked) ~ .guide-sections .guide-section[data-cat="对局技巧"]{display:block;}
+.cat-filter:has(input.cat-radio[data-cat="新手入门"]:checked) ~ .guide-sections .guide-section[data-cat="新手入门"]{display:block;}
+
+@media (max-width:720px){
+  .guide-section-head{margin:24px 0 12px;gap:8px;}
+  .gsh-title{font-size:1.08rem;}
+  .gsh-desc{margin-left:0;flex-basis:100%;font-size:.82rem;}
+  .cat-chip{font-size:.86rem;padding:6px 12px;}
+}
