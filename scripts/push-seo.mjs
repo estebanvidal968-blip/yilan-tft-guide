@@ -69,11 +69,18 @@ function loadCursor() {
     return {};
   }
 }
+// 百度配额按「北京时间自然日」重置，必须用 Asia/Shanghai 日期做幂等判定。
+// 若用 UTC 日期：北京时间 00:00-08:00 之间跑的会被记成前一天，
+// 当天 08:00 之后再跑就会误判为新一日，白打 4 次降批请求。
+function bjToday() {
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' }); // YYYY-MM-DD
+}
+
 function saveCursor(offset, successCount = 0) {
   try {
     const prev = loadCursor();
     // 仅在真正推送成功时更新「上次成功日期」，用于同日复跑的幂等短路（FORCE_PUSH=1 可绕过）
-    const okDate = successCount > 0 ? new Date().toISOString().slice(0, 10) : prev.lastSuccessDate;
+    const okDate = successCount > 0 ? bjToday() : prev.lastSuccessDate;
     writeFileSync(
       CURSOR_PATH,
       JSON.stringify({ offset, updatedAt: new Date().toISOString(), lastSuccessDate: okDate }, null, 2)
@@ -100,7 +107,7 @@ async function pushBaidu(queue) {
   }
   const total = queue.length;
   const cursor = loadCursor();
-  const today = new Date().toISOString().slice(0, 10);
+  const today = bjToday();
   // 同日已成功推送过 → 直接短路，避免无意义的 4 次降批请求（配额按日发放，同日重跑必 over quota）
   if (cursor.lastSuccessDate === today && !process.env.FORCE_PUSH) {
     console.log(`[baidu] 今日（${today}）已成功推送过，跳过本轮（同日配额已用尽，重复调用无收益）。设 FORCE_PUSH=1 可强制重跑。`);
