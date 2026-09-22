@@ -10,6 +10,7 @@ const nav = [
   { href: '/play', label: '玩什么', match: (p) => p.startsWith('/play') },
   { href: '/tools', label: '工具', match: (p) => p.startsWith('/tools') },
   { href: '/guides', label: '攻略', match: (p) => p.startsWith('/guides') },
+  { href: '/legends', label: '海克斯典籍', match: (p) => p.startsWith('/legends') },
   { href: '/mine', label: '我的', match: (p) => p.startsWith('/mine') },
 ];
 

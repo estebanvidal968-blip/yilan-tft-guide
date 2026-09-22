@@ -1,0 +1,185 @@
+/* 英雄联盟传奇 · 海克斯典籍 板块样式
+   作用域全部限定在 .lg 内，不污染主站其余页面。
+   主色沿用站内「纸 + 金」基调，另加一档海克斯蓝承载板块身份（区别于 S18 的森林绿）。 */
+
+.lg {
+  --hex: #2f4b7c;
+  --hex-soft: #6b8cb8;
+  --hex-wash: #ebf0f7;
+  --hex-line: #cdd8e8;
+}
+
+.lg-head {
+  position: relative;
+  padding: 22px 20px 20px;
+  margin: 0 0 22px;
+  background: linear-gradient(180deg, var(--hex-wash), transparent);
+  border: 1px solid var(--hex-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.lg-title {
+  font-family: var(--serif);
+  font-size: 1.65rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.lg-sub {
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+  line-height: 1.7;
+  max-width: 62ch;
+}
+.lg-meta {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--mute);
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* 板块内子导航 */
+.lg-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.lg-nav a {
+  padding: 5px 13px;
+  font-size: 0.88rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-hi);
+  color: var(--ink-soft);
+  transition: all var(--d-fast) var(--ease);
+}
+.lg-nav a:hover { border-color: var(--hex-soft); color: var(--hex); }
+.lg-nav a[aria-current='page'] {
+  background: var(--hex);
+  border-color: var(--hex);
+  color: #fff;
+}
+
+/* 卡片网格 */
+.lg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+.lg-card {
+  background: var(--paper-hi);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.lg-card h3 {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lg-card .lg-hook {
+  color: var(--mute);
+  font-size: 0.86rem;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* 徽标 */
+.lg-badge {
+  font-size: 0.7rem;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+.lg-badge.t0 { color: var(--t0); border-color: var(--t0); }
+.lg-badge.t1 { color: var(--t1); border-color: var(--t1); }
+.lg-badge.draft { color: var(--mute); border-color: var(--line); }
+
+/* 钥匙条目 */
+.lg-keys { display: grid; gap: 10px; margin-top: 10px; }
+.lg-key {
+  border-left: 3px solid var(--line);
+  padding: 8px 0 8px 12px;
+}
+.lg-key.order { border-left-color: var(--hex-soft); }
+.lg-key.tech { border-left-color: var(--gold-soft); }
+.lg-key-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+.lg-key-type {
+  font-size: 0.74rem;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.lg-key.order .lg-key-type { background: var(--hex-wash); color: var(--hex); }
+.lg-key.tech .lg-key-type { background: #faf3e2; color: #8a6d24; }
+.lg-key-cond { font-size: 0.85rem; color: var(--ink); }
+.lg-key-attr { font-size: 0.8rem; color: var(--mute); margin-top: 2px; }
+.lg-key-eff { font-size: 0.86rem; color: var(--ink-soft); margin-top: 4px; }
+
+/* 通用小模块 */
+.lg-block { margin-bottom: 26px; }
+.lg-block h2 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.lg-list { display: grid; gap: 8px; }
+.lg-row {
+  display: flex;
+  gap: 10px;
+  padding: 9px 12px;
+  background: var(--paper-hi);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+.lg-row .lg-row-t {
+  flex: 0 0 auto;
+  font-weight: 500;
+  color: var(--hex);
+  min-width: 5.5em;
+}
+.lg-row .lg-row-d { color: var(--ink-soft); }
+
+/* 标签组 */
+.lg-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.lg-tags span {
+  font-size: 0.76rem;
+  padding: 1px 7px;
+  background: var(--paper-2);
+  border: 1px solid var(--line-soft);
+  border-radius: 2px;
+  color: var(--ink-soft);
+}
+
+.lg-note {
+  font-size: 0.82rem;
+  color: var(--mute);
+  border-left: 2px solid var(--gold-soft);
+  padding-left: 10px;
+  margin-top: 8px;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .lg-grid { grid-template-columns: 1fr; }
+  .lg-row { flex-direction: column; gap: 3px; }
+}

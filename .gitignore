@@ -31,6 +31,10 @@ repo.json
 __probe.json
 __probe__.*
 
+# WorkBuddy 本地会话数据 / SEO 推送游标（本地生成，不入库）
+.workbuddy/
+data/push-seo-cursor.json
+
 # 调试 / 验证产物（本地抓取与截图，不入库）
 __qr__/
 __screens__/
