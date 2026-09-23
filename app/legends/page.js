@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { cityKeys, totalKeys } from '@/legends/data/keys';
 import { comps } from '@/legends/data/comps';
+import { runes as totalRunes } from '@/legends/data/runes';
 
 export const metadata = {
   title: '英雄联盟传奇 · 海克斯典籍 · 弈览',
@@ -28,6 +29,9 @@ export default function LegendsHome() {
           </Link>
           <Link className="lg-chip" href="/legends/keys">
             城邦钥匙解锁表 →
+          </Link>
+          <Link className="lg-chip" href="/legends/runes">
+            符文 → 阵容 → 装备（{totalRunes.length} 张）→
           </Link>
           <Link className="lg-chip" href="/legends/items">
             装备与配装思路 →

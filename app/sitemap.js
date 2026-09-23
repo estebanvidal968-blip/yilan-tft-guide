@@ -2,6 +2,7 @@ import { headers } from 'next/headers';
 import { loadComps, loadTraits } from '@/lib/loadData';
 import { guides } from '@/content/guides';
 import { comps as legendComps } from '@/legends/data/comps';
+import { runes as legendRunes } from '@/legends/data/runes';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import augments from '@/data/tft/augments.json';
@@ -77,10 +78,17 @@ export default async function sitemap() {
     { url: `${base}/legends`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/legends/keys`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/legends/comps`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/legends/runes`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/legends/items`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
   ];
   const legendCompUrls = (legendComps || []).map((c) => ({
     url: `${base}/legends/comps/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.85,
+  }));
+  const legendRuneUrls = (legendRunes || []).map((r) => ({
+    url: `${base}/legends/runes/${r.slug}`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.85,
@@ -106,6 +114,7 @@ export default async function sitemap() {
     ...guideUrls,
     ...legendStaticUrls,
     ...legendCompUrls,
+    ...legendRuneUrls,
     ...compUrls,
     ...itemUrls,
     ...traitUrls,
