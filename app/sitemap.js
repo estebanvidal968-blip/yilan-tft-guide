@@ -1,6 +1,7 @@
 import { headers } from 'next/headers';
 import { loadComps, loadTraits } from '@/lib/loadData';
 import { guides } from '@/content/guides';
+import { comps as legendComps } from '@/legends/data/comps';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import augments from '@/data/tft/augments.json';
@@ -71,6 +72,20 @@ export default async function sitemap() {
     priority: 0.9,
   }));
 
+  // 英雄联盟传奇 · 海克斯典籍（新板块，优先让搜索引擎收录）
+  const legendStaticUrls = [
+    { url: `${base}/legends`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/legends/keys`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${base}/legends/comps`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${base}/legends/items`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+  ];
+  const legendCompUrls = (legendComps || []).map((c) => ({
+    url: `${base}/legends/comps/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.85,
+  }));
+
   const staticUrls = [
     { url: `${base}/`, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },
     { url: `${base}/guides`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
@@ -86,5 +101,15 @@ export default async function sitemap() {
     { url: `${base}/tools/comp-gen`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.5 },
     { url: `${base}/share`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
   ];
-  return [...staticUrls, ...guideUrls, ...compUrls, ...itemUrls, ...traitUrls, ...champUrls, ...augUrls];
+  return [
+    ...staticUrls,
+    ...guideUrls,
+    ...legendStaticUrls,
+    ...legendCompUrls,
+    ...compUrls,
+    ...itemUrls,
+    ...traitUrls,
+    ...champUrls,
+    ...augUrls,
+  ];
 }

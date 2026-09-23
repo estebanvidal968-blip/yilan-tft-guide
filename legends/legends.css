@@ -103,7 +103,135 @@
 }
 .lg-badge.t0 { color: var(--t0); border-color: var(--t0); }
 .lg-badge.t1 { color: var(--t1); border-color: var(--t1); }
+.lg-badge.s { color: var(--gold); border-color: var(--gold); }
 .lg-badge.draft { color: var(--mute); border-color: var(--line); }
+
+/* ── 详情页 / 列表页增强 ───────────────────────────── */
+.lg-crumb {
+  font-size: 0.82rem;
+  color: var(--mute);
+  margin-bottom: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.lg-crumb a { color: var(--hex); }
+.lg-crumb em { font-style: normal; color: var(--ink-soft); }
+
+.lg-flavor {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--hex);
+  border-left: 2px solid var(--hex-soft);
+  padding-left: 10px;
+}
+
+/* 属性 chips */
+.lg-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.lg-chip {
+  font-size: 0.76rem;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--hex-wash);
+  border: 1px solid var(--hex-line);
+  color: var(--hex);
+}
+
+/* 分组目录 */
+.lg-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.lg-toc-label { font-size: 0.82rem; color: var(--mute); }
+.lg-toc a {
+  font-size: 0.84rem;
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-hi);
+  color: var(--ink-soft);
+  transition: all var(--d-fast) var(--ease);
+}
+.lg-toc a:hover { border-color: var(--hex-soft); color: var(--hex); }
+
+.lg-group { margin-bottom: 34px; scroll-margin-top: 20px; }
+.lg-group-title {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line-soft);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.lg-group-title span {
+  font-family: inherit;
+  font-size: 0.78rem;
+  color: var(--mute);
+  font-weight: 400;
+}
+
+/* 可点击卡片 */
+.lg-card-link { display: flex; flex-direction: column; transition: border-color var(--d-fast) var(--ease); }
+.lg-card-link:hover { border-color: var(--hex-soft); }
+.lg-card h3 a { color: var(--ink); }
+.lg-card h3 a:hover { color: var(--hex); }
+
+.lg-card-key {
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+.lg-card-key-t {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  padding: 1px 6px;
+  border-radius: 2px;
+  background: var(--hex-wash);
+  color: var(--hex);
+}
+.lg-more {
+  margin-top: 12px;
+  font-size: 0.84rem;
+  color: var(--hex);
+  border-top: 1px dashed var(--hex-line);
+  padding-top: 10px;
+}
+.lg-more:hover { color: var(--gold); }
+
+.lg-warn {
+  font-size: 0.86rem;
+  color: #8a6d24;
+  background: #faf3e2;
+  border: 1px solid #e6d5ac;
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  line-height: 1.65;
+}
+
+.lg-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line-soft);
+  font-size: 0.88rem;
+}
+.lg-pager a { color: var(--hex); }
+.lg-pager a:hover { color: var(--gold); }
+.lg-pager-next { text-align: right; }
 
 /* 钥匙条目 */
 .lg-keys { display: grid; gap: 10px; margin-top: 10px; }
@@ -182,4 +310,6 @@
 @media (max-width: 640px) {
   .lg-grid { grid-template-columns: 1fr; }
   .lg-row { flex-direction: column; gap: 3px; }
+  .lg-pager { flex-direction: column; }
+  .lg-pager-next { text-align: left; }
 }

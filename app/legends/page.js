@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import { cityKeys, totalKeys } from '@/legends/data/keys';
-import { comps, compsReady } from '@/legends/data/comps';
+import { comps } from '@/legends/data/comps';
 
 export const metadata = {
   title: '英雄联盟传奇 · 海克斯典籍 · 弈览',
@@ -19,7 +20,18 @@ export default function LegendsHome() {
         <div className="lg-meta">
           <span>{cityKeys.length} 个城邦</span>
           <span>{totalKeys} 把钥匙</span>
-          <span>{comps.length} 套阵容（完整 {compsReady.length}）</span>
+          <span>{comps.length} 套阵容</span>
+        </div>
+        <div className="lg-chips">
+          <Link className="lg-chip" href="/legends/comps">
+            查看全部 {comps.length} 套阵容 →
+          </Link>
+          <Link className="lg-chip" href="/legends/keys">
+            城邦钥匙解锁表 →
+          </Link>
+          <Link className="lg-chip" href="/legends/items">
+            装备与配装思路 →
+          </Link>
         </div>
       </div>
 
@@ -60,24 +72,50 @@ export default function LegendsHome() {
       </section>
 
       <section className="lg-block">
-        <h2>阵容速览</h2>
+        <h2>强度向阵容</h2>
+        <p className="lg-note" style={{ marginBottom: 12, borderLeft: 'none', paddingLeft: 0 }}>
+          T0 / S 级，能稳定上分的答案阵容。
+        </p>
         <div className="lg-grid">
-          {comps.map((c) => (
-            <a className="lg-card" href="/legends/comps" key={c.slug}>
-              <h3>
-                {c.name}
-                <span className={`lg-badge ${c.tier.toLowerCase()}`}>{c.tier}</span>
-                {c.draft ? <span className="lg-badge draft">待补齐</span> : null}
-              </h3>
-              <p className="lg-hook">{c.hook}</p>
-              <div className="lg-tags">
-                {c.units.slice(0, 5).map((u) => (
-                  <span key={u}>{u}</span>
-                ))}
-                {c.units.length > 5 ? <span>+{c.units.length - 5}</span> : null}
-              </div>
-            </a>
-          ))}
+          {comps
+            .filter((c) => c.tier === 'T0' || c.tier === 'S')
+            .map((c) => (
+              <Link className="lg-card lg-card-link" href={`/legends/comps/${c.slug}`} key={c.slug}>
+                <h3>
+                  {c.name}
+                  <span className={`lg-badge ${c.tier.toLowerCase()}`}>{c.tier}</span>
+                </h3>
+                <p className="lg-hook">{c.hook}</p>
+                <div className="lg-chips">
+                  <span className="lg-chip">{c.style}</span>
+                  <span className="lg-chip">{c.difficulty}</span>
+                </div>
+              </Link>
+            ))}
+        </div>
+      </section>
+
+      <section className="lg-block">
+        <h2>特立独行 · 整活向</h2>
+        <p className="lg-note" style={{ marginBottom: 12, borderLeft: 'none', paddingLeft: 0 }}>
+          机制特别、成型有门槛，但一旦开出来就是别人没有的东西。
+        </p>
+        <div className="lg-grid">
+          {comps
+            .filter((c) => c.style === '整活')
+            .map((c) => (
+              <Link className="lg-card lg-card-link" href={`/legends/comps/${c.slug}`} key={c.slug}>
+                <h3>
+                  {c.name}
+                  <span className={`lg-badge ${c.tier.toLowerCase()}`}>{c.tier}</span>
+                </h3>
+                <p className="lg-hook">{c.flavor}</p>
+                <div className="lg-chips">
+                  <span className="lg-chip">{c.city}</span>
+                  <span className="lg-chip">{c.difficulty}</span>
+                </div>
+              </Link>
+            ))}
         </div>
       </section>
 
@@ -104,8 +142,9 @@ export default function LegendsHome() {
       </section>
 
       <p className="lg-note">
-        本板块资料整理自官方前瞻与公开攻略，部分为测试服数据，实际数值与解锁条件以游戏内为准。
-        标注「待补齐」处为资料不足，待实测补充。
+        本板块资料整理自金铲铲官方钥匙表与前瞻阵容、游侠手游 / 17173 攻略、金铲铲阿助地区玩法，
+        以及社区实测阵容（兔顶之弈 / 北派解说 / 手刃猫咪 / 铲铲有点6 等）。
+        部分数值在不同来源间存在版本差异，已在对应篇目标注；实际数值与解锁条件以游戏内为准。
       </p>
     </>
   );
