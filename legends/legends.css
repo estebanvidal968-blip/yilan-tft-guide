@@ -329,7 +329,78 @@
   line-height: 1.65;
 }
 
+/* ── 实测台（Labs）──────────────────────────────────────────── */
+
+/* 结论 / 声明卡：用于「这不是什么」这类需要先讲清楚口径的说明 */
+.lg-verdict {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+}
+.lg-verdict-t {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.lg-verdict p {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.lg-verdict b { color: var(--ink); }
+
+/* 确认状态标记：已确认 / 待补 */
+.lg-flag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  border-radius: 2px;
+  border: 1px solid var(--line-soft);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.lg-flag.ok { color: #3d7a4e; border-color: #bcd9c4; background: #eef6f0; }
+.lg-flag.todo { color: #8a6d24; border-color: #e0c98a; background: #faf5e6; }
+
+/* 差异对比表 */
+.lg-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+  margin-top: 8px;
+}
+.lg-table th,
+.lg-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 9px 10px;
+  border: 1px solid var(--line-soft);
+  line-height: 1.65;
+}
+.lg-table thead th {
+  background: var(--paper-2);
+  color: var(--ink);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.lg-table tbody th {
+  color: var(--hex);
+  font-weight: 500;
+  white-space: nowrap;
+  background: var(--paper-2);
+}
+.lg-table td { color: var(--ink-soft); }
+
 @media (max-width: 640px) {
+  .lg-table { font-size: 0.8rem; }
+  .lg-table th, .lg-table td { padding: 7px 8px; }
   .lg-grid { grid-template-columns: 1fr; }
   .lg-row { flex-direction: column; gap: 3px; }
   .lg-pager { flex-direction: column; }

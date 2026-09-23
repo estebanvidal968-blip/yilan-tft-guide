@@ -7,6 +7,7 @@ const items = [
   { href: '/legends/keys', label: '城邦钥匙' },
   { href: '/legends/comps', label: '阵容' },
   { href: '/legends/runes', label: '符文' },
+  { href: '/legends/labs', label: '实测台' },
   { href: '/legends/items', label: '装备' },
 ];
 
