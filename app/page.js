@@ -2,6 +2,7 @@ import CompCard from '@/components/CompCard';
 import HexMark from '@/components/HexMark';
 import HeroField from '@/components/HeroField';
 import { loadComps, loadVersions, loadTraits, loadCnMeta } from '@/lib/loadData';
+import { loadWeeklyRank, formatPeriod } from '@/lib/weeklyRank';
 import { guides } from '@/content/guides';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
@@ -21,8 +22,14 @@ export default async function Home() {
   const comps = await loadComps();
   const current = versions.find((v) => v.isCurrent) || versions[0];
   const list = comps.filter((c) => c.versionId === current.versionId);
-  // 按 OP.GG 强度分（opScore）降序排，整页一把排 + 名次
-  const ranked = [...list].sort((a, b) => (b.stat?.opScore || 0) - (a.stat?.opScore || 0));
+  // 周榜优先：首页推荐位只放「上一周最强」的 Top N（由 scripts/gen-weekly-rank.mjs 生成）。
+  // 周榜缺失或异常时回退到全量阵容按 opScore 排序，保证首页永不空白。
+  const weekly = loadWeeklyRank();
+  const periodText = formatPeriod(weekly?.period);
+  const ranked =
+    weekly && weekly.comps.length
+      ? weekly.comps
+      : [...list].sort((a, b) => (b.stat?.opScore || 0) - (a.stat?.opScore || 0));
 
   // 国服 meta 校准库：用于首页「数据口径」与「最后更新」标注
   const meta = loadCnMeta() || {};
@@ -153,7 +160,11 @@ export default async function Home() {
       </section>
 
       <h2 className="section-title">阵容强度榜</h2>
-      <p className="section-sub">按金铲铲国服 S18 实测 tier 从高到低排序 · 点击查看运营思路与克制关系。</p>
+      <p className="section-sub">
+        {periodText
+          ? `上周最强 ${ranked.length} 套 · 统计周期 ${periodText} · 点击查看运营思路与克制关系。`
+          : '按金铲铲国服 S18 实测 tier 从高到低排序 · 点击查看运营思路与克制关系。'}
+      </p>
 
       <div className="comp-grid home-grid">
         {ranked.map((c, i) => (

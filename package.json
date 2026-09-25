@@ -11,7 +11,8 @@
     "sync:12": "node scripts/sync-opgg.mjs 12",
     "assets": "node scripts/build-assets.mjs",
     "pipeline": "node scripts/gen-s18-pipeline.mjs",
-    "seo:push": "node scripts/push-seo.mjs"
+    "seo:push": "node scripts/push-seo.mjs",
+    "weekly": "node scripts/gen-weekly-rank.mjs"
   },
   "dependencies": {
     "next": "14.2.33",
