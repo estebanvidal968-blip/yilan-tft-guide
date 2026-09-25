@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { cityKeys, totalKeys } from '@/legends/data/keys';
 import { comps } from '@/legends/data/comps';
 import { runes as totalRunes } from '@/legends/data/runes';
-import { labs } from '@/legends/data/labs';
 
 export const metadata = {
   title: '英雄联盟传奇 · 海克斯典籍 · 弈览',
@@ -23,7 +22,6 @@ export default function LegendsHome() {
           <span>{cityKeys.length} 个城邦</span>
           <span>{totalKeys} 把钥匙</span>
           <span>{comps.length} 套阵容</span>
-          <span>{labs.length} 篇实测拆解</span>
         </div>
         <div className="lg-chips">
           <Link className="lg-chip" href="/legends/comps">
@@ -34,9 +32,6 @@ export default function LegendsHome() {
           </Link>
           <Link className="lg-chip" href="/legends/runes">
             符文 → 阵容 → 装备（{totalRunes.length} 张）→
-          </Link>
-          <Link className="lg-chip" href="/legends/labs">
-            实测台：玩家自建阵容拆解 →
           </Link>
           <Link className="lg-chip" href="/legends/items">
             装备与配装思路 →
@@ -125,28 +120,6 @@ export default function LegendsHome() {
                 </div>
               </Link>
             ))}
-        </div>
-      </section>
-
-      <section className="lg-block">
-        <h2>实测台 · 玩家自建阵容</h2>
-        <p className="lg-note" style={{ marginBottom: 12, borderLeft: 'none', paddingLeft: 0 }}>
-          公开攻略之外的一套思路。只拆机制，不给胜率。
-        </p>
-        <div className="lg-grid">
-          {labs.map((l) => (
-            <Link className="lg-card lg-card-link" href={`/legends/labs/${l.slug}`} key={l.slug}>
-              <h3>
-                {l.name}
-                <span className="lg-badge s">实测</span>
-              </h3>
-              <p className="lg-hook">{l.hook}</p>
-              <div className="lg-chips">
-                <span className="lg-chip">{l.city}</span>
-                <span className="lg-chip">强度：{l.verdict}</span>
-              </div>
-            </Link>
-          ))}
         </div>
       </section>
 
