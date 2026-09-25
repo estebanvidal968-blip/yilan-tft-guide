@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { LEGENDS_LIVE } from '@/lib/legendsLive';
 
 const nav = [
   { href: '/', label: '阵容', match: (p) => p === '/' || p.startsWith('/comp') },
@@ -12,7 +13,7 @@ const nav = [
   { href: '/guides', label: '攻略', match: (p) => p.startsWith('/guides') },
   { href: '/legends', label: '海克斯典籍', match: (p) => p.startsWith('/legends') },
   { href: '/mine', label: '我的', match: (p) => p.startsWith('/mine') },
-];
+].filter((n) => LEGENDS_LIVE || n.href !== '/legends');
 
 export default function SiteNav() {
   const pathname = usePathname() || '/';

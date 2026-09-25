@@ -3,6 +3,7 @@ import { loadComps, loadTraits } from '@/lib/loadData';
 import { guides } from '@/content/guides';
 import { comps as legendComps } from '@/legends/data/comps';
 import { runes as legendRunes } from '@/legends/data/runes';
+import { LEGENDS_LIVE } from '@/lib/legendsLive';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import augments from '@/data/tft/augments.json';
@@ -74,25 +75,32 @@ export default async function sitemap() {
   }));
 
   // 英雄联盟传奇 · 海克斯典籍（新板块，优先让搜索引擎收录）
-  const legendStaticUrls = [
-    { url: `${base}/legends`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${base}/legends/keys`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${base}/legends/comps`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${base}/legends/runes`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${base}/legends/items`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
-  ];
-  const legendCompUrls = (legendComps || []).map((c) => ({
-    url: `${base}/legends/comps/${c.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.85,
-  }));
-  const legendRuneUrls = (legendRunes || []).map((r) => ({
-    url: `${base}/legends/runes/${r.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 0.85,
-  }));
+  // 开关关闭时不输出任何 /legends URL，避免搜索引擎抓到 404。
+  const legendStaticUrls = LEGENDS_LIVE
+    ? [
+        { url: `${base}/legends`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+        { url: `${base}/legends/keys`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+        { url: `${base}/legends/comps`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+        { url: `${base}/legends/runes`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
+        { url: `${base}/legends/items`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+      ]
+    : [];
+  const legendCompUrls = LEGENDS_LIVE
+    ? (legendComps || []).map((c) => ({
+        url: `${base}/legends/comps/${c.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      }))
+    : [];
+  const legendRuneUrls = LEGENDS_LIVE
+    ? (legendRunes || []).map((r) => ({
+        url: `${base}/legends/runes/${r.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      }))
+    : [];
 
   const staticUrls = [
     { url: `${base}/`, lastModified: new Date(), changeFrequency: 'daily', priority: 1 },

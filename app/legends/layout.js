@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+import { LEGENDS_LIVE } from '@/lib/legendsLive';
 import '@/legends/legends.css';
 import LegendsNav from './LegendsNav';
 
@@ -8,6 +10,8 @@ export const metadata = {
 };
 
 export default function LegendsLayout({ children }) {
+  // 开关关闭时整板块返回 404（含所有子路由），审核通过后把 LEGENDS_LIVE 改为 true 即可。
+  if (!LEGENDS_LIVE) notFound();
   return (
     <div className="lg">
       <LegendsNav />
