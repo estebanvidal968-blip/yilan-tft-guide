@@ -74,6 +74,13 @@ export default function RootLayout({ children }) {
             <a href="/about">关于</a>
             <a href="/privacy">隐私政策</a>
             <a href="https://beian.miit.gov.cn" target="_blank" rel="noreferrer noopener">苏ICP备2026066445号-1</a>
+            <a
+              href="https://beian.mps.gov.cn/#/query/webSearch?code=32050902103404"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              苏公网安备32050902103404号
+            </a>
             <span className="muted">数据源：金铲铲国服 S18 实测（非全球服 OP.GG）</span>
           </span>
         </footer>
