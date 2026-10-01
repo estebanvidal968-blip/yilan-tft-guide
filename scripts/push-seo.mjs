@@ -60,6 +60,28 @@ function buildQueue(urls) {
   return [...home, ...guides, ...rest];
 }
 
+// 优先插队队列：data/push-seo-priority.json 里的 URL 会被插到「当前断点」位置，
+// 使下一次推送优先包含它们（新上线页面用，不必等环形队列慢慢轮到）。
+// 推送成功后可从该文件移除；留空数组即关闭插队。
+const PRIORITY_PATH = new URL('../data/push-seo-priority.json', import.meta.url);
+function loadPriority() {
+  try {
+    const arr = JSON.parse(readFileSync(PRIORITY_PATH, 'utf8'));
+    return Array.isArray(arr) ? arr.filter(Boolean) : [];
+  } catch {
+    return [];
+  }
+}
+
+// 把优先 URL 移到 offset 位置：其余 URL 的相对顺序不变，总数不变，既不重复也不遗漏。
+function applyPriority(queue, offset) {
+  const pending = loadPriority().filter((u) => queue.includes(u));
+  if (!pending.length) return queue;
+  const rest = queue.filter((u) => !pending.includes(u));
+  const at = Math.min(Math.max(offset, 0), rest.length);
+  return [...rest.slice(0, at), ...pending, ...rest.slice(at)];
+}
+
 // 适配器：读/写推送断点，避免每天从头重复推同样的 URL
 const CURSOR_PATH = new URL('../data/push-seo-cursor.json', import.meta.url);
 function loadCursor() {
@@ -115,6 +137,12 @@ async function pushBaidu(queue) {
     return;
   }
   let offset = ((Number(cursor.offset) || 0) % total + total) % total;
+  // 插队：把 priority 里的 URL 移到当前断点位置，下一次推送即命中它们
+  const headBefore = queue[offset];
+  queue = applyPriority(queue, offset);
+  if (queue[offset] !== headBefore) {
+    console.log(`[baidu] 插队生效：优先 URL 已置于断点 offset=${offset} → ${queue[offset]}`);
+  }
   let batch = Math.max(1, Number(process.env.PUSH_BATCH || 10));
   let success = 0;
   let remain = null;
