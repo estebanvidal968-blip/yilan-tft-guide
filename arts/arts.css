@@ -1,0 +1,273 @@
+/* 画之灵板块样式 —— 作用域限定 .ar，不污染主站 */
+
+.ar {
+  --ar-ink: #1c1a17;
+  --ar-sub: #6b6357;
+  --ar-line: #e6ddcd;
+  --ar-bg: #fbf8f2;
+  --ar-panel: #ffffff;
+  --ar-accent: #a8442a;
+  --ar-accent-soft: #f4e6df;
+  --ar-jade: #2f6d5c;
+  --ar-gold: #b8892f;
+  color: var(--ar-ink);
+}
+
+.ar-nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 10px 0 14px;
+  border-bottom: 1px solid var(--ar-line);
+  margin-bottom: 18px;
+}
+
+.ar-nav a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--ar-sub);
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.ar-nav a[aria-current='page'] {
+  background: var(--ar-accent-soft);
+  color: var(--ar-accent);
+  border-color: #e8cfc4;
+  font-weight: 600;
+}
+
+.ar-hero {
+  padding: 22px 0 10px;
+}
+
+.ar-hero h1 {
+  font-size: 28px;
+  margin: 0 0 6px;
+  letter-spacing: 0.5px;
+}
+
+.ar-hero .ar-tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--ar-accent-soft);
+  color: var(--ar-accent);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.ar-hero p {
+  color: var(--ar-sub);
+  line-height: 1.75;
+  margin: 8px 0 0;
+}
+
+.ar-section {
+  margin: 26px 0;
+}
+
+.ar-section > h2 {
+  font-size: 19px;
+  margin: 0 0 4px;
+  padding-left: 10px;
+  border-left: 3px solid var(--ar-accent);
+}
+
+.ar-section > .ar-sub {
+  color: var(--ar-sub);
+  font-size: 13.5px;
+  margin: 0 0 14px;
+  padding-left: 13px;
+}
+
+.ar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.ar-list li {
+  background: var(--ar-panel);
+  border: 1px solid var(--ar-line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  line-height: 1.7;
+}
+
+.ar-list li b {
+  color: var(--ar-accent);
+}
+
+.ar-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.ar-card {
+  background: var(--ar-panel);
+  border: 1px solid var(--ar-line);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.ar-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ar-card .ar-chip {
+  font-size: 11.5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f1efe9;
+  color: var(--ar-sub);
+  font-weight: 400;
+}
+
+.ar-card .ar-chip.jade {
+  background: #e6f1ed;
+  color: var(--ar-jade);
+}
+
+.ar-card .ar-chip.gold {
+  background: #f8f0df;
+  color: var(--ar-gold);
+}
+
+.ar-card .ar-chip.accent {
+  background: var(--ar-accent-soft);
+  color: var(--ar-accent);
+}
+
+.ar-card p {
+  margin: 6px 0 0;
+  color: var(--ar-sub);
+  font-size: 13.5px;
+  line-height: 1.75;
+}
+
+.ar-card .ar-tip {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--ar-line);
+  font-size: 13px;
+  color: var(--ar-jade);
+}
+
+.ar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  background: var(--ar-panel);
+  border: 1px solid var(--ar-line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ar-table th,
+.ar-table td {
+  padding: 9px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--ar-line);
+  vertical-align: top;
+  line-height: 1.65;
+}
+
+.ar-table th {
+  background: #f7f4ee;
+  font-weight: 600;
+  color: var(--ar-ink);
+  white-space: nowrap;
+}
+
+.ar-table tr:last-child td {
+  border-bottom: none;
+}
+
+.ar-note {
+  margin: 18px 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #fdf6e8;
+  border: 1px solid #f0e0c0;
+  font-size: 13px;
+  color: #7a5a1e;
+  line-height: 1.7;
+}
+
+.ar-note b {
+  color: #8a5a10;
+}
+
+.ar-meta {
+  font-size: 12.5px;
+  color: #9a9186;
+  margin-top: 26px;
+  padding-top: 12px;
+  border-top: 1px solid var(--ar-line);
+  line-height: 1.7;
+}
+
+/* 页内锚点导航（单页版）—— 吸顶，长页面滚动时始终可见 */
+.ar-anchors {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 12px 0;
+  margin: 16px 0 0;
+  border-top: 1px solid var(--ar-line);
+  border-bottom: 1px solid var(--ar-line);
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  background: rgba(251, 248, 242, 0.96);
+  backdrop-filter: blur(6px);
+}
+
+.ar-anchors a {
+  font-size: 13.5px;
+  padding: 4px 13px;
+  border-radius: 999px;
+  color: var(--ar-sub);
+  text-decoration: none;
+  border: 1px solid var(--ar-line);
+  background: #fff;
+  white-space: nowrap;
+}
+
+.ar-anchors a:hover {
+  color: var(--ar-accent);
+  border-color: #e8cfc4;
+}
+
+/* 锚点跳转时留出吸顶导航的高度，避免标题被盖住 */
+.ar-section {
+  scroll-margin-top: 72px;
+}
+
+/* 分组小标题（羁绊四类 / 阵容五类） */
+.ar-h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  color: var(--ar-ink);
+  font-weight: 600;
+}
+
+.ar-h3-desc {
+  font-size: 12.5px;
+  color: var(--ar-sub);
+  font-weight: 400;
+}

@@ -4,6 +4,7 @@ import { guides } from '@/content/guides';
 import { comps as legendComps } from '@/legends/data/comps';
 import { runes as legendRunes } from '@/legends/data/runes';
 import { LEGENDS_LIVE } from '@/lib/legendsLive';
+import { ARTS_LIVE } from '@/lib/artsLive';
 import itemsTft from '@/data/tft/items.json';
 import champs from '@/data/tft/champs.json';
 import augments from '@/data/tft/augments.json';
@@ -117,8 +118,19 @@ export default async function sitemap() {
     { url: `${base}/tools/comp-gen`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.5 },
     { url: `${base}/share`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.4 },
   ];
+
+  // 画之灵板块（受 ARTS_LIVE 开关控制，关闭时不输出任何 /arts URL）
+  const artsUrls = ARTS_LIVE
+    ? [
+        { url: `${base}/arts`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.85 },
+        { url: `${base}/arts/traits`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+        { url: `${base}/arts/comps`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.85 },
+      ]
+    : [];
+
   return [
     ...staticUrls,
+    ...artsUrls,
     ...guideUrls,
     ...legendStaticUrls,
     ...legendCompUrls,
