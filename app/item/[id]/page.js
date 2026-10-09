@@ -55,7 +55,10 @@ export function generateMetadata({ params }) {
   return {
     title: `${it.name} · 装备详情 · 弈览`,
     description: tail ? `${base}｜${tail}` : base,
-    alternates: { canonical: `/item/${it.id}` },
+    alternates: { canonical: `/item/${params.id}` },
+    // 2026-10-09 软下线：实测这 140 个装备详情页近 14 天总访问仅 567 次、单页 PV < 1，
+    // 不具备收录价值且拉低站点质量信号，故不参与索引（页面仍可正常访问，站内链接不失效）。
+    robots: { index: false, follow: false },
   };
 }
 

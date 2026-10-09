@@ -35,7 +35,11 @@ export default async function sitemap() {
     priority: 0.8,
   }));
 
-  // 140 件装备详情页（长尾 SEO：单件装备问答）
+  // 140 件装备详情页 —— 2026-10-09 起不再输出到 sitemap。
+  // 原因（实测数据）：这批页面占 sitemap 的 23.5%，但近 14 天总访问仅 567 次、单页 PV < 1，
+  // 既无搜索流量也无站内导流，属于「只消耗抓取预算、不产出」的低质页，拖累站点整体质量信号。
+  // 页面本身保留可访问（首页、弈子页、装备列表、"我的"收藏共 6 处站内链接依赖），
+  // 并已在详情页 metadata 加 robots noindex，等于「软下线」而非删除。
   const itemUrls = (itemsTft || []).map((it) => ({
     url: `${base}/item/${it.id}`,
     lastModified: new Date(),
@@ -136,7 +140,7 @@ export default async function sitemap() {
     ...legendCompUrls,
     ...legendRuneUrls,
     ...compUrls,
-    ...itemUrls,
+    // ...itemUrls,   ← 2026-10-09 停用：装备详情页软下线（见上方注释）
     ...traitUrls,
     ...champUrls,
     ...augUrls,
