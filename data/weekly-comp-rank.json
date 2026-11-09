@@ -1,541 +1,13 @@
 {
-  "generatedAt": "2026-10-12",
+  "generatedAt": "2026-11-09",
   "period": {
-    "from": "2026-09-26",
-    "to": "2026-10-12"
+    "from": "2026-10-26",
+    "to": "2026-11-09"
   },
   "season": "S18 自然之力",
   "totalScanned": 14,
   "topN": 8,
   "comps": [
-    {
-      "compId": "opgg-31f55aeac2d48af5d44aa1e99f0b0c39",
-      "versionId": "set18",
-      "name": "裁决使 阿兹尔",
-      "alias": "Executioner Azir",
-      "tier": "T0",
-      "coreChampions": [
-        "拉姆斯",
-        "婕拉"
-      ],
-      "traits": [
-        "婕拉 专属",
-        "花灵",
-        "处刑人",
-        "黑荆棘",
-        "召唤师",
-        "护卫",
-        "咒术师",
-        "灵狐",
-        "炼狱"
-      ],
-      "coreItems": [
-        "冕卫",
-        "石像鬼石板甲",
-        "石像鬼石板甲"
-      ],
-      "earlyGame": "",
-      "midGame": "",
-      "lateGame": "",
-      "counters": [],
-      "counteredBy": [],
-      "stationMapUrl": "",
-      "positionTip": "",
-      "aiComment": "婕拉是这套的输出核心，靠花灵与处刑人叠伤害；拉姆斯双石像鬼配冕卫站在最前吃满第一波爆发，费德提克和索拉卡补控制与续航。怕前排还没成型就被越过来切后排，也怕婕拉开局被集火。",
-      "positions": [
-        {
-          "champ": "拉姆斯",
-          "cost": 3,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "冕卫",
-            "石像鬼石板甲",
-            "石像鬼石板甲"
-          ],
-          "row": 0,
-          "col": 3
-        },
-        {
-          "champ": "费德提克",
-          "cost": 3,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "离子火花",
-            "振奋盔甲",
-            "日炎斗篷"
-          ],
-          "row": 2,
-          "col": 2
-        },
-        {
-          "champ": "提莫",
-          "cost": 3,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 2,
-          "col": 3
-        },
-        {
-          "champ": "凯南",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 2,
-          "col": 4
-        },
-        {
-          "champ": "婕拉",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "莫雷洛秘典",
-            "朔极之矛",
-            "虚空之杖"
-          ],
-          "row": 3,
-          "col": 2
-        },
-        {
-          "champ": "索拉卡",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 3,
-          "col": 4
-        },
-        {
-          "champ": "维迦",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 3,
-          "col": 6
-        }
-      ],
-      "roster": [
-        {
-          "champ": "维迦",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "提莫",
-          "cost": 3,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "拉姆斯",
-          "cost": 3,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "冕卫",
-            "石像鬼石板甲",
-            "石像鬼石板甲"
-          ]
-        },
-        {
-          "champ": "费德提克",
-          "cost": 3,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "离子火花",
-            "振奋盔甲",
-            "日炎斗篷"
-          ]
-        },
-        {
-          "champ": "索拉卡",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "婕拉",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "莫雷洛秘典",
-            "朔极之矛",
-            "虚空之杖"
-          ]
-        },
-        {
-          "champ": "凯南",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        }
-      ],
-      "hasStation": true,
-      "stat": {
-        "opScore": 1.871964067616875
-      },
-      "source": "国服实测",
-      "updatedAt": "2026-10-12",
-      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
-      "selectionGuide": "开局拉姆斯、费德提克这类前排牌顺，或野怪爆了锁子甲、负极斗篷就该考虑这套。前排成型快，中期很稳血；符文优先处刑人相关转职和加双抗的战力类，经济好就存钱上八找婕拉二星。",
-      "pickTips": "婕拉是唯一真核，八人口前别硬 D，用低费前排打工过渡。拉姆斯优先追二并给满肉装，双石像鬼配冕卫能撑住开局爆发，他站得住婕拉才有输出环境。装备先保证前排两件再补婕拉的法强装；婕拉迟迟不来牌就转其他处刑人体系保血。",
-      "rank": 1,
-      "opScore": 1.872
-    },
-    {
-      "compId": "opgg-25e6c08cee3fb517b00a8c3cb27179a7",
-      "versionId": "set18",
-      "name": "峡谷野怪 Elder Dragon",
-      "alias": "Riftbeast Elder Dragon",
-      "tier": "T0",
-      "coreChampions": [
-        "石甲虫",
-        "石甲虫",
-        "远古巨龙"
-      ],
-      "traits": [
-        "顶级掠食者",
-        "翡翠",
-        "裂隙兽",
-        "格斗家",
-        "召唤师",
-        "杀手",
-        "先锋",
-        "幽林",
-        "灵狐"
-      ],
-      "coreItems": [
-        "蓝霸符",
-        "珠光护手",
-        "灭世者的死亡之帽"
-      ],
-      "earlyGame": "",
-      "midGame": "",
-      "lateGame": "",
-      "counters": [],
-      "counteredBy": [],
-      "stationMapUrl": "",
-      "positionTip": "",
-      "aiComment": "顶级掠食者体系靠石甲虫和远古巨龙的坦度拖后期，双狂徒加石像鬼让前排几乎打不死，靠野怪的持续输出磨死对面。爆发不足，怕对面治疗续航拖到超时。",
-      "positions": [
-        {
-          "champ": "石甲虫",
-          "cost": 1,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ],
-          "row": 0,
-          "col": 3
-        },
-        {
-          "champ": "远古巨龙",
-          "cost": 7,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "无尽之刃",
-            "最后的轻语",
-            "强袭者的链枷"
-          ],
-          "row": 1,
-          "col": 2
-        },
-        {
-          "champ": "纳尔",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 1,
-          "col": 3
-        },
-        {
-          "champ": "塔里克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 2,
-          "col": 1
-        },
-        {
-          "champ": "石甲虫",
-          "cost": 1,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "夜之锋刃",
-            "巨人杀手",
-            "斯特拉克的挑战护手"
-          ],
-          "row": 2,
-          "col": 2
-        },
-        {
-          "champ": "魔沼蛙",
-          "cost": 1,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 2,
-          "col": 3
-        },
-        {
-          "champ": "锋喙鸟",
-          "cost": 1,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 2,
-          "col": 4
-        },
-        {
-          "champ": "石甲虫",
-          "cost": 1,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "蓝霸符",
-            "珠光护手",
-            "灭世者的死亡之帽"
-          ],
-          "row": 3,
-          "col": 0
-        }
-      ],
-      "roster": [
-        {
-          "champ": "石甲虫",
-          "cost": 1,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "蓝霸符",
-            "珠光护手",
-            "灭世者的死亡之帽"
-          ]
-        },
-        {
-          "champ": "魔沼蛙",
-          "cost": 1,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "石甲虫",
-          "cost": 1,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ]
-        },
-        {
-          "champ": "石甲虫",
-          "cost": 1,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "夜之锋刃",
-            "巨人杀手",
-            "斯特拉克的挑战护手"
-          ]
-        },
-        {
-          "champ": "锋喙鸟",
-          "cost": 1,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "远古巨龙",
-          "cost": 7,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "无尽之刃",
-            "最后的轻语",
-            "强袭者的链枷"
-          ]
-        },
-        {
-          "champ": "纳尔",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "塔里克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        }
-      ],
-      "hasStation": true,
-      "stat": {
-        "opScore": 1.815201384089408
-      },
-      "source": "国服实测",
-      "updatedAt": "2026-10-12",
-      "selectionGuide": "开局来石甲虫这类野怪牌就能冲，野怪爆了锁子甲、腰带更稳。顶级掠食者来牌顺优先，符文拿加生命值和双抗的战力类。前排成型极快，中期基本不掉血。",
-      "pickTips": "石甲虫是前排核心，双狂徒加石像鬼堆血量，追二甚至追三。远古巨龙补输出和坦度。装备优先保证前排站得住。前期用低费格斗家打工过渡。石甲虫不来牌就转其他掠食者体系。",
-      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
-      "rank": 2,
-      "opScore": 1.8152
-    },
-    {
-      "compId": "opgg-c5a44db118188c9565578d30c786b078",
-      "versionId": "set18",
-      "name": "永恒之森 德莱文",
-      "alias": "Elderwood Draven",
-      "tier": "T1",
-      "coreChampions": [
-        "伊泽瑞尔",
-        "茂凯",
-        "德莱文"
-      ],
-      "traits": [
-        "绿父亲",
-        "茂凯 专属",
-        "德莱文 专属",
-        "翡翠",
-        "格斗家",
-        "处刑人",
-        "炼狱",
-        "重装战士",
-        "幽林",
-        "灵狐",
-        "先锋"
-      ],
-      "coreItems": [
-        "死亡之刃",
-        "最后的轻语",
-        "朔极之矛"
-      ],
-      "earlyGame": "",
-      "midGame": "",
-      "lateGame": "",
-      "counters": [],
-      "counteredBy": [],
-      "stationMapUrl": "",
-      "positionTip": "",
-      "aiComment": "绿父亲体系养双物理C，德莱文鬼索叠攻速越打越快，伊泽瑞尔死亡之刃补爆发。前排有艾翁凯南纳尔顶着，输出环境不错。怕高护甲阵容拖到后期。",
-      "positions": [],
-      "roster": [
-        {
-          "champ": "阿利斯塔",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "伊泽瑞尔",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "死亡之刃",
-            "最后的轻语",
-            "朔极之矛"
-          ]
-        },
-        {
-          "champ": "阿木木",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "纳尔",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "艾翁",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "凯南",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "夜之锋刃",
-            "正义之手",
-            "灭世者的死亡之帽"
-          ]
-        },
-        {
-          "champ": "茂凯",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ]
-        },
-        {
-          "champ": "德莱文",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "死亡之刃",
-            "鬼索的狂暴之刃",
-            "海妖之怒"
-          ]
-        },
-        {
-          "champ": "塔里克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        }
-      ],
-      "hasStation": false,
-      "stat": {
-        "opScore": 1.5859845623154383
-      },
-      "source": "国服实测",
-      "updatedAt": "2026-10-12",
-      "selectionGuide": "野怪爆了暴击拳套或反曲弓就该考虑这套，前期艾翁、凯南这类低费很容易二星。绿父亲来牌顺就直冲，符文优先加攻速和暴击的战力类，经济好能上八找德莱文二星。",
-      "pickTips": "德莱文是主C，鬼索的狂暴之刃必做，攻速叠起来输出翻倍。伊泽瑞尔副C补死亡之刃打爆发，最后的轻语破甲。茂凯追二给肉装顶前排。前期用艾翁、凯南打工，他们低费容易追三。德莱文不来牌就先用EZ顶着。",
-      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
-      "rank": 3,
-      "opScore": 1.586
-    },
     {
       "compId": "opgg-96aeda6509f73e075c028fbbfc984091",
       "versionId": "set18",
@@ -581,6 +53,15 @@
           "stars": 2,
           "items": [],
           "row": 0,
+          "col": 1
+        },
+        {
+          "champ": "阿木木",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 0,
           "col": 2
         },
         {
@@ -593,15 +74,6 @@
           "col": 3
         },
         {
-          "champ": "阿木木",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 4
-        },
-        {
           "champ": "茂凯",
           "cost": 2,
           "carry": true,
@@ -612,7 +84,7 @@
             "狂徒铠甲"
           ],
           "row": 0,
-          "col": 5
+          "col": 4
         },
         {
           "champ": "凯南",
@@ -655,8 +127,8 @@
           "carry": true,
           "stars": 2,
           "items": [
+            "死亡之刃",
             "鬼索的狂暴之刃",
-            "海妖之怒",
             "海妖之怒"
           ],
           "row": 3,
@@ -724,8 +196,8 @@
           "carry": true,
           "stars": 2,
           "items": [
+            "死亡之刃",
             "鬼索的狂暴之刃",
-            "海妖之怒",
             "海妖之怒"
           ]
         },
@@ -739,21 +211,969 @@
       ],
       "hasStation": true,
       "stat": {
-        "opScore": 1.2684822368552113
+        "opScore": 2.2539641539499473
       },
       "source": "国服实测",
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-11-09",
       "selectionGuide": "开局艾翁、茂凯这类低费先锋或重装来得顺，或野怪爆了拳套、弓，就可以往这套靠。前期用茂凯加阿木木加塔里克撑血量稳住，符文优先攻速暴击类战力和经济类，攒钱上八找远古巨龙。巨龙迟迟不来就先做德莱文二星过渡保分。",
       "pickTips": "远古巨龙是终点核心，八人口前别硬 D，用茂凯、凯南打工锁血。装备优先给巨龙凑齐无尽加轻语，第三件在链枷和复活甲之间按局势选。茂凯的肉装要尽早满，他站不住整套输出就没环境。德莱文拿鬼索海妖做副核，能兜底也能分担伤害。",
       "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "rank": 1,
+      "opScore": 2.254
+    },
+    {
+      "compId": "opgg-e79e0b44fb8b780e395642c6c706fc35",
+      "versionId": "set18",
+      "name": "日蚀骑士 芸阿娜",
+      "alias": "Solar Yunara",
+      "tier": "T0",
+      "coreChampions": [
+        "卡尔玛",
+        "瑟庄妮"
+      ],
+      "traits": [
+        "圣盾",
+        "处刑人",
+        "召唤师",
+        "咒术师",
+        "重装战士",
+        "花绽",
+        "黑荆棘",
+        "Rapidfire",
+        "幽林",
+        "护卫"
+      ],
+      "coreItems": [
+        "蓝霸符",
+        "珠光护手",
+        "灭世者的死亡之帽"
+      ],
+      "earlyGame": "",
+      "midGame": "",
+      "lateGame": "",
+      "counters": [],
+      "counteredBy": [],
+      "stationMapUrl": "",
+      "positionTip": "",
+      "aiComment": "圣盾配咒术师的双核体系：卡尔玛吃蓝霸符、珠光护手和灭世者的死亡之帽把法强拉满，一套技能就能清掉后排；瑟庄妮石像鬼加振奋和狂徒顶在最前吸收第一波伤害，蕾欧娜与约里克把前排厚度补上，凯尔在侧翼补持续输出。爆发极高但启动偏慢，怕卡尔玛起手被切，也怕真实伤害直接穿掉瑟庄妮。",
+      "positions": [
+        {
+          "champ": "瑟庄妮",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "石像鬼石板甲",
+            "狂徒铠甲"
+          ],
+          "row": 0,
+          "col": 3
+        },
+        {
+          "champ": "约里克",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 2,
+          "col": 2
+        },
+        {
+          "champ": "蕾欧娜",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 2,
+          "col": 3
+        },
+        {
+          "champ": "卡尔玛",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "蓝霸符",
+            "珠光护手",
+            "灭世者的死亡之帽"
+          ],
+          "row": 3,
+          "col": 2
+        },
+        {
+          "champ": "凯尔",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 3,
+          "col": 3
+        }
+      ],
+      "roster": [
+        {
+          "champ": "蕾欧娜",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "约里克",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "卡尔玛",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "蓝霸符",
+            "珠光护手",
+            "灭世者的死亡之帽"
+          ]
+        },
+        {
+          "champ": "凯尔",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "瑟庄妮",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "石像鬼石板甲",
+            "狂徒铠甲"
+          ]
+        }
+      ],
+      "hasStation": true,
+      "stat": {
+        "opScore": 1.9852042639370384
+      },
+      "source": "国服实测",
+      "updatedAt": "2026-11-09",
+      "selectionGuide": "开局来蕾欧娜、约里克这类低费圣盾或重装，或者野怪爆了眼泪、大棒就该考虑这套。卡尔玛顺牌就直冲，符文优先咒术师转职和加双抗的战力类，经济好能存钱上八去追卡尔玛和瑟庄妮二星。前排成型快，中期很稳血。",
+      "pickTips": "卡尔玛是唯一的真核，八人口前别硬 D，先用蕾欧娜约里克打工过渡。瑟庄妮优先追二并给满肉装，她站得住卡尔玛才有输出环境。装备先做蓝霸符和珠光护手，法强叠起来后期一套秒人。卡尔玛迟迟不来牌就转其他圣盾体系保血，不要在七人口赌到死。",
+      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "rank": 2,
+      "opScore": 1.9852
+    },
+    {
+      "compId": "opgg-564efd4bc644d584ceb5986205ebd56e",
+      "versionId": "set18",
+      "name": "永恒之森 提莫",
+      "alias": "Elderwood Teemo",
+      "tier": "T0",
+      "coreChampions": [
+        "阿利斯塔",
+        "提莫",
+        "莫甘娜"
+      ],
+      "traits": [
+        "召唤师",
+        "格斗家",
+        "先锋",
+        "咒术师",
+        "幽林",
+        "灵狐",
+        "魔女",
+        "黑荆棘",
+        "裂隙兽"
+      ],
+      "coreItems": [
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "狂徒铠甲"
+      ],
+      "earlyGame": "",
+      "midGame": "",
+      "lateGame": "",
+      "counters": [],
+      "counteredBy": [],
+      "stationMapUrl": "",
+      "positionTip": "",
+      "aiComment": "召唤师体系靠阿利斯塔一个人扛住全场：双石像鬼配狂徒把坦度堆到极限，站在最前吃满第一波爆发；提莫在后排用珠光护手、朔极之矛和强袭者的链枷持续丢技能，越打越疼；莫甘娜莫雷洛秘典配虚空之杖补重伤和法穿，赫卡里姆与维迦负责控制和收割。缺点是输出全靠提莫单点，怕真实伤害和能越过前排的刺客。",
+      "positions": [
+        {
+          "champ": "阿利斯塔",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "石像鬼石板甲",
+            "狂徒铠甲"
+          ],
+          "row": 0,
+          "col": 3
+        },
+        {
+          "champ": "莫甘娜",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "适应性头盔",
+            "莫雷洛秘典",
+            "虚空之杖"
+          ],
+          "row": 2,
+          "col": 3
+        },
+        {
+          "champ": "赫卡里姆",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 2,
+          "col": 4
+        },
+        {
+          "champ": "锋喙鸟",
+          "cost": 1,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 2,
+          "col": 5
+        },
+        {
+          "champ": "提莫",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "珠光护手",
+            "朔极之矛",
+            "强袭者的链枷"
+          ],
+          "row": 3,
+          "col": 0
+        },
+        {
+          "champ": "维迦",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 3,
+          "col": 6
+        }
+      ],
+      "roster": [
+        {
+          "champ": "维迦",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "阿利斯塔",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "石像鬼石板甲",
+            "狂徒铠甲"
+          ]
+        },
+        {
+          "champ": "提莫",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "珠光护手",
+            "朔极之矛",
+            "强袭者的链枷"
+          ]
+        },
+        {
+          "champ": "赫卡里姆",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "莫甘娜",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "适应性头盔",
+            "莫雷洛秘典",
+            "虚空之杖"
+          ]
+        },
+        {
+          "champ": "锋喙鸟",
+          "cost": 1,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        }
+      ],
+      "hasStation": true,
+      "stat": {
+        "opScore": 1.5896000575642573
+      },
+      "source": "国服实测",
+      "updatedAt": "2026-11-09",
+      "selectionGuide": "开局来阿利斯塔这类低费格斗家，或者野怪爆了大棒、反曲弓就该考虑这套。提莫顺牌就直冲，符文优先咒术师转职和加法强的战力类，经济好能存钱上八去追提莫和阿利斯塔二星。前排成型快，中期稳血能力很强。",
+      "pickTips": "提莫是输出核心，八人口前别硬 D，先用阿利斯塔莫甘娜打工过渡。阿利斯塔优先追二并给满肉装，双石像鬼让他站得住提莫才有输出环境。装备先做珠光护手和朔极之矛，法强叠起来后期越打越疼。提莫一直不来牌就转其他召唤师体系保血。",
+      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "rank": 3,
+      "opScore": 1.5896
+    },
+    {
+      "compId": "opgg-80c87fc58f8286ad9209df87d89d3d91",
+      "versionId": "set18",
+      "name": "重装战士 拉露恩",
+      "alias": "Vanguard Alune",
+      "tier": "T0",
+      "coreChampions": [
+        "莫甘娜",
+        "锋喙鸟",
+        "阿露恩"
+      ],
+      "traits": [
+        "阿露恩 专属",
+        "顶级掠食者",
+        "翡翠",
+        "先锋",
+        "月相",
+        "咒术师",
+        "召唤师",
+        "魔女",
+        "裂隙兽",
+        "杀手"
+      ],
+      "coreItems": [
+        "适应性头盔",
+        "莫雷洛秘典",
+        "虚空之杖"
+      ],
+      "earlyGame": "",
+      "midGame": "",
+      "lateGame": "",
+      "counters": [],
+      "counteredBy": [],
+      "stationMapUrl": "",
+      "positionTip": "",
+      "aiComment": "莫甘娜饮血莫雷洛虚空之杖边打边回血，阿露恩珠光纳什朔极叠法强打持续输出，远古巨龙压阵补物理爆发，是一套三核混伤体系。怕装备分散、三核都没成型就被逐个击破。",
+      "positions": [
+        {
+          "champ": "伊莉丝",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 0,
+          "col": 1
+        },
+        {
+          "champ": "塔里克",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 0,
+          "col": 2
+        },
+        {
+          "champ": "锋喙鸟",
+          "cost": 1,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "圣盾使的誓约",
+            "狂徒铠甲"
+          ],
+          "row": 0,
+          "col": 3
+        },
+        {
+          "champ": "黛安娜",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 0,
+          "col": 4
+        },
+        {
+          "champ": "莫甘娜",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "适应性头盔",
+            "莫雷洛秘典",
+            "虚空之杖"
+          ],
+          "row": 1,
+          "col": 2
+        },
+        {
+          "champ": "远古巨龙",
+          "cost": 7,
+          "carry": false,
+          "stars": 2,
+          "items": [
+            "无尽之刃",
+            "最后的轻语",
+            "强袭者的链枷"
+          ],
+          "row": 1,
+          "col": 3
+        },
+        {
+          "champ": "阿露恩",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "珠光护手",
+            "纳什之牙",
+            "朔极之矛"
+          ],
+          "row": 3,
+          "col": 0
+        },
+        {
+          "champ": "卡西奥佩娅",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 3,
+          "col": 1
+        }
+      ],
+      "roster": [
+        {
+          "champ": "伊莉丝",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "卡西奥佩娅",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "黛安娜",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "莫甘娜",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "适应性头盔",
+            "莫雷洛秘典",
+            "虚空之杖"
+          ]
+        },
+        {
+          "champ": "锋喙鸟",
+          "cost": 1,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "圣盾使的誓约",
+            "狂徒铠甲"
+          ]
+        },
+        {
+          "champ": "阿露恩",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "珠光护手",
+            "纳什之牙",
+            "朔极之矛"
+          ]
+        },
+        {
+          "champ": "远古巨龙",
+          "cost": 7,
+          "carry": false,
+          "stars": 2,
+          "items": [
+            "无尽之刃",
+            "最后的轻语",
+            "强袭者的链枷"
+          ]
+        },
+        {
+          "champ": "塔里克",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        }
+      ],
+      "hasStation": true,
+      "stat": {
+        "opScore": 1.0503225996904075
+      },
+      "source": "国服实测",
+      "updatedAt": "2026-11-09",
+      "selectionGuide": "开局来莫甘娜、阿露恩，或野怪爆了法强散件，就可以往这套走。前中期用伊莉丝、卡西奥佩娅、黛安娜撑羁绊，符文优先法强类和经济类。七人口先出两核，八级再找远古巨龙收尾。",
+      "pickTips": "莫甘娜优先做饮血和莫雷洛，保证续航与穿透；阿露恩拿到珠光纳什打持续。远古巨龙是上限，但别为了等他把前两核的装备拖住。锋喙鸟作为一费前排可以早点追三，性价比很高。",
+      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
       "rank": 4,
-      "opScore": 1.2685
+      "opScore": 1.0503
+    },
+    {
+      "compId": "opgg-63f8b64181d2cb89afee42cf22378557",
+      "versionId": "set18",
+      "name": "重装战士 拉露恩",
+      "alias": "Vanguard Alune",
+      "tier": "T0",
+      "coreChampions": [
+        "莫甘娜",
+        "阿露恩",
+        "塔里克"
+      ],
+      "traits": [
+        "阿露恩 专属",
+        "绿父亲",
+        "翡翠",
+        "先锋",
+        "花灵",
+        "月相",
+        "咒术师",
+        "护卫",
+        "仙灵",
+        "召唤师",
+        "杀手",
+        "魔女",
+        "重装战士",
+        "裂隙兽"
+      ],
+      "coreItems": [
+        "莫雷洛秘典",
+        "朔极之矛",
+        "虚空之杖"
+      ],
+      "earlyGame": "",
+      "midGame": "",
+      "lateGame": "",
+      "counters": [],
+      "counteredBy": [],
+      "stationMapUrl": "",
+      "positionTip": "",
+      "aiComment": "阿露恩是这套的主核，莫雷洛上重伤、虚空之杖破魔抗、朔极之矛加快起手，靠阿露恩专属与翡翠羁绊持续输出；莫甘娜吃法强装当副核，塔里克、洛、艾翁配费德提克把前排站满替她铺场。九人口才凑得齐完整羁绊，怕中期掉血太快、也怕阿露恩被切后排。",
+      "positions": [
+        {
+          "champ": "洛",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 0,
+          "col": 1
+        },
+        {
+          "champ": "锋喙鸟",
+          "cost": 1,
+          "carry": false,
+          "stars": 2,
+          "items": [
+            "冕卫",
+            "圣盾使的誓约",
+            "狂徒铠甲"
+          ],
+          "row": 0,
+          "col": 3
+        },
+        {
+          "champ": "塔里克",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "坚定之心",
+            "狂徒铠甲"
+          ],
+          "row": 0,
+          "col": 4
+        },
+        {
+          "champ": "莉莉娅",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 1,
+          "col": 2
+        },
+        {
+          "champ": "黛安娜",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 1,
+          "col": 3
+        },
+        {
+          "champ": "费德提克",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 1,
+          "col": 4
+        },
+        {
+          "champ": "莫甘娜",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "莫雷洛秘典",
+            "朔极之矛",
+            "虚空之杖"
+          ],
+          "row": 2,
+          "col": 3
+        },
+        {
+          "champ": "艾翁",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 3,
+          "col": 0
+        },
+        {
+          "champ": "阿露恩",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "珠光护手",
+            "朔极之矛",
+            "强袭者的链枷"
+          ],
+          "row": 3,
+          "col": 6
+        }
+      ],
+      "roster": [
+        {
+          "champ": "洛",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "黛安娜",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "费德提克",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "莉莉娅",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "莫甘娜",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "莫雷洛秘典",
+            "朔极之矛",
+            "虚空之杖"
+          ]
+        },
+        {
+          "champ": "锋喙鸟",
+          "cost": 1,
+          "carry": false,
+          "stars": 2,
+          "items": [
+            "冕卫",
+            "圣盾使的誓约",
+            "狂徒铠甲"
+          ]
+        },
+        {
+          "champ": "阿露恩",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "珠光护手",
+            "朔极之矛",
+            "强袭者的链枷"
+          ]
+        },
+        {
+          "champ": "艾翁",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "塔里克",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "坚定之心",
+            "狂徒铠甲"
+          ]
+        }
+      ],
+      "hasStation": true,
+      "stat": {
+        "opScore": 0.8380285717975732
+      },
+      "source": "国服实测",
+      "updatedAt": "2026-11-09",
+      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "selectionGuide": "开局莫甘娜、莉莉娅这类低费法系牌顺，或野怪爆了无用大棒、女神之泪就该考虑这套。符文优先翡翠、仙灵相关的转职和加法强的战力类，经济好就存钱上九凑齐羁绊。中期靠低费法系打工稳血，别急着找高费。",
+      "pickTips": "阿露恩是主核，八人口前别硬 D，用莫甘娜配莉莉娅打工过渡。装备先做莫雷洛保证中期强度，再补虚空之杖和朔极之矛打后期；前排优先给塔里克补肉装站满，阿露恩才有输出环境。牌不顺就转其他法系体系保血。",
+      "rank": 5,
+      "opScore": 0.838
+    },
+    {
+      "compId": "opgg-cd2ff8ee4b6b682adfd9e77363573881",
+      "versionId": "set18",
+      "name": "魔战士 雷恩加尔",
+      "alias": "Adaptor Rengar",
+      "tier": "T0",
+      "coreChampions": [
+        "易",
+        "蔚"
+      ],
+      "traits": [
+        "Rival",
+        "腐蚀",
+        "适应体",
+        "格斗家",
+        "重装战士",
+        "原始",
+        "花绽",
+        "召唤师",
+        "裂隙兽"
+      ],
+      "coreItems": [
+        "夜之锋刃",
+        "鬼索的狂暴之刃",
+        "泰坦的坚决"
+      ],
+      "earlyGame": "",
+      "midGame": "",
+      "lateGame": "",
+      "counters": [],
+      "counteredBy": [],
+      "stationMapUrl": "",
+      "positionTip": "",
+      "aiComment": "易和奈德丽的双物理核心：易吃鬼索的狂暴之刃叠攻速，配夜之锋刃和泰坦的坚决持续输出越打越快；奈德丽无尽之刃配朔极之矛和斯特拉克补爆发与续航；蔚薄暮法袍石像鬼日炎顶在最前，约里克和瑟提把前排补齐。格斗家和重装战士叠起来坦度不错，怕高护甲阵容把物理输出吃干净，也怕易起手就被集火。",
+      "positions": [
+        {
+          "champ": "瑟提",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 0,
+          "col": 0
+        },
+        {
+          "champ": "石甲虫",
+          "cost": 1,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 0,
+          "col": 1
+        },
+        {
+          "champ": "蔚",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "振奋盔甲",
+            "狂徒铠甲"
+          ],
+          "row": 0,
+          "col": 5
+        },
+        {
+          "champ": "约里克",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 2,
+          "col": 0
+        },
+        {
+          "champ": "易",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "夜之锋刃",
+            "鬼索的狂暴之刃",
+            "泰坦的坚决"
+          ],
+          "row": 2,
+          "col": 6
+        },
+        {
+          "champ": "克格莫",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 3,
+          "col": 0
+        },
+        {
+          "champ": "奈德丽",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [
+            "鬼索的狂暴之刃",
+            "珠光护手",
+            "灭世者的死亡之帽"
+          ],
+          "row": 3,
+          "col": 6
+        }
+      ],
+      "roster": [
+        {
+          "champ": "约里克",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "易",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "夜之锋刃",
+            "鬼索的狂暴之刃",
+            "泰坦的坚决"
+          ]
+        },
+        {
+          "champ": "克格莫",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "石甲虫",
+          "cost": 1,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "蔚",
+          "cost": 3,
+          "carry": true,
+          "stars": 2,
+          "items": [
+            "石像鬼石板甲",
+            "振奋盔甲",
+            "狂徒铠甲"
+          ]
+        },
+        {
+          "champ": "瑟提",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "奈德丽",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [
+            "鬼索的狂暴之刃",
+            "珠光护手",
+            "灭世者的死亡之帽"
+          ]
+        }
+      ],
+      "hasStation": true,
+      "stat": {
+        "opScore": 0.7482123407681014
+      },
+      "source": "国服实测",
+      "updatedAt": "2026-11-09",
+      "selectionGuide": "开局来蔚、瑟提这类低费格斗家，或者野怪爆了反曲弓、拳套就该考虑这套。易顺牌就直冲，符文优先格斗家转职和加攻速的战力类，经济好能存钱上八去追易二星。中期靠格斗家过渡很稳，血量压力小。",
+      "pickTips": "易是这套的绝对核心，八人口前别硬 D，先用蔚瑟提打工过渡。蔚优先追二并给满肉装，她站得住易才有输出环境。装备先做鬼索和夜之锋刃，攻速叠起来后期滚雪球。易一直不来牌就转其他格斗家体系保血。",
+      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "rank": 6,
+      "opScore": 0.7482
     },
     {
       "compId": "opgg-91fa8a5b041869b676179aa7841c6780",
       "versionId": "set18",
-      "name": "日蚀天使（凯尔）",
-      "alias": "Rapidfire Kayle",
+      "name": "迅捷射手 瑟庄妮",
+      "alias": "Rapidfire Sejuani",
       "tier": "T0",
       "coreChampions": [
         "凯尔",
@@ -820,11 +1240,7 @@
           "cost": 3,
           "carry": false,
           "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ],
+          "items": [],
           "row": 2,
           "col": 3
         },
@@ -844,8 +1260,8 @@
           "stars": 2,
           "items": [
             "死亡之刃",
-            "海妖之怒",
-            "红霸符"
+            "鬼索的狂暴之刃",
+            "海妖之怒"
           ],
           "row": 3,
           "col": 5
@@ -899,11 +1315,7 @@
           "cost": 3,
           "carry": false,
           "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ]
+          "items": []
         },
         {
           "champ": "黛安娜",
@@ -919,8 +1331,8 @@
           "stars": 2,
           "items": [
             "死亡之刃",
-            "海妖之怒",
-            "红霸符"
+            "鬼索的狂暴之刃",
+            "海妖之怒"
           ]
         },
         {
@@ -933,462 +1345,41 @@
       ],
       "hasStation": true,
       "stat": {
-        "opScore": 1.1308977425795983
+        "opScore": 0.6692878083700643
       },
       "source": "国服实测",
-      "updatedAt": "2026-10-12",
-      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "updatedAt": "2026-11-09",
       "selectionGuide": "开局来蕾欧娜、慎这类低费圣盾护卫，或野怪爆了反曲弓、无用大棒就该考虑这套。前排顺就直冲，符文优先圣盾转职和加攻速、法强的战力类，经济好能存钱上八找凯尔二星。中期靠前排稳血，后期靠凯尔收割。",
       "pickTips": "凯尔是唯一真核，装备优先鬼索，攻速叠起来才有输出。前排给瑟庄妮、阿木木补肉装，站得住凯尔才有输出环境。八人口前别硬 D，用圣盾护卫打工过渡；凯尔一直不来牌就转其他圣盾体系保血。",
-      "rank": 5,
-      "opScore": 1.1309
+      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "rank": 7,
+      "opScore": 0.6693
     },
     {
-      "compId": "opgg-458b25ae58ad7c7e8924d03816fe41b8",
+      "compId": "opgg-07d2f5a06ab8d04212b64df0419b7c8e",
       "versionId": "set18",
-      "name": "永恒之森 卡兹克",
-      "alias": "Elderwood Kha'Zix",
+      "name": "裁决使 阿兹尔",
+      "alias": "Executioner Azir",
       "tier": "T0",
       "coreChampions": [
-        "黛安娜",
-        "赫卡里姆"
-      ],
-      "traits": [
-        "Rival",
-        "花灵",
-        "月相",
-        "先锋",
-        "处刑人",
-        "护卫",
-        "幽林",
-        "Rapidfire",
-        "杀手",
-        "咒术师"
-      ],
-      "coreItems": [
-        "正义之手",
-        "离子火花",
-        "珠光护手"
-      ],
-      "earlyGame": "",
-      "midGame": "",
-      "lateGame": "",
-      "counters": [],
-      "counteredBy": [],
-      "stationMapUrl": "",
-      "positionTip": "",
-      "aiComment": "黛安娜吃正义之手、离子火花、珠光护手打法系爆发，赫卡里姆石像鬼振奋狂徒顶在最前，伊泽瑞尔死亡之刃红霸符补物理输出，是一套法物双修的中期阵容。怕核心启动慢、被高爆发直接点掉。",
-      "positions": [
-        {
-          "champ": "赫卡里姆",
-          "cost": 3,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ],
-          "row": 0,
-          "col": 2
-        },
-        {
-          "champ": "奥恩",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 5
-        },
-        {
-          "champ": "费德提克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 6
-        },
-        {
-          "champ": "黛安娜",
-          "cost": 3,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "正义之手",
-            "离子火花",
-            "珠光护手"
-          ],
-          "row": 1,
-          "col": 1
-        },
-        {
-          "champ": "索拉卡",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 3,
-          "col": 0
-        },
-        {
-          "champ": "厄斐琉斯",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 3,
-          "col": 1
-        },
-        {
-          "champ": "伊泽瑞尔",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "死亡之刃",
-            "红霸符",
-            "朔极之矛"
-          ],
-          "row": 3,
-          "col": 2
-        }
-      ],
-      "roster": [
-        {
-          "champ": "奥恩",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "黛安娜",
-          "cost": 3,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "正义之手",
-            "离子火花",
-            "珠光护手"
-          ]
-        },
-        {
-          "champ": "赫卡里姆",
-          "cost": 3,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ]
-        },
-        {
-          "champ": "费德提克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "厄斐琉斯",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "伊泽瑞尔",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "死亡之刃",
-            "红霸符",
-            "朔极之矛"
-          ]
-        },
-        {
-          "champ": "索拉卡",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        }
-      ],
-      "hasStation": true,
-      "stat": {
-        "opScore": 0.9260909741494637
-      },
-      "source": "国服实测",
-      "updatedAt": "2026-10-12",
-      "selectionGuide": "开局黛安娜、赫卡里姆这类三费来得顺，或野怪爆了大棒、拳套，就可以往这套靠。前中期用奥恩、费德提克、索拉卡撑羁绊和续航，符文优先法强类战力和经济类。成型快的话中期能连胜，八级再补强二星核心。",
-      "pickTips": "黛安娜是主核，装备优先正义之手和珠光护手，离子火花补穿透；赫卡里姆肉装满才有前排。伊泽瑞尔做副核补物理输出，装备不够时可以只给他死亡之刃。别为了凑齐阵容在七人口硬 D，稳血优先。",
-      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
-      "rank": 6,
-      "opScore": 0.9261
-    },
-    {
-      "compId": "opgg-ae485444b0417ccf87b19dce35beff10",
-      "versionId": "set18",
-      "name": "重装战士 拉露恩",
-      "alias": "Vanguard Alune",
-      "tier": "T1",
-      "coreChampions": [
-        "莫甘娜",
-        "锋喙鸟",
-        "阿露恩"
-      ],
-      "traits": [
-        "阿露恩 专属",
-        "绿父亲",
-        "翡翠",
-        "先锋",
-        "花灵",
-        "月相",
-        "咒术师",
-        "护卫",
-        "召唤师",
-        "杀手",
-        "幽林",
-        "仙灵",
-        "魔女",
-        "裂隙兽"
-      ],
-      "coreItems": [
-        "海克斯科技枪刃",
-        "莫雷洛秘典",
-        "虚空之杖"
-      ],
-      "earlyGame": "",
-      "midGame": "",
-      "lateGame": "",
-      "counters": [],
-      "counteredBy": [],
-      "stationMapUrl": "",
-      "positionTip": "",
-      "aiComment": "阿露恩是主核，科技枪保证续航、莫雷洛上重伤、虚空之杖破魔抗，莫甘娜与锋喙鸟补控制和副核输出；赫卡里姆、塔里克、艾翁把前排站满替她铺场。九人口才凑得齐完整羁绊，怕中期掉血太快、也怕阿露恩被切。",
-      "positions": [
-        {
-          "champ": "塔里克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ],
-          "row": 0,
-          "col": 1
-        },
-        {
-          "champ": "赫卡里姆",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 2
-        },
-        {
-          "champ": "锋喙鸟",
-          "cost": 1,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "圣盾使的誓约",
-            "狂徒铠甲"
-          ],
-          "row": 0,
-          "col": 3
-        },
-        {
-          "champ": "黛安娜",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 4
-        },
-        {
-          "champ": "费德提克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 5
-        },
-        {
-          "champ": "莉莉娅",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 6
-        },
-        {
-          "champ": "莫甘娜",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "海克斯科技枪刃",
-            "莫雷洛秘典",
-            "虚空之杖"
-          ],
-          "row": 1,
-          "col": 3
-        },
-        {
-          "champ": "艾翁",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 3,
-          "col": 0
-        },
-        {
-          "champ": "阿露恩",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "大天使之杖",
-            "珠光护手",
-            "朔极之矛"
-          ],
-          "row": 3,
-          "col": 6
-        }
-      ],
-      "roster": [
-        {
-          "champ": "黛安娜",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "赫卡里姆",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "费德提克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "莉莉娅",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "莫甘娜",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "海克斯科技枪刃",
-            "莫雷洛秘典",
-            "虚空之杖"
-          ]
-        },
-        {
-          "champ": "锋喙鸟",
-          "cost": 1,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "圣盾使的誓约",
-            "狂徒铠甲"
-          ]
-        },
-        {
-          "champ": "阿露恩",
-          "cost": 2,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "大天使之杖",
-            "珠光护手",
-            "朔极之矛"
-          ]
-        },
-        {
-          "champ": "艾翁",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "塔里克",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [
-            "石像鬼石板甲",
-            "振奋盔甲",
-            "狂徒铠甲"
-          ]
-        }
-      ],
-      "hasStation": true,
-      "stat": {
-        "opScore": 0.4711949417600554
-      },
-      "source": "国服实测",
-      "updatedAt": "2026-10-12",
-      "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
-      "selectionGuide": "开局莫甘娜、莉莉娅这类低费法系牌顺，或野怪爆了无用大棒、女神之泪就该考虑这套。符文优先翡翠、仙灵相关的转职和加法强的战力类，经济好就存钱上九凑齐羁绊。中期靠低费法系打工稳血，别急着找高费。",
-      "pickTips": "阿露恩是主核，八人口前别硬 D，用莫甘娜配莉莉娅打工过渡。装备先做科技枪保证续航，再补莫雷洛和虚空之杖打高魔抗阵容。前排给赫卡里姆、塔里克补肉装站满，阿露恩才有输出环境；牌不顺就转其他法系体系保血。",
-      "rank": 7,
-      "opScore": 0.4712
-    },
-    {
-      "compId": "opgg-744234e84d716f4b87a69a7d85888ea3",
-      "versionId": "set18",
-      "name": "护卫 卡西奥佩娅",
-      "alias": "Defender Cassiopeia",
-      "tier": "T1",
-      "coreChampions": [
-        "卡西奥佩娅",
         "拉姆斯",
-        "费德提克"
+        "婕拉"
       ],
       "traits": [
+        "婕拉 专属",
         "花灵",
+        "处刑人",
+        "黑荆棘",
+        "召唤师",
         "护卫",
         "咒术师",
-        "魔女",
-        "圣盾",
-        "仙灵",
-        "幽林",
         "灵狐",
-        "炼狱",
-        "处刑人"
+        "幽林"
       ],
       "coreItems": [
-        "大天使之杖",
-        "蓝霸符",
-        "海克斯科技枪刃"
+        "石像鬼石板甲",
+        "石像鬼石板甲",
+        "日炎斗篷"
       ],
       "earlyGame": "",
       "midGame": "",
@@ -1397,129 +1388,98 @@
       "counteredBy": [],
       "stationMapUrl": "",
       "positionTip": "",
-      "aiComment": "护卫把前排堆到极致，拉姆斯石像鬼配费德提克日炎站成一堵墙，卡西奥佩娅躲后排靠大天使叠法强慢慢磨。怕真实伤害和能越前排的切后排。",
+      "aiComment": "婕拉是这套的输出核心，靠花灵与处刑人羁绊叠伤害；拉姆斯双石像鬼配日炎站在最前吃满第一波爆发，费德提克和索拉卡补控制与续航，维迦和提莫在后排补伤害。怕前排还没成型就被越过来切后排，也怕婕拉开局被集火。",
       "positions": [
         {
-          "champ": "蕾欧娜",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 0
-        },
-        {
-          "champ": "慎",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 1
-        },
-        {
-          "champ": "莉莉娅",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": [],
-          "row": 0,
-          "col": 2
-        },
-        {
-          "champ": "费德提克",
+          "champ": "拉姆斯",
           "cost": 3,
           "carry": true,
           "stars": 2,
           "items": [
-            "离子火花",
-            "振奋盔甲",
+            "石像鬼石板甲",
+            "石像鬼石板甲",
             "日炎斗篷"
           ],
           "row": 0,
           "col": 3
         },
         {
-          "champ": "拉姆斯",
+          "champ": "费德提克",
           "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": [
+            "离子火花",
+            "振奋盔甲",
+            "日炎斗篷"
+          ],
+          "row": 2,
+          "col": 2
+        },
+        {
+          "champ": "提莫",
+          "cost": 3,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 2,
+          "col": 3
+        },
+        {
+          "champ": "婕拉",
+          "cost": 2,
           "carry": true,
           "stars": 2,
           "items": [
-            "石像鬼石板甲",
-            "坚定之心",
-            "狂徒铠甲"
+            "莫雷洛秘典",
+            "朔极之矛",
+            "虚空之杖"
           ],
-          "row": 0,
-          "col": 4
+          "row": 3,
+          "col": 2
         },
         {
-          "champ": "奥恩",
+          "champ": "伊泽瑞尔",
           "cost": 2,
           "carry": false,
           "stars": 2,
           "items": [],
-          "row": 0,
-          "col": 5
-        },
-        {
-          "champ": "卡西奥佩娅",
-          "cost": 3,
-          "carry": true,
-          "stars": 2,
-          "items": [
-            "大天使之杖",
-            "蓝霸符",
-            "海克斯科技枪刃"
-          ],
           "row": 3,
-          "col": 0
+          "col": 3
         },
         {
           "champ": "索拉卡",
           "cost": 2,
           "carry": false,
           "stars": 2,
-          "items": [
-            "珠光护手",
-            "纳什之牙",
-            "朔极之矛"
-          ],
+          "items": [],
           "row": 3,
-          "col": 1
+          "col": 4
+        },
+        {
+          "champ": "维迦",
+          "cost": 2,
+          "carry": false,
+          "stars": 2,
+          "items": [],
+          "row": 3,
+          "col": 6
         }
       ],
       "roster": [
         {
-          "champ": "蕾欧娜",
+          "champ": "维迦",
           "cost": 2,
           "carry": false,
           "stars": 2,
           "items": []
         },
         {
-          "champ": "奥恩",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "慎",
-          "cost": 2,
-          "carry": false,
-          "stars": 2,
-          "items": []
-        },
-        {
-          "champ": "卡西奥佩娅",
+          "champ": "提莫",
           "cost": 3,
-          "carry": true,
+          "carry": false,
           "stars": 2,
-          "items": [
-            "大天使之杖",
-            "蓝霸符",
-            "海克斯科技枪刃"
-          ]
+          "items": []
         },
         {
           "champ": "拉姆斯",
@@ -1528,14 +1488,14 @@
           "stars": 2,
           "items": [
             "石像鬼石板甲",
-            "坚定之心",
-            "狂徒铠甲"
+            "石像鬼石板甲",
+            "日炎斗篷"
           ]
         },
         {
           "champ": "费德提克",
           "cost": 3,
-          "carry": true,
+          "carry": false,
           "stars": 2,
           "items": [
             "离子火花",
@@ -1544,7 +1504,7 @@
           ]
         },
         {
-          "champ": "莉莉娅",
+          "champ": "伊泽瑞尔",
           "cost": 2,
           "carry": false,
           "stars": 2,
@@ -1555,24 +1515,31 @@
           "cost": 2,
           "carry": false,
           "stars": 2,
+          "items": []
+        },
+        {
+          "champ": "婕拉",
+          "cost": 2,
+          "carry": true,
+          "stars": 2,
           "items": [
-            "珠光护手",
-            "纳什之牙",
-            "朔极之矛"
+            "莫雷洛秘典",
+            "朔极之矛",
+            "虚空之杖"
           ]
         }
       ],
       "hasStation": true,
       "stat": {
-        "opScore": 0.4399816721553147
+        "opScore": 0.6049413010629093
       },
       "source": "国服实测",
-      "updatedAt": "2026-10-12",
-      "selectionGuide": "开局来蕾欧娜、慎这类低费护卫，或野怪爆了眼泪、大棒就该考虑这套。护卫牌顺就直冲，符文优先护卫转职和加双抗的战力类，经济好能存钱上八找卡西奥佩娅二星。前排成型快，中期很稳血。",
-      "pickTips": "卡西奥佩娅是唯一真核，八人口前别硬 D，用蕾欧娜慎打工过渡。拉姆斯优先追二并给满肉装，他站得住蛇女才有输出环境。装备先做大天使和蓝霸符，法强叠起来后期越打越疼。蛇女一直不来牌就转其他护卫体系保血。",
+      "updatedAt": "2026-11-09",
       "sourceNote": "数据源：金铲铲国服 18.18.1_S18 实测 meta（非全球服 OP.GG）。国服与全球服存在数值/机制差异，榜单以国服为准。",
+      "selectionGuide": "开局拉姆斯、费德提克这类前排牌顺，或野怪爆了锁子甲、负极斗篷就该考虑这套。前排成型快，中期很稳血；符文优先处刑人相关转职和加双抗的战力类，经济好就存钱上八找婕拉二星。",
+      "pickTips": "婕拉是这套的真核，八人口前别硬 D，用低费前排打工过渡。拉姆斯优先追二并给满肉装，双石像鬼配日炎能撑住开局爆发，他站得住婕拉才有输出环境。装备先保证前排两件再补婕拉的法强装；婕拉迟迟不来牌就转其他处刑人体系保血。",
       "rank": 8,
-      "opScore": 0.44
+      "opScore": 0.6049
     }
   ]
 }
